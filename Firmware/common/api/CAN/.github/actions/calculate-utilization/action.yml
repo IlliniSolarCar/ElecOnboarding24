@@ -1,0 +1,16 @@
+name: 'CAN Utilization Calculation'
+description: 'Calculate the Utilization of each message'
+author: 'jtmullen'
+inputs:
+  config_path:
+    description: "Path to config file that has overhead info and data type sizes"
+    required: true
+  input_path:
+    description: "Location of the CAN Def (inside GitHub Workspace)"
+    required: true
+  output_path: 
+    description: "Location of the artifact file (inside GitHub Workspace)"
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

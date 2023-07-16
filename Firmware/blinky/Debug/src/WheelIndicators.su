@@ -1,0 +1,30 @@
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/gpio_object.h:35:20:void gpio_write(gpio_t*, int)	16	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/gpio_object.h:43:19:int gpio_read(gpio_t*)	16	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/api/DigitalOut.h:48:5:mbed::DigitalOut::DigitalOut(PinName)	16	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/api/DigitalOut.h:66:10:void mbed::DigitalOut::write(int)	16	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/api/DigitalOut.h:76:9:int mbed::DigitalOut::read()	16	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/api/DigitalOut.h:93:17:mbed::DigitalOut& mbed::DigitalOut::operator=(int)	16	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/api/CAN.h:46:5:mbed::CANMessage::CANMessage(int, const char*, char, CANType, CANFormat)	24	static
+../src/WheelIndicators.cpp:10:1:WheelIndicators::WheelIndicators(mbed::SPI&, WheelCommon&)	48	static
+../src/WheelIndicators.cpp:23:9:uint8_t WheelIndicators::init()	32	static
+../src/WheelIndicators.cpp:45:6:void WheelIndicators::hazards(bool)	16	static
+../src/WheelIndicators.cpp:52:6:void WheelIndicators::leftTurnSignal(bool)	16	static
+../src/WheelIndicators.cpp:59:6:void WheelIndicators::rightTurnSignal(bool)	16	static
+../src/WheelIndicators.cpp:66:6:void WheelIndicators::headLights(bool)	24	static
+../src/WheelIndicators.cpp:71:6:void WheelIndicators::cruiseLights(bool)	24	static
+../src/WheelIndicators.cpp:77:6:void WheelIndicators::setSpeed(uint32_t, uint32_t)	32	static
+../src/WheelIndicators.cpp:89:6:void WheelIndicators::setVoltage(uint32_t, uint32_t)	24	static
+../src/WheelIndicators.cpp:94:6:void WheelIndicators::setTime(uint8_t, uint8_t)	24	static
+../src/WheelIndicators.cpp:100:6:void WheelIndicators::tickMinute()	16	static
+../src/WheelIndicators.cpp:111:6:void WheelIndicators::setMode(WheelIndicators::sevenSegMode)	16	static
+../src/WheelIndicators.cpp:115:9:uint8_t WheelIndicators::writeDisplay(uint32_t)	32	static
+../src/WheelIndicators.cpp:174:6:void WheelIndicators::setDisplayBrightness(uint8_t)	16	static
+../src/WheelIndicators.cpp:178:6:void WheelIndicators::updateBrightness()	24	static
+../src/WheelIndicators.cpp:203:6:bool WheelIndicators::sendCktErrors()	80	static
+../src/WheelIndicators.cpp:225:6:void WheelIndicators::enableAll(bool)	16	static
+../src/WheelIndicators.cpp:234:9:uint8_t WheelIndicators::testDisplays(uint8_t)	24	static
+../src/WheelIndicators.cpp:247:6:void WheelIndicators::_updateTurnLEDs()	16	static
+../src/WheelIndicators.cpp:263:9:uint8_t WheelIndicators::_writeDisplay(float, uint8_t, bool, bool)	48	static
+../src/WheelIndicators.cpp:302:10:uint16_t WheelIndicators::_writeSingleDisplayHelper(uint8_t, uint8_t)	24	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/common/api/can_struct.h:38:12:mbed::CANMessage makeMessage(int, const DataStruct&) [with DataStruct = BRIZO_CAN::Wheel7SegDriverCktError]	32	static
+/opt/mcuxpresso-ide/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.7.1.202301190959/tools/arm-none-eabi/include/c++/10.3.1/cmath:415:5:constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type std::pow(_Tp, _Up) [with _Tp = int; _Up = int]	24	static

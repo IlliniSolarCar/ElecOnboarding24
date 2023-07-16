@@ -1,0 +1,231 @@
+name: Check BUS Utilization
+
+on:
+  push: 
+    branches:
+      - 'brizo-master'  # For pushes to master we need to update the badges
+  pull_request:
+    branches: 
+      - 'brizo-master'  # For PRs into master we want to 
+
+
+jobs:
+
+  # make sure the json is valid before we try to play with it. 
+  verify-json:
+    name: Verify Json Valid
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Validate CAN Def
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: /schema.json
+          INPUT_JSONS: /canDef.json
+      - name: Verify No Duplicates
+        run: |
+          python .github/scripts/check_duplicates.py
+
+
+  # Calculate the utilization for the current branch
+  # brizo-master on push event otherwise the PR branch
+  overall-utilization-new:
+    name: Calculate New Utilization
+    needs: verify-json
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout CAN Repo
+        uses: actions/checkout@v2
+      - name: Calculate Utilizations
+        uses: ./.github/actions/calculate-utilization
+        with:
+          config_path: .github/utilization-config.yml
+          input_path: canDef.json
+          output_path: message-utilization.json
+      - uses: actions/upload-artifact@v2
+        if: github.ref == 'refs/heads/brizo-master'
+        id: brizo-master-upload
+        with:
+          name: Message Utilizations
+          path: ${{ github.workspace }}/message-utilization.json
+          retention-days: 60 #Keep longer for master branch
+          if-no-files-found: 'error' # If this doesn't get uploaded successfully we should fail
+      - uses: actions/upload-artifact@v2
+        if: steps.brizo-master-upload.outcome == 'skipped'
+        with:
+          name: Message Utilizations
+          path: ${{ github.workspace }}/message-utilization.json
+          retention-days: 5 # Keep long enough to inspect, but no more if not master
+          if-no-files-found: 'error' # If this doesn't get uploaded successfully we should fail
+
+
+  # This is the current easiest solution for now
+  # The GitHub Actions artifacts system is still not fully featured
+  # Eventually we should just be able to grab the last one this workflow running on master
+  # But currently we can't easily access artifacts from previous runs, so recreating is easier
+  overall-utilization-current-master:
+    name: Calculate Existing Utilization
+    needs: verify-json
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'pull_request'}}
+    steps:
+      - name: Checkout CAN Repo Brizo-Master
+        uses: actions/checkout@v2
+        with:
+          ref: 'brizo-master'
+      - name: Checkout This Branch for Action
+        uses: actions/checkout@v2
+        with:
+          path: 'this-branch'
+      - name: Calculate Utilizations
+        uses: ./this-branch/.github/actions/calculate-utilization
+        with:
+          config_path: this-branch/.github/utilization-config.yml
+          input_path: canDef.json
+          output_path: message-utilization.json
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Brizo-Master Message Utilizations
+          path: ${{ github.workspace }}/message-utilization.json
+          retention-days: 1 # Just a recreation for this run
+          if-no-files-found: 'error'
+
+  # Generate the comment to post on a PR
+  pull-request-comment:
+    name: Comment on Pull Request
+    if: ${{ github.event_name == 'pull_request'}}
+    needs: [overall-utilization-current-master, overall-utilization-new]
+    runs-on: ubuntu-latest
+    steps:
+      # Check out repo to get the action
+      - name: Checkout CAN Repo
+        uses: actions/checkout@v2
+      - name: Download Branch Utilizations
+        uses: actions/download-artifact@v2
+        with:
+          name: Message Utilizations
+          path: ${{ github.workspace }}/branch
+      - name: Download Brizo Master Utilizations
+        uses: actions/download-artifact@v2
+        with:
+          name: Brizo-Master Message Utilizations
+          path: ${{ github.workspace }}/master
+      - name: Create Comment
+        id: comment
+        uses: ./.github/actions/utilization-comment
+        with: 
+          config_path: .github/utilization-config.yml
+          new_input_path: branch/message-utilization.json
+          master_input_path: master/message-utilization.json
+      - name: Update Comment
+        uses: actions-cool/maintain-one-comment@v1.2.0
+        with:
+          # The comment will include this HTML comment
+          # That way we update the same comment each time, not add a new one
+          body-include: '<!-- Utilization Comment -->' 
+          token: ${{ secrets.GITHUB_TOKEN }}
+          body: ${{ steps.comment.outputs.comment }} 
+
+  # Update badges for master
+  update-brizo-badges:
+    name: Update Utilization Badges
+    if: ${{ github.event_name == 'push' }} #&& github.ref == 'refs/heads/brizo-master' }}
+    needs: overall-utilization-new
+    runs-on: ubuntu-latest
+    env:
+      # Settings for all the badges
+      GIST_ID: eacabc6190a7e3d0612d107b88a40649
+      BADGE_STYLE: 'for-the-badge'
+
+    steps:
+      # Checkout Repo to get the action
+      - name: Checkout CAN Repo
+        uses: actions/checkout@v2
+      - name: Download Utilizations
+        uses: actions/download-artifact@v2
+        with:      
+          name: Message Utilizations
+          path: ${{ github.workspace }}
+
+      # This sums the nominal, 1s worst case, and 0.1s worst case utilizations
+      # It does this without debug messages as well
+      # All are put into outputs to pass to a step to update the specific badge
+      - name: Sum Utiliation Totals
+        id: totals
+        uses: ./.github/actions/sum-for-badges
+        with:
+          config_path: .github/utilization-config.yml
+          input_path: /message-utilization.json
+
+      - name: Update Nominal 
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with: 
+          auth: ${{ secrets.CAN_MONITORING_TOKEN }}
+          filename: nominal.json
+          label: 'Nominal'
+          gistID: ${{ env.GIST_ID }}
+          style: ${{ env.BADGE_STYLE }}
+          message: ${{ steps.totals.outputs.nominal }} 
+          color: ${{ steps.totals.outputs.nominalColor }} 
+
+      - name: Update 0.1s Worst Case
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with: 
+          auth: ${{ secrets.CAN_MONITORING_TOKEN }}
+          filename: tenth-worst.json
+          label: '0.1s Worst Case'
+          gistID: ${{ env.GIST_ID }}
+          style: ${{ env.BADGE_STYLE }}
+          message: ${{ steps.totals.outputs.tenthWorst }} 
+          color: ${{ steps.totals.outputs.tenthWorstColor }} 
+
+      - name: Update 1s Worst Case
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with: 
+          auth: ${{ secrets.CAN_MONITORING_TOKEN }}
+          filename: full-worst.json
+          label: '1s Worst Case'
+          gistID: ${{ env.GIST_ID }}
+          style: ${{ env.BADGE_STYLE }}
+          message: ${{ steps.totals.outputs.fullWorst }} 
+          color: ${{ steps.totals.outputs.fullWorstColor }} 
+
+      - name: Update Nominal No Debug
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with: 
+          auth: ${{ secrets.CAN_MONITORING_TOKEN }}
+          filename: nominal-no-debug.json
+          label: 'Nominal'
+          gistID: ${{ env.GIST_ID }}
+          style: ${{ env.BADGE_STYLE }}
+          message: ${{ steps.totals.outputs.nominalNoDebug }} 
+          color: ${{ steps.totals.outputs.nominalNoDebugColor }} 
+
+      - name: Update 0.1s Worst Case No Debug
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with: 
+          auth: ${{ secrets.CAN_MONITORING_TOKEN }}
+          filename: tenth-worst-no-debug.json
+          label: '0.1s Worst Case'
+          gistID: ${{ env.GIST_ID }}
+          style: ${{ env.BADGE_STYLE }}
+          message: ${{ steps.totals.outputs.tenthWorstNoDebug }} 
+          color: ${{ steps.totals.outputs.tenthWorstNoDebugColor }} 
+
+      - name: Update 1s Worst Case No Debug
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with: 
+          auth: ${{ secrets.CAN_MONITORING_TOKEN }}
+          filename: full-worst-no-debug.json
+          label: '1s Worst Case'
+          gistID: ${{ env.GIST_ID }}
+          style: ${{ env.BADGE_STYLE }}
+          message: ${{ steps.totals.outputs.fullWorstNoDebug }} 
+          color: ${{ steps.totals.outputs.fullWorstNoDebugColor }} 
+
+
+
+
+
+
+

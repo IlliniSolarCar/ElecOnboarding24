@@ -1,0 +1,41 @@
+../src/WheelScreen.cpp:11:1:WheelScreen::WheelScreen(mbed::SPI&, mbed::DigitalOut&, mbed::DigitalOut&)	32	static
+../src/WheelScreen.cpp:16:9:uint8_t WheelScreen::init(uint8_t)	16	static
+../src/WheelScreen.cpp:21:6:void WheelScreen::setDriveInfo(BRIZO_CAN::DashBrakeAndDirection)	40	static
+../src/WheelScreen.cpp:69:6:void WheelScreen::writeDisplay(uint32_t)	40	static
+../src/WheelScreen.cpp:90:6:void WheelScreen::setDisplay(WheelScreen::display)	24	static
+../src/WheelScreen.cpp:97:6:void WheelScreen::setPackCurrent(int16_t, uint32_t)	48	static
+../src/WheelScreen.cpp:104:6:void WheelScreen::setPackVoltage(uint32_t, uint32_t)	80	static
+../src/WheelScreen.cpp:114:6:void WheelScreen::setHighCellValue(uint16_t, uint32_t)	48	static
+../src/WheelScreen.cpp:120:6:void WheelScreen::setLowCellValue(uint16_t, uint32_t)	48	static
+../src/WheelScreen.cpp:126:6:void WheelScreen::setHighCellTemp(uint16_t, uint32_t)	48	static
+../src/WheelScreen.cpp:132:6:void WheelScreen::setWheelStatus()	48	static
+../src/WheelScreen.cpp:174:6:void WheelScreen::setCCSpeed(uint16_t)	40	static
+../src/WheelScreen.cpp:178:6:void WheelScreen::setAccelPercentage(uint8_t)	40	static
+../src/WheelScreen.cpp:183:6:void WheelScreen::setHeadLightStatus(bool)	40	static
+../src/WheelScreen.cpp:190:6:void WheelScreen::setRegenStatus(bool)	40	static
+../src/WheelScreen.cpp:199:6:void WheelScreen::setTotalMPPT()	48	static
+../src/WheelScreen.cpp:206:6:void WheelScreen::setMPPT1Power(int16_t)	40	static
+../src/WheelScreen.cpp:214:6:void WheelScreen::setMPPT2Power(int16_t)	40	static
+../src/WheelScreen.cpp:222:6:void WheelScreen::setMPPT4Power(int16_t)	40	static
+../src/WheelScreen.cpp:230:6:void WheelScreen::setPDSStatus(BRIZO_CAN::PdsState)	40	static
+../src/WheelScreen.cpp:259:6:void WheelScreen::setBMSStatus(BRIZO_CAN::operationMode)	40	static
+../src/WheelScreen.cpp:274:6:void WheelScreen::setClutch(bool)	16	static
+../src/WheelScreen.cpp:279:6:void WheelScreen::WaveErrors(bool, uint32_t)	24	static
+../src/WheelScreen.cpp:284:6:void WheelScreen::setMotorPower(int16_t)	40	static
+../src/WheelScreen.cpp:290:6:void WheelScreen::setMCCStatus(uint8_t, uint32_t)	48	static
+../src/WheelScreen.cpp:322:6:void WheelScreen::setChaseStatus(uint32_t)	40	static
+../src/WheelScreen.cpp:328:6:void WheelScreen::clearPopup()	24	static
+../src/WheelScreen.cpp:349:6:void WheelScreen::batteryShutdownPopup(BRIZO_CAN::BatteryShutdown)	16	static
+../src/WheelScreen.cpp:369:6:void WheelScreen::wheelErrorPopup(BRIZO_CAN::WheelErrors)	16	static
+../src/WheelScreen.cpp:387:6:void WheelScreen::_setNumData(int, int, int*, int, int, bool)	48	static
+../src/WheelScreen.cpp:413:6:void WheelScreen::_setCharData(int, int, int*, int, char*, int)	40	static
+../src/WheelScreen.cpp:432:6:void WheelScreen::_setPopupNumData(int, int*, int, int, bool)	40	static
+../src/WheelScreen.cpp:456:6:void WheelScreen::_setPopupData(int, int*, int, char*, int)	32	static
+../src/WheelScreen.cpp:473:6:void WheelScreen::_recentDataCheck(uint32_t)	40	static
+../src/WheelScreen.cpp:501:6:void WheelScreen::_recentDataCheckHelper(uint32_t, uint32_t, uint32_t, int, int, int*, int)	104	dynamic
+../src/WheelScreen.cpp:515:6:void WheelScreen::_setUpPopup()	40	static
+../src/WheelScreen.cpp:543:6:void WheelScreen::_setBatteryShutdownPopup(BRIZO_CAN::BatteryShutdown)	24	static
+../src/WheelScreen.cpp:596:6:void WheelScreen::_setWheelErrorPopup(BRIZO_CAN::WheelErrors)	24	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/common/api/MovingAverage.h:14:3:MovingAverage<T, V, L>::MovingAverage() [with T = long int; V = long long int; unsigned int L = 10]	16	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/common/api/MovingAverage.h:22:8:void MovingAverage<T, V, L>::update(T) [with T = long int; V = long long int; unsigned int L = 10]	64	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/common/api/MovingAverage.h:42:5:T MovingAverage<T, V, L>::read() const [with T = long int; V = long long int; unsigned int L = 10]	48	static

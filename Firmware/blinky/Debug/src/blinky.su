@@ -1,0 +1,11 @@
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/gpio_object.h:35:20:void gpio_write(gpio_t*, int)	16	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/api/DigitalOut.h:66:10:void mbed::DigitalOut::write(int)	16	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/api/DigitalOut.h:93:17:mbed::DigitalOut& mbed::DigitalOut::operator=(int)	16	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/api/CAN.h:36:5:mbed::CANMessage::CANMessage()	16	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/api/CAN.h:46:5:mbed::CANMessage::CANMessage(int, const char*, char, CANType, CANFormat)	24	static
+../src/blinky.cpp:51:6:void heartbeat()	48	static
+../src/blinky.cpp:57:6:void checkCANController()	8	static
+../src/blinky.cpp:70:6:void setup()	8	static
+../src/blinky.cpp:94:6:void shutdown_method()	4	static
+../src/blinky.cpp:101:5:int main()	48	static
+/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/common/api/can_struct.h:38:12:mbed::CANMessage makeMessage(int, const DataStruct&) [with DataStruct = int]	32	static
