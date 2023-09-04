@@ -1,0 +1,3 @@
+[submodule "Firmware/common/api/CAN"]
+	path = Firmware/common/api/CAN
+	url = https://github.com/IlliniSolarCar/CAN.git
