@@ -2,7 +2,6 @@
 
 #include "WDT.h"
 #include "cmsis.h"
-#include "Reset.h"
 
 WDT::WDT(uint32_t timeout_us) {
     LPC_SYSCON->SYSAHBCLKCTRL0 |= (1<<22); //Set bit 22 to 1 to enable WDT register interface
@@ -31,7 +30,13 @@ void WDT::enable() {
 }
 
 bool WDT::causedReset() {
-	return Reset::watchdogCausedReset();
+    uint16_t resetstat = LPC_SYSCON->SYSRSTSTAT;
+    if(resetstat & (1<<2)) { //The 2nd bit is the WDT reset bit
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 void WDT::feed() {

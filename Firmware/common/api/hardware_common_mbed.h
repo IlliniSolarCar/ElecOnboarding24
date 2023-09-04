@@ -24,7 +24,7 @@ public:
      * @param _can Pointer to CAN object, or null if this board does not use CAN
      * @param _wdt Pointer to WDT object Null if no WDT
      */
-    hardware_common_mbed(Timer* _timer, CAN* _can = NULL);
+    hardware_common_mbed(Timer* _timer, CAN* _can = NULL, WDT* _wdt = NULL);
     virtual ~hardware_common_mbed();
 
     /** Helper function to handle a CAN message interrupt. */
@@ -49,7 +49,7 @@ private:
 
     CAN* p_can;
     Timer* p_timer;
-//    WDT* p_wdt;
+    WDT* p_wdt;
     DigitalOut* p_heartbeatLED;
     DigitalOut* p_receiveCANLED;
     DigitalOut* p_sendCANLED;

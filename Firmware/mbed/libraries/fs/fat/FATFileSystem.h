@@ -24,7 +24,7 @@
 
 #include "FileSystemLike.h"
 #include "FileHandle.h"
-#include "ChaN/ff.h"
+#include "ff.h"
 #include <stdint.h>
 
 using namespace mbed;

@@ -5,10 +5,7 @@
 # Ignore local, user-specific launch configurations
 *.launch
 /LPC1549/
-/LPC11c14/
-/LPC15xx/
+/LPC1517/
 /LPC15x9/
-
-#ignore project files
-*.cproject
-*.project
+/LPC15x8/
+/LPC15x7/

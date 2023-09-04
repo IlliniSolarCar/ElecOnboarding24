@@ -103,11 +103,11 @@ void DmaSerialBase::startTransfer() {
   }
 
   dmaRunning_.store(true, std::memory_order_release);
-//  DmaController::get().memToPeriphTransfer(
-//      &(_serial.uart->TXDATA),
-//      queueStart, len,
-//      dmaChannel(),
-//      this, &DmaSerialBase::irqTransferDone);
+  DmaController::get().memToPeriphTransfer(
+      &(_serial.uart->TXDATA),
+      queueStart, len,
+      dmaChannel(),
+      this, &DmaSerialBase::irqTransferDone);
 }
 
 void DmaSerialBase::irqTransferDone() {

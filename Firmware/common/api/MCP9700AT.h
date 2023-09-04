@@ -24,7 +24,7 @@ public:
 	 * @Param pin the pin connected to the temperature sensor
 	 * @param num_of_rdings the number of readings to take before logging it to the lastFewReads (1 <= num_of_rdings <= 5; the default value is 5)
 	 */
-	MCP9700AT(AnalogIn &pin, uint8_t num_of_rdings = 5, uint16_t reference_voltage = 33000);
+	MCP9700AT(PinName pin, uint8_t num_of_rdings = 5, uint16_t reference_voltage = 33000);
 
 	/*
 	 * Initializes the class, especially _last_few_reads that stores the last 10 reads
@@ -46,7 +46,7 @@ private:
 	/*
 	 * _temperatureIn is the pin of the sensor
 	 */
-	AnalogIn& _temperatureIn;
+	AnalogIn _temperatureIn;
 	/*
 	 * _last_few_reads records the latest 10 readings from read()
 	 */

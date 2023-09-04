@@ -26,11 +26,7 @@ public:
 
     enum Channel {
         Ain0 = 0b0,
-        Ain1 = 0b1,
-    };
-    enum DiffMode {
-    	Ain0minusAin1 = 0b0,
-    	Ain1minusAin0 = 0b1
+        Ain1 = 0b1
     };
 
     /**
@@ -47,16 +43,14 @@ public:
      * Reads an ADC channel.
      * @param Channel The channel to scan
      * @param data 10-bit reading for analog channel
-     * @returns 0 on success, 1 on read failure, 2 on config failure
      */
-    uint8_t readChannel(Channel channel, uint16_t& data);
+    void readChannel(Channel channel, uint16_t& data);
 
     /**
      * Reads the differential of Ain1 - Ain0.
      * @param data Output with space for I2C_NUM_READS readings.
-     * @returns 0 on success 1 on read error, 2 on config error
      */
-    uint8_t readDifferential(int16_t* data, DiffMode mode);
+    void readDifferential(int16_t* data);
 
     /**
      * Setup configuration of ADC.
@@ -66,11 +60,8 @@ public:
      *        false otherwise.
      * @param bipolar True to support both positive and negative voltages;
      *        false otherwise (positive only; negative voltages clipped to 0).
-     * @param C0 True for Ain1 - Ain0 differential
-     *        false for Ain0 - Ain1 differential
-     * @returns 0 on sucess, 1 on config failure
      */
-    uint8_t initialize(int frequency, int numReads, bool differential, bool bipolar, bool C0 = 1);
+    void configure(int frequency, int numReads, bool differential, bool bipolar);
 
 protected:
 
@@ -128,7 +119,6 @@ private:
     const uint8_t SCAN_EIGHT_TIMES = (0b01 << 5);
     const uint8_t CS_SHIFT = 0b1;
     const uint8_t SGL = 0b1;
-    const uint8_t DIF = 0b0;
 };
 
 #endif /* __MAX11647_H__ */
