@@ -1,0 +1,5 @@
+../libraries/mbed/common/gpio.c:37:6:gpio_init_in	16	static
+../libraries/mbed/common/gpio.c:41:6:gpio_init_in_ex	16	static
+../libraries/mbed/common/gpio.c:45:6:gpio_init_out	16	static
+../libraries/mbed/common/gpio.c:49:6:gpio_init_out_ex	16	static
+../libraries/mbed/common/gpio.c:53:6:gpio_init_inout	24	static

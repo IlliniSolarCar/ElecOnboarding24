@@ -1,0 +1,14 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c:94:6:i2c_init	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c:113:12:i2c_start	4	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c:133:12:i2c_stop	4	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c:179:6:i2c_frequency	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c:204:5:i2c_read	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c:249:5:i2c_write	20	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c:285:6:i2c_reset	4	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c:289:5:i2c_byte_read	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c:293:5:i2c_byte_write	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c:315:6:i2c_slave_mode	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c:324:5:i2c_slave_receive	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c:339:5:i2c_slave_read	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c:363:5:i2c_slave_write	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/i2c_api.c:385:6:i2c_slave_address	8	static

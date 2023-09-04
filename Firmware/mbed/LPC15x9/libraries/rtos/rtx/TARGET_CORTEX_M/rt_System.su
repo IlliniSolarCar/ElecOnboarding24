@@ -1,0 +1,10 @@
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_System.c:77:5:rt_suspend	12	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_System.c:97:6:rt_resume	24	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_System.c:156:6:rt_tsk_lock	12	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_System.c:172:6:rt_tsk_unlock	12	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_System.c:190:6:rt_psh_req	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_System.c:203:6:rt_pop_req	16	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_System.c:239:12:os_tick_init	4	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_System.c:248:13:os_tick_irqack	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_System.c:257:6:rt_systick	8	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_System.c:284:13:rt_stk_check	0	static

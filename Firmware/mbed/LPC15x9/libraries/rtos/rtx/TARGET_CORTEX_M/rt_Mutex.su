@@ -1,0 +1,4 @@
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Mutex.c:50:6:rt_mut_init	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Mutex.c:65:11:rt_mut_delete	24	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Mutex.c:103:11:rt_mut_release	32	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Mutex.c:157:11:rt_mut_wait	16	static

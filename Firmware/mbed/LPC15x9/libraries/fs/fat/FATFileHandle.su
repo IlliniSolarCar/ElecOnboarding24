@@ -1,0 +1,10 @@
+../libraries/fs/fat/FATFileHandle.cpp:59:5:virtual int FATFileHandle::isatty()	0	static
+../libraries/fs/fat/FATFileHandle.cpp:88:7:virtual off_t FATFileHandle::flen()	0	static
+../libraries/fs/fat/FATFileHandle.cpp:32:5:virtual int FATFileHandle::close()	8	static
+../libraries/fs/fat/FATFileHandle.h:29:7:FATFileHandle::~FATFileHandle()	8	static
+../libraries/fs/fat/FATFileHandle.h:29:7:virtual FATFileHandle::~FATFileHandle()	8	static
+../libraries/fs/fat/FATFileHandle.cpp:38:9:virtual ssize_t FATFileHandle::write(const void*, size_t)	16	static
+../libraries/fs/fat/FATFileHandle.cpp:48:9:virtual ssize_t FATFileHandle::read(void*, size_t)	16	static
+../libraries/fs/fat/FATFileHandle.cpp:63:7:virtual off_t FATFileHandle::lseek(off_t, int)	8	static
+../libraries/fs/fat/FATFileHandle.cpp:79:5:virtual int FATFileHandle::fsync()	8	static
+../libraries/fs/fat/FATFileHandle.cpp:28:1:FATFileHandle::FATFileHandle(FIL)	8	static

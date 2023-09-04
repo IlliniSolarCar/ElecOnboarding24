@@ -1,0 +1,6 @@
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Semaphore.c:51:6:rt_sem_init	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Semaphore.c:64:11:rt_sem_delete	24	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Semaphore.c:94:11:rt_sem_send	8	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Semaphore.c:120:11:rt_sem_wait	8	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Semaphore.c:147:6:isr_sem_send	8	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Semaphore.c:158:6:rt_sem_psh	8	static

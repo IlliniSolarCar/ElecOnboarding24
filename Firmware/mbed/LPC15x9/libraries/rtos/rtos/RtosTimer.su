@@ -1,0 +1,4 @@
+../libraries/rtos/rtos/RtosTimer.cpp:31:1:rtos::RtosTimer::RtosTimer(void (*)(const void*), os_timer_type, void*)	24	static
+../libraries/rtos/rtos/RtosTimer.cpp:41:10:osStatus rtos::RtosTimer::start(uint32_t)	0	static
+../libraries/rtos/rtos/RtosTimer.cpp:45:10:osStatus rtos::RtosTimer::stop()	0	static
+../libraries/rtos/rtos/RtosTimer.cpp:49:1:rtos::RtosTimer::~RtosTimer()	8	static

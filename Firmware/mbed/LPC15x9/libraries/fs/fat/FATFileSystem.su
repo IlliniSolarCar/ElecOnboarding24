@@ -1,0 +1,15 @@
+../libraries/fs/fat/FATFileSystem.h:85:17:virtual int FATFileSystem::disk_initialize()	0	static
+../libraries/fs/fat/FATFileSystem.h:86:17:virtual int FATFileSystem::disk_status()	0	static
+../libraries/fs/fat/FATFileSystem.h:89:17:virtual int FATFileSystem::disk_sync()	0	static
+../libraries/fs/fat/FATFileSystem.cpp:143:5:virtual int FATFileSystem::mount()	8	static
+../libraries/fs/fat/FATFileSystem.cpp:68:13:virtual mbed::FileHandle* FATFileSystem::open(const char*, int)	1712	static
+../libraries/fs/fat/FATFileSystem.cpp:102:5:virtual int FATFileSystem::remove(const char*)	8	static
+../libraries/fs/fat/FATFileSystem.cpp:111:5:virtual int FATFileSystem::rename(const char*, const char*)	8	static
+../libraries/fs/fat/FATFileSystem.cpp:120:5:virtual int FATFileSystem::format()	8	static
+../libraries/fs/fat/FATFileSystem.cpp:129:12:virtual mbed::DirHandle* FATFileSystem::opendir(const char*)	48	static
+../libraries/fs/fat/FATFileSystem.cpp:138:5:virtual int FATFileSystem::mkdir(const char*, mode_t)	8	static
+../libraries/fs/fat/FATFileSystem.cpp:148:5:virtual int FATFileSystem::unmount()	8	static
+../libraries/fs/fat/FATFileSystem.cpp:31:7:DWORD get_fattime()	16	static
+../libraries/fs/fat/FATFileSystem.cpp:45:1:FATFileSystem::FATFileSystem(const char*)	16	static
+../libraries/fs/fat/FATFileSystem.cpp:59:1:FATFileSystem::~FATFileSystem()	8	static
+../libraries/fs/fat/FATFileSystem.cpp:59:1:virtual FATFileSystem::~FATFileSystem()	8	static

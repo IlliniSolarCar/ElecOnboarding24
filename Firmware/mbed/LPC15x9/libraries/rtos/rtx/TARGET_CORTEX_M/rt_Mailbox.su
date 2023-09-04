@@ -1,0 +1,7 @@
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Mailbox.c:52:6:rt_mbx_init	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Mailbox.c:70:11:rt_mbx_send	24	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Mailbox.c:123:11:rt_mbx_wait	16	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Mailbox.c:179:11:rt_mbx_check	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Mailbox.c:190:6:isr_mbx_send	8	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Mailbox.c:201:11:isr_mbx_receive	8	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Mailbox.c:226:6:rt_mbx_psh	16	static

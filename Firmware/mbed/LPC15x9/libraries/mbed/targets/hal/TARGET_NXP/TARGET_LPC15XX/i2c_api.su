@@ -1,0 +1,9 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/i2c_api.c:43:6:i2c_init	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/i2c_api.c:60:12:i2c_start	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/i2c_api.c:71:12:i2c_stop	8	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/i2c_api.c:106:6:i2c_frequency	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/i2c_api.c:115:5:i2c_read	56	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/i2c_api.c:164:5:i2c_write	48	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/i2c_api.c:203:6:i2c_reset	8	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/i2c_api.c:207:5:i2c_byte_read	8	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/i2c_api.c:211:5:i2c_byte_write	16	static

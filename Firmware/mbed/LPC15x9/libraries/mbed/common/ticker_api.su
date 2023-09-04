@@ -1,0 +1,6 @@
+../libraries/mbed/common/ticker_api.c:20:6:ticker_set_handler	16	static
+../libraries/mbed/common/ticker_api.c:26:6:ticker_irq_handler	16	static
+../libraries/mbed/common/ticker_api.c:56:6:ticker_insert_event	16	static
+../libraries/mbed/common/ticker_api.c:90:6:ticker_remove_event	8	static
+../libraries/mbed/common/ticker_api.c:117:13:ticker_read	0	static
+../libraries/mbed/common/ticker_api.c:122:5:ticker_get_next_timestamp	0	static

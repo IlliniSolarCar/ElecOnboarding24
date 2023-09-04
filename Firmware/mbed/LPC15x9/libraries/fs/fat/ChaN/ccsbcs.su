@@ -1,0 +1,2 @@
+../libraries/fs/fat/ChaN/ccsbcs.cpp:501:7:WCHAR ff_convert(WCHAR, UINT)	0	static
+../libraries/fs/fat/ChaN/ccsbcs.cpp:528:7:WCHAR ff_wtoupper(WCHAR)	0	static

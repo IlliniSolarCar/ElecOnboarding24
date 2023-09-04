@@ -1,0 +1,4 @@
+c:\nxp\mcuxpressoide_11.7.0_9198\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.7.0.202209140929\tools\arm-none-eabi\include\time.h:59:11:time	8	static
+../libraries/mbed/common/rtc_time.c:61:6:set_time	16	static
+c:\nxp\mcuxpressoide_11.7.0_9198\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.7.0.202209140929\tools\arm-none-eabi\include\time.h:56:12:clock	8	static
+../libraries/mbed/common/rtc_time.c:76:6:attach_rtc	4	static

@@ -1,0 +1,8 @@
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\fs\fat/FATFileSystem.h:85:17:virtual int FATFileSystem::disk_initialize()	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\fs\fat/FATFileSystem.h:86:17:virtual int FATFileSystem::disk_status()	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\fs\fat/FATFileSystem.h:89:17:virtual int FATFileSystem::disk_sync()	0	static
+../libraries/fs/fat/ChaN/diskio.cpp:15:9:DSTATUS disk_initialize(BYTE)	8	static
+../libraries/fs/fat/ChaN/diskio.cpp:23:9:DSTATUS disk_status(BYTE)	8	static
+../libraries/fs/fat/ChaN/diskio.cpp:31:9:DRESULT disk_read(BYTE, BYTE*, DWORD, BYTE)	24	static
+../libraries/fs/fat/ChaN/diskio.cpp:46:9:DRESULT disk_write(BYTE, const BYTE*, DWORD, BYTE)	24	static
+../libraries/fs/fat/ChaN/diskio.cpp:61:9:DRESULT disk_ioctl(BYTE, BYTE, void*)	16	static

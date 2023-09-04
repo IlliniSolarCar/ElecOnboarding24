@@ -1,0 +1,2 @@
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX/system_LPC15xx.c:360:6:SystemCoreClockUpdate	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX/system_LPC15xx.c:425:6:SystemInit	16	static

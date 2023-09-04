@@ -1,0 +1,8 @@
+../libraries/mbed/common/BusIn.cpp:43:1:mbed::BusIn::~BusIn()	16	static
+../libraries/mbed/common/BusIn.cpp:43:1:virtual mbed::BusIn::~BusIn()	16	static
+../libraries/mbed/common/BusIn.cpp:21:1:mbed::BusIn::BusIn(PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName)	80	static
+../libraries/mbed/common/BusIn.cpp:33:1:mbed::BusIn::BusIn(PinName*)	32	static
+../libraries/mbed/common/BusIn.cpp:51:5:int mbed::BusIn::read()	16	static
+../libraries/mbed/common/BusIn.cpp:61:6:void mbed::BusIn::mode(PinMode)	16	static
+../libraries/mbed/common/BusIn.cpp:70:1:mbed::BusIn::operator int()	16	static
+../libraries/mbed/common/BusIn.cpp:74:12:mbed::DigitalIn& mbed::BusIn::operator[](int)	16	static

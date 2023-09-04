@@ -1,0 +1,9 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/spi_api.c:59:6:spi_init	48	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/spi_api.c:85:6:spi_free	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/spi_api.c:87:6:spi_format	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/spi_api.c:118:6:spi_frequency	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/spi_api.c:188:5:spi_master_write	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/spi_api.c:193:5:spi_slave_receive	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/spi_api.c:197:5:spi_slave_read	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/spi_api.c:201:6:spi_slave_write	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/spi_api.c:206:5:spi_busy	0	static

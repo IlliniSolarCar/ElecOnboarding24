@@ -1,0 +1,11 @@
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Task.c:59:8:rt_get_TID	4	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Task.c:86:6:rt_init_context	8	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Task.c:107:6:rt_switch_req	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Task.c:117:6:rt_dispatch	16	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Task.c:144:6:rt_block	16	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Task.c:163:6:rt_tsk_pass	16	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Task.c:178:8:rt_tsk_self	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Task.c:189:11:rt_tsk_prio	16	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Task.c:225:11:rt_tsk_delete	16	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Task.c:263:6:rt_sys_init	24	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Task.c:326:6:rt_sys_start	8	static

@@ -9,11 +9,11 @@
 
 #include "hardware_common_mbed.h"
 
-hardware_common_mbed::hardware_common_mbed(Timer* _timer, CAN* _can) {
+hardware_common_mbed::hardware_common_mbed(Timer* _timer, CAN* _can, WDT* _wdt) {
     p_timer = _timer;
     p_can = _can;
     p_canBuffer = new CANRXTXBuffer<32, 16>(*_can); //TODO remove dynamic allocation
-//    p_wdt = _wdt;
+    p_wdt = _wdt;
 }
 
 hardware_common_mbed::~hardware_common_mbed() {
@@ -37,9 +37,9 @@ void hardware_common_mbed::setupCAN(void) {
 }
 
 void hardware_common_mbed::startTimingCommon(TimingCommon* timing, bool* wdtReset) {
-   // *wdtReset = p_wdt->causedReset();
+    *wdtReset = p_wdt->causedReset();
 	timing->start(p_timer);
-   // p_wdt->enable();
+    p_wdt->enable();
 }
 
 int hardware_common_mbed::readCANMessage(CANMessage& msg) {
@@ -52,10 +52,10 @@ int hardware_common_mbed::writeCANMessage(CANMessage msg) {
 
 bool hardware_common_mbed::checkCANController() {
 	//implemented for LPC15xx only!
-//	if (LPC_C_CAN0->CANCNTL & (1 << 0)) {
-//			LPC_C_CAN0->CANCNTL &= ~(1 << 0);
-//			return false;
-//	}
+	if (LPC_C_CAN0->CANCNTL & (1 << 0)) {
+			LPC_C_CAN0->CANCNTL &= ~(1 << 0);
+			return false;
+	}
 
     return true;
 }
@@ -96,6 +96,6 @@ int hardware_common_mbed::toggleHardwareLED(bool on){
 }
 
 int hardware_common_mbed::loopTime(TimingCommon* timing, bool* isOverflow){
-	//p_wdt->feed();
+	p_wdt->feed();
 	return timing->onTick(isOverflow);
 }

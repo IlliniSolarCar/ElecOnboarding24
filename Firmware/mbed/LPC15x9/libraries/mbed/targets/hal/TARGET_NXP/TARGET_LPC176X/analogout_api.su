@@ -1,0 +1,6 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/analogout_api.c:27:6:analogout_init	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/analogout_api.c:40:6:analogout_free	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/analogout_api.c:54:6:analogout_write	8	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/analogout_api.c:64:6:analogout_write_u16	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/analogout_api.c:68:7:analogout_read	8	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/analogout_api.c:73:10:analogout_read_u16	0	static

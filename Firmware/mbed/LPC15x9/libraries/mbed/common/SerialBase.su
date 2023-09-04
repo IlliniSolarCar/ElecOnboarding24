@@ -1,0 +1,13 @@
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/SerialBase.h:199:13:mbed::SerialBase::~SerialBase()	0	static
+../libraries/mbed/common/SerialBase.cpp:60:6:static void mbed::SerialBase::_irq_handler(uint32_t, SerialIrq)	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/SerialBase.h:199:13:virtual mbed::SerialBase::~SerialBase()	8	static
+../libraries/mbed/common/SerialBase.cpp:23:1:mbed::SerialBase::SerialBase(PinName, PinName)	16	static
+../libraries/mbed/common/SerialBase.cpp:33:6:void mbed::SerialBase::baud(int)	16	static
+../libraries/mbed/common/SerialBase.cpp:38:6:void mbed::SerialBase::format(int, mbed::SerialBase::Parity, int)	0	static
+../libraries/mbed/common/SerialBase.cpp:42:5:int mbed::SerialBase::readable()	0	static
+../libraries/mbed/common/SerialBase.cpp:47:5:int mbed::SerialBase::writeable()	0	static
+../libraries/mbed/common/SerialBase.cpp:51:6:void mbed::SerialBase::attach(void (*)(), mbed::SerialBase::IrqType)	4	static
+../libraries/mbed/common/SerialBase.cpp:65:5:int mbed::SerialBase::_base_getc()	0	static
+../libraries/mbed/common/SerialBase.cpp:69:5:int mbed::SerialBase::_base_putc(int)	8	static
+../libraries/mbed/common/SerialBase.cpp:74:6:void mbed::SerialBase::send_break()	16	static
+../libraries/mbed/common/SerialBase.cpp:89:6:void mbed::SerialBase::set_flow_control(mbed::SerialBase::Flow, PinName, PinName)	0	static

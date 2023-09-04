@@ -1,0 +1,6 @@
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Event.c:51:11:rt_evt_wait	8	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Event.c:85:6:rt_evt_set	8	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Event.c:123:6:rt_evt_clr	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Event.c:137:6:isr_evt_set	8	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Event.c:151:5:rt_evt_get	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Event.c:159:6:rt_evt_psh	8	static

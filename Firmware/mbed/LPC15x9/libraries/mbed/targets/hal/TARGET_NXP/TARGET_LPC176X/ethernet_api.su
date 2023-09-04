@@ -1,0 +1,9 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/ethernet_api.c:531:6:ethernet_free	8	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/ethernet_api.c:546:5:ethernet_write	40	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/ethernet_api.c:614:5:ethernet_send	20	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/ethernet_api.c:671:5:ethernet_receive	12	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/ethernet_api.c:732:5:ethernet_read	48	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/ethernet_api.c:802:5:ethernet_link	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/ethernet_api.c:879:6:ethernet_address	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/ethernet_api.c:883:6:ethernet_set_link	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/ethernet_api.c:435:5:ethernet_init	48	static

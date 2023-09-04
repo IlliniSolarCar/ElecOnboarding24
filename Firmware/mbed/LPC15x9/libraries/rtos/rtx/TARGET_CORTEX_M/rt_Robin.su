@@ -1,0 +1,2 @@
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Robin.c:56:13:rt_init_robin	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_Robin.c:64:13:rt_chk_robin	8	static

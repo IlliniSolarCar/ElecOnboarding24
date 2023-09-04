@@ -1,0 +1,5 @@
+../libraries/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.c:290:6:os_idle_demon	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.c:308:6:os_error	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/RTX_Conf_CM.c:314:6:sysThreadError	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/RTX_CM_lib.h:341:6:set_main_stack	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/RTX_CM_lib.h:451:29:software_init_hook	0	static

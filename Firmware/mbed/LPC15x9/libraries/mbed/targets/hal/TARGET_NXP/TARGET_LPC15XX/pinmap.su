@@ -1,0 +1,2 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/pinmap.c:20:6:pin_function	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/pinmap.c:23:6:pin_mode	16	static

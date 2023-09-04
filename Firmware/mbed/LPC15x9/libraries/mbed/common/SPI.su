@@ -1,0 +1,7 @@
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/SPI.h:222:13:mbed::SPI::~SPI()	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/SPI.h:222:13:virtual mbed::SPI::~SPI()	8	static
+../libraries/mbed/common/SPI.cpp:64:5:virtual int mbed::SPI::write(int)	24	static
+../libraries/mbed/common/SPI.cpp:26:1:mbed::SPI::SPI(PinName, PinName, PinName, PinName)	32	static
+../libraries/mbed/common/SPI.cpp:40:6:void mbed::SPI::format(int, int)	16	static
+../libraries/mbed/common/SPI.cpp:47:6:void mbed::SPI::frequency(int)	16	static
+../libraries/mbed/common/SPI.cpp:56:6:void mbed::SPI::aquire()	16	static

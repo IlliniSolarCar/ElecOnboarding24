@@ -1,0 +1,2 @@
+../libraries/mbed/common/us_ticker_api.c:33:22:get_us_ticker_data	0	static
+../libraries/mbed/common/us_ticker_api.c:38:6:us_ticker_irq_handler	0	static

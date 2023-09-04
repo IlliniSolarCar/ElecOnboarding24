@@ -1,0 +1,15 @@
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/FileSystemLike.h:64:17:virtual int mbed::FileSystemLike::remove(const char*)	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/FileSystemLike.h:75:17:virtual int mbed::FileSystemLike::rename(const char*, const char*)	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/FileSystemLike.h:86:24:virtual mbed::DirHandle* mbed::FileSystemLike::opendir(const char*)	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/FileSystemLike.h:97:17:virtual int mbed::FileSystemLike::mkdir(const char*, mode_t)	0	static
+../libraries/mbed/common/FileSystemLike.cpp:35:17:virtual int mbed::BaseDirHandle::closedir()	8	static
+../libraries/mbed/common/FileSystemLike.cpp:52:19:virtual off_t mbed::BaseDirHandle::telldir()	0	static
+../libraries/mbed/common/FileSystemLike.cpp:56:18:virtual void mbed::BaseDirHandle::seekdir(off_t)	0	static
+../libraries/mbed/common/FileSystemLike.cpp:60:18:virtual void mbed::BaseDirHandle::rewinddir()	0	static
+../libraries/mbed/common/FileSystemLike.cpp:20:7:mbed::BaseDirHandle::~BaseDirHandle()	0	static
+../libraries/mbed/common/FileSystemLike.cpp:20:7:virtual mbed::BaseDirHandle::~BaseDirHandle()	8	static
+../libraries/mbed/common/FileSystemLike.cpp:40:28:virtual dirent* mbed::BaseDirHandle::readdir()	16	static
+../libraries/mbed/common/FileSystemLike.cpp:65:1:mbed::FileSystemLike::FileSystemLike(const char*)	8	static
+../libraries/mbed/common/FileSystemLike.cpp:69:1:mbed::FileSystemLike::~FileSystemLike()	8	static
+../libraries/mbed/common/FileSystemLike.cpp:69:1:virtual mbed::FileSystemLike::~FileSystemLike()	8	static
+../libraries/mbed/common/FileSystemLike.cpp:73:12:static mbed::DirHandle* mbed::FileSystemLike::opendir()	8	static

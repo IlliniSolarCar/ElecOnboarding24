@@ -1,0 +1,5 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/us_ticker.c:25:6:us_ticker_init	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/us_ticker.c:44:10:us_ticker_read	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/us_ticker.c:51:6:us_ticker_set_interrupt	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/us_ticker.c:58:6:us_ticker_disable_interrupt	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/us_ticker.c:62:6:us_ticker_clear_interrupt	0	static

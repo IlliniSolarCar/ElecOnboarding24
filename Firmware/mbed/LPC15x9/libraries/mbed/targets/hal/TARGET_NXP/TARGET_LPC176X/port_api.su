@@ -1,0 +1,6 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/port_api.c:20:9:port_pin	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/port_api.c:24:6:port_init	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/port_api.c:48:6:port_mode	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/port_api.c:58:6:port_dir	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/port_api.c:65:6:port_write	4	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/port_api.c:69:5:port_read	0	static

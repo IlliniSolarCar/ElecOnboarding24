@@ -1,0 +1,5 @@
+../libraries/mbed/common/Ticker.cpp:35:6:virtual void mbed::Ticker::handler()	8	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/Ticker.h:108:13:mbed::Ticker::~Ticker()	8	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/Ticker.h:108:13:virtual mbed::Ticker::~Ticker()	8	static
+../libraries/mbed/common/Ticker.cpp:24:6:void mbed::Ticker::detach()	8	static
+../libraries/mbed/common/Ticker.cpp:29:6:void mbed::Ticker::setup(timestamp_t)	16	static

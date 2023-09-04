@@ -27,7 +27,7 @@ TimingCommon timing;
 WDT wdt(WDT_TIMEOUT_US);
 
 // Common hardware methods to all boards - debug LEDs, timing classes, CAN
-hardware_common_mbed common_(&timer, &can, &wdt);
+hardware_common_mbed common_(&timer, &can);
 hardware_common& common = common_;
 
 

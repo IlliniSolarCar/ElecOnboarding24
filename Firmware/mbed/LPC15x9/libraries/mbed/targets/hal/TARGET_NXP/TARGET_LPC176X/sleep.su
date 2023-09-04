@@ -1,0 +1,2 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/sleep.c:20:6:sleep	8	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/sleep.c:63:6:deepsleep	8	static

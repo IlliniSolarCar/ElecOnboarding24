@@ -1,0 +1,4 @@
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_MemBox.c:48:5:_init_box	8	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_MemBox.c:94:7:rt_alloc_box	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_MemBox.c:120:7:_calloc_box	16	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_MemBox.c:140:5:rt_free_box	0	static

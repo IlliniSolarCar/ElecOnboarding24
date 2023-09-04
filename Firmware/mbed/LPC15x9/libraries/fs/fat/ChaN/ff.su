@@ -1,0 +1,37 @@
+../libraries/fs/fat/ChaN/ff.cpp:1873:6:void get_fileinfo(FATFS_DIR*, FILINFO*)	24	static
+../libraries/fs/fat/ChaN/ff.cpp:721:9:FRESULT move_window(FATFS*, DWORD)	24	static
+../libraries/fs/fat/ChaN/ff.cpp:2017:6:BYTE check_fs(FATFS*, DWORD)	8	static
+../libraries/fs/fat/ChaN/ff.cpp:2043:9:FRESULT chk_mounted(const TCHAR**, FATFS**, BYTE)	24	static
+../libraries/fs/fat/ChaN/ff.cpp:821:7:0(FATFS*, DWORD)	24	static
+../libraries/fs/fat/ChaN/ff.cpp:864:9:0(FATFS*, DWORD, DWORD)	32	static
+../libraries/fs/fat/ChaN/ff.cpp:1389:9:0(FATFS_DIR*)	56	static
+../libraries/fs/fat/ChaN/ff.cpp:1450:9:FRESULT dir_read(FATFS_DIR*)	48	static
+../libraries/fs/fat/ChaN/ff.cpp:763:9:FRESULT sync(FATFS*)	24	static
+../libraries/fs/fat/ChaN/ff.cpp:980:7:DWORD create_chain(FATFS*, DWORD)	32	static
+../libraries/fs/fat/ChaN/ff.cpp:927:9:0(FATFS*, DWORD)	24	static
+../libraries/fs/fat/ChaN/ff.cpp:1067:9:FRESULT dir_sdi(FATFS_DIR*, WORD)	32	static
+../libraries/fs/fat/ChaN/ff.cpp:1955:9:FRESULT follow_path(FATFS_DIR*, const TCHAR*)	48	static
+../libraries/fs/fat/ChaN/ff.cpp:1115:9:FRESULT dir_next(FATFS_DIR*, int)	56	static
+../libraries/fs/fat/ChaN/ff.cpp:803:7:DWORD clust2sect(FATFS*, DWORD)	0	static
+../libraries/fs/fat/ChaN/ff.cpp:821:7:DWORD get_fat(FATFS*, DWORD)	24	static
+../libraries/fs/fat/ChaN/ff.cpp:864:9:FRESULT put_fat(FATFS*, DWORD, DWORD)	32	static
+../libraries/fs/fat/ChaN/ff.cpp:1321:6:void gen_numname(BYTE*, const BYTE*, const WCHAR*, WORD)	16	static
+../libraries/fs/fat/ChaN/ff.cpp:1507:9:FRESULT dir_register(FATFS_DIR*)	48	static
+../libraries/fs/fat/ChaN/ff.cpp:2244:9:FRESULT f_mount(BYTE, FATFS*)	0	static
+../libraries/fs/fat/ChaN/ff.cpp:2284:9:FRESULT f_open(FIL*, const TCHAR*, BYTE)	88	static
+../libraries/fs/fat/ChaN/ff.cpp:2416:9:FRESULT f_read(FIL*, void*, UINT, UINT*)	48	static
+../libraries/fs/fat/ChaN/ff.cpp:2650:9:FRESULT f_sync(FIL*)	16	static
+../libraries/fs/fat/ChaN/ff.cpp:2517:9:FRESULT f_write(FIL*, const void*, UINT, UINT*)	48	static
+../libraries/fs/fat/ChaN/ff.cpp:2698:9:FRESULT f_close(FIL*)	24	static
+../libraries/fs/fat/ChaN/ff.cpp:2867:9:FRESULT f_lseek(FIL*, DWORD)	24	static
+../libraries/fs/fat/ChaN/ff.cpp:3025:9:FRESULT f_opendir(FATFS_DIR*, const TCHAR*)	40	static
+../libraries/fs/fat/ChaN/ff.cpp:3072:9:FRESULT f_readdir(FATFS_DIR*, FILINFO*)	32	static
+../libraries/fs/fat/ChaN/ff.cpp:3114:9:FRESULT f_stat(const TCHAR*, FILINFO*)	72	static
+../libraries/fs/fat/ChaN/ff.cpp:3147:9:FRESULT f_getfree(const TCHAR*, DWORD*, FATFS**)	40	static
+../libraries/fs/fat/ChaN/ff.cpp:3214:9:FRESULT f_truncate(FIL*)	16	static
+../libraries/fs/fat/ChaN/ff.cpp:3264:9:FRESULT f_unlink(const TCHAR*)	128	static
+../libraries/fs/fat/ChaN/ff.cpp:3332:9:FRESULT f_mkdir(const TCHAR*)	136	static
+../libraries/fs/fat/ChaN/ff.cpp:3405:9:FRESULT f_chmod(const TCHAR*, BYTE, BYTE)	72	static
+../libraries/fs/fat/ChaN/ff.cpp:3447:9:FRESULT f_utime(const TCHAR*, const FILINFO*)	64	static
+../libraries/fs/fat/ChaN/ff.cpp:3488:9:FRESULT f_rename(const TCHAR*, const TCHAR*)	160	static
+../libraries/fs/fat/ChaN/ff.cpp:3632:9:FRESULT f_mkfs(BYTE, BYTE, UINT)	72	static

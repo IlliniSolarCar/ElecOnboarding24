@@ -1,0 +1,17 @@
+../libraries/rtos/rtos/Thread.cpp:135:1:rtos::Thread::~Thread()	8	static
+../libraries/rtos/rtos/Thread.cpp:135:1:virtual rtos::Thread::~Thread()	8	static
+../libraries/rtos/rtos/Thread.cpp:28:1:rtos::Thread::Thread(void (*)(const void*), void*, osPriority, uint32_t, unsigned char*)	24	static
+../libraries/rtos/rtos/Thread.cpp:52:10:osStatus rtos::Thread::terminate()	0	static
+../libraries/rtos/rtos/Thread.cpp:56:10:osStatus rtos::Thread::set_priority(osPriority)	0	static
+../libraries/rtos/rtos/Thread.cpp:60:12:osPriority rtos::Thread::get_priority()	0	static
+../libraries/rtos/rtos/Thread.cpp:64:9:int32_t rtos::Thread::signal_set(int32_t)	0	static
+../libraries/rtos/rtos/Thread.cpp:68:9:int32_t rtos::Thread::signal_clr(int32_t)	0	static
+../libraries/rtos/rtos/Thread.cpp:72:15:rtos::Thread::State rtos::Thread::get_state()	0	static
+../libraries/rtos/rtos/Thread.cpp:82:10:uint32_t rtos::Thread::stack_size()	0	static
+../libraries/rtos/rtos/Thread.cpp:90:10:uint32_t rtos::Thread::free_stack()	0	static
+../libraries/rtos/rtos/Thread.cpp:99:10:uint32_t rtos::Thread::used_stack()	0	static
+../libraries/rtos/rtos/Thread.cpp:108:10:uint32_t rtos::Thread::max_stack()	4	static
+../libraries/rtos/rtos/Thread.cpp:119:9:static osEvent rtos::Thread::signal_wait(int32_t, uint32_t)	8	static
+../libraries/rtos/rtos/Thread.cpp:123:10:static osStatus rtos::Thread::wait(uint32_t)	0	static
+../libraries/rtos/rtos/Thread.cpp:127:10:static osStatus rtos::Thread::yield()	0	static
+../libraries/rtos/rtos/Thread.cpp:131:12:static os_thread_cb* rtos::Thread::gettid()	0	static

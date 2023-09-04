@@ -1,0 +1,13 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/gpio_irq_api.c:56:6:gpio_irq6	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/gpio_irq_api.c:57:6:gpio_irq7	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/gpio_irq_api.c:50:6:gpio_irq0	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/gpio_irq_api.c:51:6:gpio_irq1	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/gpio_irq_api.c:52:6:gpio_irq2	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/gpio_irq_api.c:53:6:gpio_irq3	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/gpio_irq_api.c:54:6:gpio_irq4	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/gpio_irq_api.c:55:6:gpio_irq5	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/gpio_irq_api.c:59:5:gpio_irq_init	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/gpio_irq_api.c:104:6:gpio_irq_free	8	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/gpio_irq_api.c:109:6:gpio_irq_set	8	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/gpio_irq_api.c:133:6:gpio_irq_enable	4	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/gpio_irq_api.c:137:6:gpio_irq_disable	4	static

@@ -1,0 +1,5 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/rtc_api.c:20:6:rtc_init	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/rtc_api.c:36:6:rtc_free	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/rtc_api.c:42:5:rtc_isenabled	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/rtc_api.c:47:8:rtc_read	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/rtc_api.c:52:6:rtc_write	0	static

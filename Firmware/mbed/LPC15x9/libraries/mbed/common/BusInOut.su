@@ -1,0 +1,13 @@
+../libraries/mbed/common/BusInOut.cpp:43:1:mbed::BusInOut::~BusInOut()	16	static
+../libraries/mbed/common/BusInOut.cpp:43:1:virtual mbed::BusInOut::~BusInOut()	16	static
+../libraries/mbed/common/BusInOut.cpp:21:1:mbed::BusInOut::BusInOut(PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName)	80	static
+../libraries/mbed/common/BusInOut.cpp:33:1:mbed::BusInOut::BusInOut(PinName*)	32	static
+../libraries/mbed/common/BusInOut.cpp:51:6:void mbed::BusInOut::write(int)	4	static
+../libraries/mbed/common/BusInOut.cpp:59:5:int mbed::BusInOut::read()	16	static
+../libraries/mbed/common/BusInOut.cpp:69:6:void mbed::BusInOut::output()	16	static
+../libraries/mbed/common/BusInOut.cpp:77:6:void mbed::BusInOut::input()	16	static
+../libraries/mbed/common/BusInOut.cpp:85:6:void mbed::BusInOut::mode(PinMode)	16	static
+../libraries/mbed/common/BusInOut.cpp:94:11:mbed::BusInOut& mbed::BusInOut::operator=(int)	8	static
+../libraries/mbed/common/BusInOut.cpp:99:11:mbed::BusInOut& mbed::BusInOut::operator=(mbed::BusInOut&)	24	static
+../libraries/mbed/common/BusInOut.cpp:104:15:mbed::DigitalInOut& mbed::BusInOut::operator[](int)	16	static
+../libraries/mbed/common/BusInOut.cpp:110:1:mbed::BusInOut::operator int()	16	static

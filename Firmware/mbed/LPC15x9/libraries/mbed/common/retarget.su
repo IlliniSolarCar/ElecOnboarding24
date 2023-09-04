@@ -1,0 +1,36 @@
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/FileHandle.h:103:19:virtual off_t mbed::FileHandle::flen()	16	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/DirHandle.h:79:19:virtual off_t mbed::DirHandle::telldir()	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/DirHandle.h:85:18:virtual void mbed::DirHandle::seekdir(off_t)	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/FileSystemLike.h:64:17:virtual int mbed::FileSystemLike::remove(const char*)	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/FileSystemLike.h:75:17:virtual int mbed::FileSystemLike::rename(const char*, const char*)	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/FileSystemLike.h:86:24:virtual mbed::DirHandle* mbed::FileSystemLike::opendir(const char*)	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/FileSystemLike.h:97:17:virtual int mbed::FileSystemLike::mkdir(const char*, mode_t)	0	static
+../libraries/mbed/common/retarget.cpp:76:1:mbed::FileHandle::~FileHandle()	4	static
+../libraries/mbed/common/retarget.cpp:76:1:virtual mbed::FileHandle::~FileHandle()	16	static
+../libraries/mbed/common/retarget.cpp:130:23:FILEHANDLE _open(const char*, int)	32	static
+../libraries/mbed/common/retarget.cpp:191:16:int _close(FILEHANDLE)	0	static
+../libraries/mbed/common/retarget.cpp:204:16:int _write(FILEHANDLE, const unsigned char*, unsigned int, int)	24	static
+../libraries/mbed/common/retarget.cpp:231:16:int _read(FILEHANDLE, unsigned char*, unsigned int, int)	8	static
+../libraries/mbed/common/retarget.cpp:257:16:int _isatty(FILEHANDLE)	0	static
+../libraries/mbed/common/retarget.cpp:275:5:int _lseek(FILEHANDLE, int, int)	0	static
+../libraries/mbed/common/retarget.cpp:312:16:int _fstat(int, stat*)	8	static
+../libraries/mbed/common/retarget.cpp:324:16:int remove(const char*)	24	static
+../libraries/mbed/common/retarget.cpp:332:16:int rename(const char*, const char*)	32	static
+../libraries/mbed/common/retarget.cpp:344:18:char* tmpnam(char*)	0	static
+../libraries/mbed/common/retarget.cpp:348:18:FILE* tmpfile()	0	static
+../libraries/mbed/common/retarget.cpp:359:17:DIR* opendir(const char*)	24	static
+../libraries/mbed/common/retarget.cpp:372:27:dirent* readdir(DIR*)	0	static
+../libraries/mbed/common/retarget.cpp:376:16:int closedir(DIR*)	0	static
+../libraries/mbed/common/retarget.cpp:380:17:void rewinddir(DIR*)	0	static
+../libraries/mbed/common/retarget.cpp:384:18:off_t telldir(DIR*)	0	static
+../libraries/mbed/common/retarget.cpp:388:17:void seekdir(DIR*, off_t)	0	static
+../libraries/mbed/common/retarget.cpp:392:16:int mkdir(const char*, mode_t)	24	static
+../libraries/mbed/common/retarget.cpp:406:10:void __gnu_cxx::__verbose_terminate_handler()	0	static
+../libraries/mbed/common/retarget.cpp:411:22:void __cxa_pure_virtual()	8	static
+../libraries/mbed/common/retarget.cpp:424:22:void mbed_main()	0	static
+../libraries/mbed/common/retarget.cpp:428:22:void mbed_sdk_init()	0	static
+../libraries/mbed/common/retarget.cpp:442:16:int __wrap_main()	8	static
+../libraries/mbed/common/retarget.cpp:507:17:void exit(int)	8	static
+../libraries/mbed/common/retarget.cpp:534:6:void mbed::mbed_set_unbuffered_stream(FILE*)	0	static
+../libraries/mbed/common/retarget.cpp:543:5:int mbed::mbed_getc(FILE*)	0	static
+../libraries/mbed/common/retarget.cpp:558:7:char* mbed::mbed_gets(char*, int, FILE*)	0	static

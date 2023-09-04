@@ -1,0 +1,9 @@
+../libraries/mbed/common/I2C.cpp:24:1:mbed::I2C::I2C(PinName, PinName)	16	static
+../libraries/mbed/common/I2C.cpp:36:6:void mbed::I2C::frequency(int)	8	static
+../libraries/mbed/common/I2C.cpp:46:6:void mbed::I2C::aquire()	16	static
+../libraries/mbed/common/I2C.cpp:54:5:int mbed::I2C::write(int, const char*, int, bool)	40	static
+../libraries/mbed/common/I2C.cpp:63:5:int mbed::I2C::write(int)	0	static
+../libraries/mbed/common/I2C.cpp:68:5:int mbed::I2C::read(int, char*, int, bool)	40	static
+../libraries/mbed/common/I2C.cpp:77:5:int mbed::I2C::read(int)	0	static
+../libraries/mbed/common/I2C.cpp:85:6:void mbed::I2C::start()	0	static
+../libraries/mbed/common/I2C.cpp:89:6:void mbed::I2C::stop()	0	static

@@ -1,0 +1,6 @@
+../libraries/mbed/common/SPISlave.cpp:22:1:mbed::SPISlave::SPISlave(PinName, PinName, PinName, PinName)	32	static
+../libraries/mbed/common/SPISlave.cpp:33:6:void mbed::SPISlave::format(int, int)	0	static
+../libraries/mbed/common/SPISlave.cpp:39:6:void mbed::SPISlave::frequency(int)	0	static
+../libraries/mbed/common/SPISlave.cpp:44:5:int mbed::SPISlave::receive()	0	static
+../libraries/mbed/common/SPISlave.cpp:48:5:int mbed::SPISlave::read()	0	static
+../libraries/mbed/common/SPISlave.cpp:52:6:void mbed::SPISlave::reply(int)	0	static

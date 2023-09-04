@@ -1,0 +1,22 @@
+../libraries/fs/sd/SDFileSystem.cpp:226:5:virtual int SDFileSystem::disk_disconnected()	0	static
+../libraries/fs/sd/SDFileSystem.cpp:269:5:virtual int SDFileSystem::disk_status()	0	static
+../libraries/fs/sd/SDFileSystem.cpp:278:5:virtual int SDFileSystem::disk_sync()	0	static
+../libraries/fs/sd/SDFileSystem.cpp:279:10:virtual uint64_t SDFileSystem::disk_sectors()	0	static
+../libraries/fs/sd/SDFileSystem.h:43:7:SDFileSystem::~SDFileSystem()	8	static
+../libraries/fs/sd/SDFileSystem.h:43:7:virtual SDFileSystem::~SDFileSystem()	8	static
+../libraries/fs/sd/SDFileSystem.cpp:283:5:int SDFileSystem::_cmd(int, int)	24	static
+../libraries/fs/sd/SDFileSystem.cpp:283:5:int SDFileSystem::_cmd(int, int)	16	static
+../libraries/fs/sd/SDFileSystem.cpp:122:1:SDFileSystem::SDFileSystem(PinName, PinName, PinName, PinName, const char*, int)	40	static
+../libraries/fs/sd/SDFileSystem.cpp:175:5:int SDFileSystem::initialise_card_v1()	16	static
+../libraries/fs/sd/SDFileSystem.cpp:283:5:int SDFileSystem::_cmd(int, int)	24	static
+../libraries/fs/sd/SDFileSystem.cpp:250:5:virtual int SDFileSystem::disk_read(uint8_t*, uint64_t, uint8_t)	40	static
+../libraries/fs/sd/SDFileSystem.cpp:231:5:virtual int SDFileSystem::disk_write(const uint8_t*, uint64_t, uint8_t)	40	static
+../libraries/fs/sd/SDFileSystem.cpp:307:5:int SDFileSystem::_cmdx(int, int)	16	static
+../libraries/fs/sd/SDFileSystem.cpp:331:5:int SDFileSystem::_cmd58()	24	static
+../libraries/fs/sd/SDFileSystem.cpp:189:5:int SDFileSystem::initialise_card_v2()	16	static
+../libraries/fs/sd/SDFileSystem.cpp:361:5:int SDFileSystem::_cmd8()	32	static
+../libraries/fs/sd/SDFileSystem.cpp:149:5:int SDFileSystem::initialise_card()	16	static
+../libraries/fs/sd/SDFileSystem.cpp:390:5:int SDFileSystem::_read(uint8_t*, uint32_t)	24	static
+../libraries/fs/sd/SDFileSystem.cpp:408:5:int SDFileSystem::_write(const uint8_t*, uint32_t)	24	static
+../libraries/fs/sd/SDFileSystem.cpp:451:10:uint64_t SDFileSystem::_sd_sectors()	40	static
+../libraries/fs/sd/SDFileSystem.cpp:206:5:virtual int SDFileSystem::disk_initialize()	24	static

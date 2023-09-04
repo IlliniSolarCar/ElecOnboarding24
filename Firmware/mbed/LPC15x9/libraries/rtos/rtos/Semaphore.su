@@ -1,0 +1,4 @@
+../libraries/rtos/rtos/Semaphore.cpp:28:1:rtos::Semaphore::Semaphore(int32_t)	16	static
+../libraries/rtos/rtos/Semaphore.cpp:36:9:int32_t rtos::Semaphore::wait(uint32_t)	0	static
+../libraries/rtos/rtos/Semaphore.cpp:40:10:osStatus rtos::Semaphore::release()	0	static
+../libraries/rtos/rtos/Semaphore.cpp:44:1:rtos::Semaphore::~Semaphore()	8	static

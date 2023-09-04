@@ -1,0 +1,10 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/pwmout_api.c:40:6:pwmout_init	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/pwmout_api.c:117:6:pwmout_free	8	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/pwmout_api.c:123:6:pwmout_write	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/pwmout_api.c:134:7:pwmout_read	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/pwmout_api.c:141:6:pwmout_period	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/pwmout_api.c:145:6:pwmout_period_ms	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/pwmout_api.c:150:6:pwmout_period_us	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/pwmout_api.c:159:6:pwmout_pulsewidth	8	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/pwmout_api.c:163:6:pwmout_pulsewidth_ms	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/pwmout_api.c:167:6:pwmout_pulsewidth_us	0	static

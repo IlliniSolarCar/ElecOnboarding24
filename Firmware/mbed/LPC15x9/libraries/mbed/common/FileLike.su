@@ -1,0 +1,6 @@
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/FileHandle.h:103:19:virtual off_t mbed::FileHandle::flen()	16	static
+../libraries/mbed/common/FileLike.cpp:20:1:mbed::FileLike::FileLike(const char*)	8	static
+../libraries/mbed/common/FileLike.cpp:24:1:mbed::FileLike::~FileLike()	8	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/FileLike.h:39:13:virtual void* mbed::FileLike::_ZThn4_N4mbed8FileLikeD1Ev()	8	static
+../libraries/mbed/common/FileLike.cpp:24:1:virtual mbed::FileLike::~FileLike()	8	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/FileLike.h:39:13:virtual void* mbed::FileLike::_ZThn4_N4mbed8FileLikeD0Ev()	8	static

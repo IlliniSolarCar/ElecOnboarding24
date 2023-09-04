@@ -1,0 +1,6 @@
+../libraries/mbed/common/pinmap_common.c:19:6:pinmap_pinout	8	static
+../libraries/mbed/common/pinmap_common.c:35:10:pinmap_merge	8	static
+../libraries/mbed/common/pinmap_common.c:51:10:pinmap_find_peripheral	0	static
+../libraries/mbed/common/pinmap_common.c:60:10:pinmap_peripheral	8	static
+../libraries/mbed/common/pinmap_common.c:71:10:pinmap_find_function	0	static
+../libraries/mbed/common/pinmap_common.c:80:10:pinmap_function	8	static

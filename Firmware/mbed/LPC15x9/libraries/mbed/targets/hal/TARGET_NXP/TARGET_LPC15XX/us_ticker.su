@@ -1,0 +1,5 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/us_ticker.c:24:6:us_ticker_init	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/us_ticker.c:51:10:us_ticker_read	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/us_ticker.c:61:6:us_ticker_set_interrupt	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/us_ticker.c:67:6:us_ticker_disable_interrupt	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/us_ticker.c:71:6:us_ticker_clear_interrupt	0	static

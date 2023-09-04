@@ -1,0 +1,18 @@
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:163:20:void NMI_Handler()	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:164:20:void HardFault_Handler()	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:165:20:void MemManage_Handler()	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:166:20:void BusFault_Handler()	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:167:20:void UsageFault_Handler()	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:168:20:void SVC_Handler()	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:169:20:void DebugMon_Handler()	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:170:20:void PendSV_Handler()	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:171:20:void SysTick_Handler()	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:172:20:void IntDefaultHandler()	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:135:20:void ResetISR()	32	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:120:20:void data_init(unsigned int, unsigned int, unsigned int)	16	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:127:20:void bss_init(unsigned int, unsigned int)	12	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:174:5:int __aeabi_atexit(void*, void (*)(void*), void*)	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:179:7:void* operator new(size_t)	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:180:7:void* operator new [](size_t)	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:182:6:void operator delete(void*)	0	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/TOOLCHAIN_GCC_CR/startup_LPC17xx.cpp:183:6:void operator delete [](void*)	0	static

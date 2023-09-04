@@ -1,0 +1,4 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/gpio_api.c:20:10:gpio_set	8	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/gpio_api.c:26:6:gpio_init	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/gpio_api.c:39:6:gpio_mode	0	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X/gpio_api.c:43:6:gpio_dir	16	static

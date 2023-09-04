@@ -1,0 +1,10 @@
+../libraries/mbed/common/InterruptManager.cpp:87:6:static void mbed::InterruptManager::static_irq_helper()	16	static
+../libraries/mbed/common/InterruptManager.cpp:15:19:static mbed::InterruptManager* mbed::InterruptManager::get()	16	static
+../libraries/mbed/common/InterruptManager.cpp:21:1:mbed::InterruptManager::InterruptManager()	8	static
+../libraries/mbed/common/InterruptManager.cpp:25:6:static void mbed::InterruptManager::destroy()	24	static
+../libraries/mbed/common/InterruptManager.cpp:35:1:mbed::InterruptManager::~InterruptManager()	16	static
+../libraries/mbed/common/InterruptManager.cpp:41:6:bool mbed::InterruptManager::must_replace_vector(IRQn_Type)	16	static
+../libraries/mbed/common/InterruptManager.cpp:52:20:mbed::FunctionPointer* mbed::InterruptManager::add_common(void (*)(), IRQn_Type, bool)	32	static
+../libraries/mbed/common/InterruptManager.cpp:62:6:bool mbed::InterruptManager::remove_handler(mbed::pFunctionPointer_t, IRQn_Type)	24	static
+../libraries/mbed/common/InterruptManager.cpp:79:6:void mbed::InterruptManager::irq_helper()	0	static
+../libraries/mbed/common/InterruptManager.cpp:83:5:int mbed::InterruptManager::get_irq_index(IRQn_Type)	0	static

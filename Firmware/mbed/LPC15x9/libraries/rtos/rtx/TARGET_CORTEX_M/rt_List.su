@@ -1,0 +1,10 @@
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_List.c:60:6:rt_put_prio	4	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_List.c:95:7:rt_get_first	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_List.c:118:6:rt_put_rdy_first	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_List.c:129:7:rt_get_same_rdy_prio	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_List.c:145:6:rt_resort_prio	8	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_List.c:170:6:rt_put_dly	12	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_List.c:210:6:rt_dec_dly	24	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_List.c:249:6:rt_rmv_list	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_List.c:277:6:rt_rmv_dly	4	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/rt_List.c:302:6:rt_psq_enq	4	static

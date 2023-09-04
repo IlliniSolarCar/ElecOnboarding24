@@ -1,0 +1,8 @@
+../libraries/fs/fat/FATDirHandle.cpp:32:5:virtual int FATDirHandle::closedir()	8	static
+../libraries/fs/fat/FATDirHandle.cpp:67:6:virtual void FATDirHandle::rewinddir()	0	static
+../libraries/fs/fat/FATDirHandle.cpp:71:7:virtual off_t FATDirHandle::telldir()	0	static
+../libraries/fs/fat/FATDirHandle.cpp:75:6:virtual void FATDirHandle::seekdir(off_t)	0	static
+../libraries/fs/fat/FATDirHandle.h:29:7:FATDirHandle::~FATDirHandle()	0	static
+../libraries/fs/fat/FATDirHandle.h:29:7:virtual FATDirHandle::~FATDirHandle()	8	static
+../libraries/fs/fat/FATDirHandle.cpp:37:16:virtual dirent* FATDirHandle::readdir()	48	static
+../libraries/fs/fat/FATDirHandle.cpp:28:1:FATDirHandle::FATDirHandle(const FATFS_DIR&)	8	static

@@ -1,0 +1,3 @@
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/analogin_api.c:55:6:analogin_init	16	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/analogin_api.c:150:10:analogin_read_u16	24	static
+../libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX/analogin_api.c:155:7:analogin_read	24	static

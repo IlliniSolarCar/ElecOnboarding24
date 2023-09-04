@@ -1,0 +1,7 @@
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/RawSerial.h:48:7:mbed::RawSerial::~RawSerial()	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/RawSerial.h:48:7:virtual mbed::RawSerial::~RawSerial()	8	static
+../libraries/mbed/common/RawSerial.cpp:26:1:mbed::RawSerial::RawSerial(PinName, PinName)	8	static
+../libraries/mbed/common/RawSerial.cpp:29:5:int mbed::RawSerial::getc()	0	static
+../libraries/mbed/common/RawSerial.cpp:33:5:int mbed::RawSerial::putc(int)	0	static
+../libraries/mbed/common/RawSerial.cpp:37:5:int mbed::RawSerial::puts(const char*)	16	static
+../libraries/mbed/common/RawSerial.cpp:47:5:)	148	static

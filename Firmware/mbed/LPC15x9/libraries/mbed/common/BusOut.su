@@ -1,0 +1,10 @@
+../libraries/mbed/common/BusOut.cpp:43:1:mbed::BusOut::~BusOut()	16	static
+../libraries/mbed/common/BusOut.cpp:43:1:virtual mbed::BusOut::~BusOut()	16	static
+../libraries/mbed/common/BusOut.cpp:21:1:mbed::BusOut::BusOut(PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName, PinName)	80	static
+../libraries/mbed/common/BusOut.cpp:33:1:mbed::BusOut::BusOut(PinName*)	32	static
+../libraries/mbed/common/BusOut.cpp:51:6:void mbed::BusOut::write(int)	4	static
+../libraries/mbed/common/BusOut.cpp:59:5:int mbed::BusOut::read()	16	static
+../libraries/mbed/common/BusOut.cpp:70:9:mbed::BusOut& mbed::BusOut::operator=(int)	8	static
+../libraries/mbed/common/BusOut.cpp:75:9:mbed::BusOut& mbed::BusOut::operator=(mbed::BusOut&)	24	static
+../libraries/mbed/common/BusOut.cpp:80:13:mbed::DigitalOut& mbed::BusOut::operator[](int)	16	static
+../libraries/mbed/common/BusOut.cpp:86:1:mbed::BusOut::operator int()	16	static

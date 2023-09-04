@@ -1,0 +1,2 @@
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/system_LPC17xx.c:466:9:SystemCoreClockUpdate	16	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/system_LPC17xx.c:517:6:SystemInit	8	static

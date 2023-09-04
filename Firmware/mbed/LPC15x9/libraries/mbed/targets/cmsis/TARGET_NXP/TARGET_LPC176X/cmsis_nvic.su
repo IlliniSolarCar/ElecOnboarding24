@@ -1,0 +1,2 @@
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/cmsis_nvic.c:36:6:NVIC_SetVector	8	static
+../libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X/cmsis_nvic.c:52:10:NVIC_GetVector	0	static

@@ -1,0 +1,3 @@
+../libraries/rtos/rtx/TARGET_CORTEX_M/HAL_CM.c:55:6:rt_init_stack	12	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/HAL_CM.c:118:6:rt_ret_val	0	static
+../libraries/rtos/rtx/TARGET_CORTEX_M/HAL_CM.c:125:6:rt_ret_val2	0	static

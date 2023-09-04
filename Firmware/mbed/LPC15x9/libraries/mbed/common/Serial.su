@@ -1,0 +1,11 @@
+../libraries/mbed/common/Serial.cpp:26:5:virtual int mbed::Serial::_getc()	0	static
+../libraries/mbed/common/Serial.cpp:30:5:virtual int mbed::Serial::_putc(int)	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/Serial.h:47:7:mbed::Serial::~Serial()	8	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/Serial.h:47:7:virtual mbed::Serial::~Serial()	8	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/Serial.h:66:17:virtual int mbed::Serial::_ZThn64_N4mbed6Serial5_getcEv()	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/Serial.h:47:7:virtual void* mbed::Serial::_ZThn68_N4mbed6SerialD1Ev()	8	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/Serial.h:47:7:virtual void* mbed::Serial::_ZThn64_N4mbed6SerialD1Ev()	8	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/Serial.h:67:17:virtual int mbed::Serial::_ZThn64_N4mbed6Serial5_putcEi(int)	0	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/Serial.h:47:7:virtual void* mbed::Serial::_ZThn68_N4mbed6SerialD0Ev()	8	static
+C:\Users\aarsh\Desktop\isc\ElecOnboarding23\Firmware\mbed\libraries\mbed\api/Serial.h:47:7:virtual void* mbed::Serial::_ZThn64_N4mbed6SerialD0Ev()	16	static
+../libraries/mbed/common/Serial.cpp:23:1:mbed::Serial::Serial(PinName, PinName, const char*)	16	static
