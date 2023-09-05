@@ -1,0 +1,37 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model IIM-42652
+#/13839296/644414/2.49/14/3/Integrated Circuit
+DEF IIM-42652 IC 0 30 Y Y 1 F N
+F0 "IC" 2050 1700 50 H V L CNN
+F1 "IIM-42652" 2050 1600 50 H V L CNN
+F2 "IIM42652" 2050 1500 50 H I L CNN
+F3 "http://3cfeqx1hf82y3xcoull08ihx-wpengine.netdna-ssl.com/wp-content/uploads/2021/01/DS-000440-IIM-42652-v1.0.pdf" 2050 1400 50 H I L CNN
+F4 "IMUs - Inertial Measurement Units Industrial 6-axis IMU w/support" 2050 1300 50 H I L CNN "Description"
+F5 "0.97" 2050 1200 50 H I L CNN "Height"
+F6 "TDK" 2050 1100 50 H I L CNN "Manufacturer_Name"
+F7 "IIM-42652" 2050 1000 50 H I L CNN "Manufacturer_Part_Number"
+F8 "410-IIM-42652" 2050 900 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/TDK-InvenSense/IIM-42652?qs=CiayqK2gdcJdwMEsK7YW9Q%3D%3D" 2050 800 50 H I L CNN "Mouser Price/Stock"
+F10 "IIM-42652" 2050 700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/iim-42652/invensense?region=nac" 2050 600 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X AP_SDO/AP_AD0 1 0 0 200 R 50 50 0 0 P
+X RESV_1 2 0 -100 200 R 50 50 0 0 P
+X RESV_2 3 0 -200 200 R 50 50 0 0 P
+X INT1/INT 4 0 -300 200 R 50 50 0 0 P
+X VDDIO 5 1000 -1000 200 U 50 50 0 0 P
+X GND 6 1100 -1000 200 U 50 50 0 0 P
+X RESV_3 7 1200 -1000 200 U 50 50 0 0 P
+X VDD 8 2200 -300 200 L 50 50 0 0 P
+X INT2/FSYNC/CLKIN 9 2200 -200 200 L 50 50 0 0 P
+X RESV_4 10 2200 -100 200 L 50 50 0 0 P
+X RESV_5 11 2200 0 200 L 50 50 0 0 P
+X AP_CS 12 1200 1700 200 D 50 50 0 0 P
+X AP_SCL_/_AP_SCLK 13 1100 1700 200 D 50 50 0 0 P
+X AP_SDA_/_AP_SDIO_/_AP_SDI 14 1000 1700 200 D 50 50 0 0 P
+P 5 0 1 6 200 1500 2000 1500 2000 -800 200 -800 200 1500 N
+ENDDRAW
+ENDDEF
+#
+#End Library
