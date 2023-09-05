@@ -1,5 +1,0 @@
-/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/api/DigitalIn.h:53:5:mbed::DigitalIn::DigitalIn(PinName)	16	static
-/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/api/DigitalOut.h:48:5:mbed::DigitalOut::DigitalOut(PinName)	16	static
-/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/api/AnalogIn.h:55:5:mbed::AnalogIn::AnalogIn(PinName)	16	static
-../src/pins.cpp:47:27:void __static_initialization_and_destruction_0(int, int)	16	static
-../src/pins.cpp:47:27:cpp)	8	static

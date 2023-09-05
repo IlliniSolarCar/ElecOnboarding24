@@ -23,7 +23,7 @@
 #define MBED_SDFILESYSTEM_H
 
 #include "mbed.h"
-#include "libraries/fs/fat/FATFileSystem.h"
+#include "FATFileSystem.h"
 #include <stdint.h>
 
 /** Access the filesystem on an SD Card using SPI

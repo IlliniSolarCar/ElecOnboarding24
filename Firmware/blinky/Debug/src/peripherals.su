@@ -1,6 +1,0 @@
-/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/api/SPI.h:222:13:mbed::SPI::~SPI()	16	static
-/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/mbed/libraries/mbed/api/SPI.h:222:13:virtual mbed::SPI::~SPI()	16	static
-/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/blinky/inc/common.h:21:7:WheelCommon::~WheelCommon()	16	static
-/home/zonedbro/Code/solarcar/firmware/FW-WHEEL/blinky/inc/common.h:21:7:virtual WheelCommon::~WheelCommon()	16	static
-../src/peripherals.cpp:36:48:void __static_initialization_and_destruction_0(int, int)	24	static
-../src/peripherals.cpp:36:48:cpp)	8	static

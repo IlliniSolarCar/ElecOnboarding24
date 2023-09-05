@@ -1,8 +1,8 @@
 #include <EEPROM.h>
 
 void EEPROM::init() {
-  //  LPC_SYSCON->PDRUNCFG &= ~(1 << 6);
-  //  LPC_SYSCON->SYSAHBCLKCTRL0 |= (1 << 9);
+    LPC_SYSCON->PDRUNCFG &= ~(1 << 6);
+    LPC_SYSCON->SYSAHBCLKCTRL0 |= (1 << 9);
 }
 
 void EEPROM::write(uint32_t address, uint8_t *data, uint32_t bytes) {
