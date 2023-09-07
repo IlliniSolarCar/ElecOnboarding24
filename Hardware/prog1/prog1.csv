@@ -1,0 +1,13 @@
+"Source:","/Users/michaelxu/Solar_Car/ElecOnboarding23/Hardware/prog1/prog1.kicad_sch"
+"Date:","2023 September 06, Wednesday 19:48:07"
+"Tool:","Eeschema 7.0.7"
+"Generator:","/Applications/KiCad/KiCad.app/Contents/SharedSupport/plugins/bom_csv_grouped_by_value.py"
+"Component Count:","4"
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","DNP","MPN"
+"1","1","D1","LED_RED","Device:LED","layout:LED_0603_Symbol_on_F.SilkS","~","",""
+"2","1","J1","Conn_01x02","Connector_Generic:Conn_01x02","Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical","https://tools.molex.com/pdm_docs/sd/022272021_sd.pdf","","022272021"
+"3","1","R1","105","Device:R_US","Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","~","",""
+"4","1","SW1","SW_Push","Switch:SW_Push","Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile","https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1825910%7FD%7Fpdf%7FEnglish%7FENG_CD_1825910_D.pdf%7F1825910-6","","1825910-6"

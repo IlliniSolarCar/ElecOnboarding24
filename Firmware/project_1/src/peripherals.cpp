@@ -22,6 +22,8 @@ Timer timer;
 //above timer by taking care of overflow and time comparisons
 TimingCommon timing;
 
+
+
 //Watchdog timer to reset board if it stops working
 //this should be fed only in the main loop
 WDT wdt(WDT_TIMEOUT_US);

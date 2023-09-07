@@ -98,6 +98,7 @@ int main() {
         //task 1
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	led5.write(!led5.read());
         }
 
 
@@ -105,3 +106,10 @@ int main() {
 
 	shutdown_method();
 }
+
+
+
+
+
+
+
