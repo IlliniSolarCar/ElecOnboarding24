@@ -10,7 +10,8 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
-
+#include "pins.h"
+#include "setup.h"
 
 /*
  * This is an example function. It blinks the heartbeat LED and sends
@@ -31,7 +32,7 @@ void checkCANController() {
  * This is where basic, one-time configuration code is run before entering
  * normal operation. It is recommended that you keep your configuration
  * code in setup() and call it at the beginning of main(), but it is not
- * mandatory.
+ *
  *
  * If you have global variables that need to be initialized, here would
  * be a good place to do it.
@@ -41,7 +42,7 @@ void setup() {
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
-	common.setupLEDs(&led1, &led2, &led3, &led4);
+	common.setupLEDs(&led1, &led2, &led3, &led4, &led5);
 
 	//Set Callbacks:
 	//These are side tasks (up to 8) that are run independently of the main
@@ -88,6 +89,7 @@ int main() {
 
         //clear CAN Buffer
         while(!common.readCANMessage(msg)) {
+        	checkCANController()
         	//you should do something with the relevant CAN messages here
         	//toggle the CAN receive LED for only the messages you need to
         	//receive for this board to function. This should be only a few
@@ -96,10 +98,11 @@ int main() {
         }
 
         //task 1
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, FLICKER)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	led5 = !led5
         }
-
+        
 
 	}
 
