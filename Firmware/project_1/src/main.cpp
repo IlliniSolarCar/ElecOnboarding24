@@ -4,7 +4,8 @@
  */
 
 #include <mbed.h>
-// PROJECT 1 - Include something here!
+
+DigitalOut led5(P_LED5);
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -96,8 +97,12 @@ int main() {
         }
 
         //task 1
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
+        if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE)){
+        	if(led5.read() == 0) {
+        		led5.write(1);
+        	} else {
+        		led.write(0);
+        	}
         }
 
 
