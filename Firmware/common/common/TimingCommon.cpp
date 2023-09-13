@@ -98,11 +98,15 @@ int TimingCommon::threshold(const uint32_t last, const uint32_t now, const uint3
 		return 1;
 	return 0;
 }
-
+/* accepts a reference to the "last time" recorded and checks if delta("last time recorded" - now(lastTickTime)) > interval. if true -> LED Blink, and  */
 int TimingCommon::tickThreshold(uint32_t &last, const uint32_t interval){
-	if(difference(last, lastTickTime) >= interval){
-		last = lastTickTime;
-		return 1;
+	if(difference(last, lastTickTime) >= interval){  /* lastTickTime(check in the .h) is the current time */
+		last = lastTickTime; /*"interval" from the line above is usually the control_rate at which LED blinks */
+		return 1; /* returns "true" */
 	}
 	return 0;
 }
+/*Essentially the method above compares the clock time on the MCU with the LED blinking rate, and
+ * determines if >= time has passed compared to the interval since the last blink to change state again
+ * &last is pointer to the variable that stores when last the LED has changed state, its value is updated if enough time has passed  */
+
