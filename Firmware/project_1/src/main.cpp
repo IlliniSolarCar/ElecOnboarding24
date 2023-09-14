@@ -42,7 +42,7 @@ void setup() {
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
-	common.setupLEDs(&led1, &led2, &led3, &led4);
+	common.setupLEDs(&led1, &led2, &led3, &led4, &led_light); // added reference to the new pin for the task
 
 	//Set Callbacks:
 	//These are side tasks (up to 8) that are run independently of the main

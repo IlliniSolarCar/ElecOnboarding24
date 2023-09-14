@@ -93,6 +93,7 @@
 								<option id="com.crt.advproject.gcc.lto.395510229" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.gcc.lto" useByScannerDiscovery="false" value="false" valueType="boolean"/>
 								<option id="gnu.c.compiler.option.dialect.std.1435969038" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
 								<option id="com.crt.advproject.gcc.specs.1566754345" name="Specs" superClass="com.crt.advproject.gcc.specs" useByScannerDiscovery="false" value="com.crt.advproject.gcc.specs.newlib" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.fpu.716694364" superClass="com.crt.advproject.gcc.fpu"/>
 								<inputType id="com.crt.advproject.compiler.input.2101873289" superClass="com.crt.advproject.compiler.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gas.exe.debug.1834960813" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.debug">
@@ -106,6 +107,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX/TOOLCHAIN_GCC_CR}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.gas.specs.524612450" name="Specs" superClass="com.crt.advproject.gas.specs" useByScannerDiscovery="false" value="com.crt.advproject.gas.specs.newlib" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.fpu.1058478793" superClass="com.crt.advproject.gas.fpu"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1404993166" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 								<inputType id="com.crt.advproject.assembler.input.1504632750" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
 							</tool>
@@ -142,6 +144,7 @@
 								<option id="com.crt.advproject.link.memory.load.image.cpp.1854760230" superClass="com.crt.advproject.link.memory.load.image.cpp" value="" valueType="string"/>
 								<option id="com.crt.advproject.link.memory.data.cpp.326173730" superClass="com.crt.advproject.link.memory.data.cpp" value="" valueType="string"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="com.crt.advproject.link.memory.sections.cpp.50157822" superClass="com.crt.advproject.link.memory.sections.cpp" valueType="stringList"/>
+								<option id="com.crt.advproject.link.cpp.fpu.2071555389" superClass="com.crt.advproject.link.cpp.fpu"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.2135286474" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -149,6 +152,7 @@
 							</tool>
 							<tool id="com.crt.advproject.link.exe.debug.2053687927" name="MCU Linker" superClass="com.crt.advproject.link.exe.debug">
 								<option id="com.crt.advproject.link.gcc.hdrlib.968714536" superClass="com.crt.advproject.link.gcc.hdrlib"/>
+								<option id="com.crt.advproject.link.fpu.1866097183" superClass="com.crt.advproject.link.fpu"/>
 							</tool>
 							<tool id="com.crt.advproject.tool.debug.debug.311288347" name="MCU Debugger" superClass="com.crt.advproject.tool.debug.debug"/>
 						</toolChain>
