@@ -1,0 +1,646 @@
+EESchema Schematic File Version 4
+LIBS:Lights_Onboarding_v0_1-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 7
+Title "Lights Onboarding"
+Date ""
+Rev "0.1"
+Comp "Illini Solar Car"
+Comment1 "Designed By: Jonathan"
+Comment2 "Specimen Board"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6150 1800 750  550 
+U 5D39FB23
+F0 "LEDDriver1" 50
+F1 "Lights_Onboarding_LEDDriver_v0_1.sch" 50
+F2 "LEDEnable" I L 6150 2050 50 
+$EndSheet
+$Sheet
+S 6150 2650 750  550 
+U 5D3A07F2
+F0 "LEDDriver2" 50
+F1 "Lights_Onboarding_LEDDriver_v0_1.sch" 50
+F2 "LEDEnable" I L 6150 2900 50 
+$EndSheet
+$Sheet
+S 6150 3450 750  550 
+U 5D3A080A
+F0 "LEDDriver3" 50
+F1 "Lights_Onboarding_LEDDriver_v0_1.sch" 50
+F2 "LEDEnable" I L 6150 3700 50 
+$EndSheet
+$Sheet
+S 6150 4250 750  550 
+U 5D3A080E
+F0 "LEDDriver4" 50
+F1 "Lights_Onboarding_LEDDriver_v0_1.sch" 50
+F2 "LEDEnable" I L 6150 4500 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5D3A7A17
+P 2300 2600
+F 0 "J2" H 2220 2275 50  0000 C CNN
+F 1 "Conn_01x02" H 2220 2366 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 2300 2600 50  0001 C CNN
+F 3 "~" H 2300 2600 50  0001 C CNN
+F 4 "22232021" H 2300 2600 50  0001 C CNN "MPN"
+F 5 "Vdd Input" H 2300 2600 50  0001 C CNN "Note"
+	1    2300 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5D3A7AA2
+P 2300 1950
+F 0 "J1" H 2220 1625 50  0000 C CNN
+F 1 "Conn_01x03" H 2220 1716 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 2300 1950 50  0001 C CNN
+F 3 "~" H 2300 1950 50  0001 C CNN
+F 4 "22232031" H 2300 1950 50  0001 C CNN "MPN"
+F 5 "12V Input" H 2300 1950 50  0001 C CNN "Note"
+	1    2300 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5D3A7B2A
+P 2750 3700
+F 0 "#PWR04" H 2750 3450 50  0001 C CNN
+F 1 "GND" H 2755 3527 50  0000 C CNN
+F 2 "" H 2750 3700 50  0001 C CNN
+F 3 "" H 2750 3700 50  0001 C CNN
+	1    2750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 5D3AB2D8
+P 3650 1700
+F 0 "#PWR01" H 3650 1550 50  0001 C CNN
+F 1 "+12V" H 3665 1873 50  0000 C CNN
+F 2 "" H 3650 1700 50  0001 C CNN
+F 3 "" H 3650 1700 50  0001 C CNN
+	1    3650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:LED D1
+U 1 1 5D3AC417
+P 4150 3200
+F 0 "D1" V 4200 3050 50  0000 C CNN
+F 1 "YELLOW" V 4100 3000 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4150 3200 50  0001 C CNN
+F 3 "~" H 4150 3200 50  0001 C CNN
+F 4 "LED YELLOW CLEAR 0603 SMD" H 4150 3200 50  0001 C CNN "MPN"
+	1    4150 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:R_US R1
+U 1 1 5D3AC486
+P 4150 2700
+F 0 "R1" H 3950 2750 50  0000 C CNN
+F 1 "3.3k" H 3950 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4190 2690 50  0001 C CNN
+F 3 "~" H 4150 2700 50  0001 C CNN
+F 4 "RES SMD 3.3K OHM 1% 1/10W 0603" H 4150 2700 50  0001 L CNN "MPN"
+	1    4150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:LED D2
+U 1 1 5D3AC511
+P 3600 3200
+F 0 "D2" V 3650 3050 50  0000 C CNN
+F 1 "Green" V 3550 3000 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3600 3200 50  0001 C CNN
+F 3 "~" H 3600 3200 50  0001 C CNN
+F 4 "LED GREEN CLEAR 0603 SMD" H 3600 3200 50  0001 C CNN "MPN"
+	1    3600 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:R_US R2
+U 1 1 5D3AC518
+P 3600 2700
+F 0 "R2" H 3450 2750 50  0000 C CNN
+F 1 "1k" H 3450 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3640 2690 50  0001 C CNN
+F 3 "~" H 3600 2700 50  0001 C CNN
+F 4 "RES SMD 1K OHM 1% 1/4W 0603" H 3600 2700 50  0001 C CNN "MPN"
+	1    3600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_Expansion:MCP23S17_SO U1
+U 1 1 5D3AAAE8
+P 3700 5000
+F 0 "U1" H 3700 6278 50  0000 C CNN
+F 1 "MCP23S17" H 3700 6187 50  0000 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 3900 4000 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 3900 3900 50  0001 L CNN
+F 4 "MCP23S17" H 3700 5000 50  0001 C CNN "MPN"
+	1    3700 5000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3000 4900
+NoConn ~ 3000 4800
+NoConn ~ 3000 5800
+NoConn ~ 3000 5700
+NoConn ~ 3000 5600
+Wire Wire Line
+	3700 3900 3700 3850
+NoConn ~ 4400 4800
+NoConn ~ 4400 4900
+NoConn ~ 4400 5100
+NoConn ~ 4400 5200
+NoConn ~ 4400 5300
+NoConn ~ 4400 5400
+NoConn ~ 4400 5500
+NoConn ~ 4400 5600
+NoConn ~ 4400 5700
+NoConn ~ 4400 5800
+$Comp
+L Connector_Generic:Conn_01x05 J3
+U 1 1 5D3B8771
+P 1950 4400
+F 0 "J3" H 1870 3975 50  0000 C CNN
+F 1 "Conn_01x05" H 1870 4066 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 1950 4400 50  0001 C CNN
+F 3 "~" H 1950 4400 50  0001 C CNN
+F 4 "22232051" H 1950 4400 50  0001 C CNN "MPN"
+	1    1950 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 4500 2150 4500
+Wire Wire Line
+	2150 4400 3000 4400
+Wire Wire Line
+	3000 4300 2150 4300
+Wire Wire Line
+	2150 4200 3000 4200
+$Comp
+L power:GND #PWR02
+U 1 1 5D3BA3A3
+P 3700 6450
+F 0 "#PWR02" H 3700 6200 50  0001 C CNN
+F 1 "GND" H 3705 6277 50  0000 C CNN
+F 2 "" H 3700 6450 50  0001 C CNN
+F 3 "" H 3700 6450 50  0001 C CNN
+	1    3700 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 6450 3700 6100
+$Sheet
+S 6150 5150 750  550 
+U 5D3B99D2
+F0 "LEDDriver5" 50
+F1 "Lights_Onboarding_LEDDriver_v0_1.sch" 50
+F2 "LEDEnable" I L 6150 5400 50 
+$EndSheet
+Wire Wire Line
+	4400 4500 6150 4500
+Wire Wire Line
+	4400 4400 5950 4400
+Wire Wire Line
+	5950 4400 5950 3700
+Wire Wire Line
+	5950 3700 6150 3700
+Wire Wire Line
+	5700 4300 4400 4300
+Wire Wire Line
+	5700 4300 5700 2900
+Wire Wire Line
+	5700 2900 6150 2900
+Wire Wire Line
+	6150 2050 5500 2050
+Wire Wire Line
+	5500 2050 5500 4200
+Wire Wire Line
+	5500 4200 4400 4200
+Wire Wire Line
+	6150 5400 5950 5400
+Wire Wire Line
+	5950 5400 5950 4600
+Wire Wire Line
+	5950 4600 4400 4600
+Wire Wire Line
+	4400 4700 5700 4700
+Wire Wire Line
+	5700 4700 5700 6250
+Wire Wire Line
+	5700 6250 6150 6250
+$Comp
+L Misc:Logo MK1
+U 1 1 5D3BCD6C
+P 4250 6850
+F 0 "MK1" H 4250 6850 60  0001 C CNN
+F 1 "~" H 3900 6850 60  0001 L CNN
+F 2 "layout:BAC_Square_Logo_5mm" H 4250 6850 60  0001 C CNN
+F 3 "~" H 4250 6850 60  0001 C CNN
+F 4 "BAC Logo" H 4100 6850 50  0000 C CNN "Note"
+	1    4250 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Misc:Logo MK2
+U 1 1 5D3BCDA5
+P 4250 7100
+F 0 "MK2" H 4250 7100 60  0001 C CNN
+F 1 "~" H 3550 7100 60  0001 L CNN
+F 2 "layout:ISC_Circles_5mm_x_4mm" H 4250 7100 60  0001 C CNN
+F 3 "" H 4250 7100 60  0001 C CNN
+F 4 "ISC Circles Logo" H 4000 7100 50  0000 C CNN "Note"
+	1    4250 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5D3BCE0F
+P 2150 7650
+F 0 "TP6" V 2104 7838 50  0000 L CNN
+F 1 "~" V 2195 7838 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2350 7650 50  0001 C CNN
+F 3 "~" H 2350 7650 50  0001 C CNN
+	1    2150 7650
+	0    1    1    0   
+$EndComp
+Text Label 5100 4200 0    50   ~ 0
+EN_1
+Text Label 5100 4300 0    50   ~ 0
+EN_2
+Text Label 5100 4400 0    50   ~ 0
+EN_3
+Text Label 5100 4500 0    50   ~ 0
+EN_4
+Text Label 5100 4600 0    50   ~ 0
+EN_5
+Text Label 5100 4700 0    50   ~ 0
+EN_6
+$Comp
+L Connector_Generic:Conn_01x06 J8
+U 1 1 5D3BD05E
+P 1650 7450
+F 0 "J8" H 1570 6925 50  0000 C CNN
+F 1 "Conn_01x06" H 1570 7016 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 1650 7450 50  0001 C CNN
+F 3 "~" H 1650 7450 50  0001 C CNN
+F 4 "22232061" H 1650 7450 50  0001 C CNN "MPN"
+	1    1650 7450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5D3C00F8
+P 2400 7550
+F 0 "TP5" V 2354 7738 50  0000 L CNN
+F 1 "~" V 2445 7738 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2600 7550 50  0001 C CNN
+F 3 "~" H 2600 7550 50  0001 C CNN
+	1    2400 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5D3C08DD
+P 2650 7450
+F 0 "TP4" V 2604 7638 50  0000 L CNN
+F 1 "~" V 2695 7638 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2850 7450 50  0001 C CNN
+F 3 "~" H 2850 7450 50  0001 C CNN
+	1    2650 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5D3C10C5
+P 2150 7350
+F 0 "TP3" V 2104 7538 50  0000 L CNN
+F 1 "~" V 2195 7538 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2350 7350 50  0001 C CNN
+F 3 "~" H 2350 7350 50  0001 C CNN
+	1    2150 7350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5D3C18A8
+P 2400 7250
+F 0 "TP2" V 2354 7438 50  0000 L CNN
+F 1 "~" V 2445 7438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2600 7250 50  0001 C CNN
+F 3 "~" H 2600 7250 50  0001 C CNN
+	1    2400 7250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5D3C2881
+P 2650 7150
+F 0 "TP1" V 2604 7338 50  0000 L CNN
+F 1 "~" V 2695 7338 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2850 7150 50  0001 C CNN
+F 3 "~" H 2850 7150 50  0001 C CNN
+	1    2650 7150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 7650 1850 7650
+Wire Wire Line
+	2400 7550 1850 7550
+Wire Wire Line
+	2650 7450 1850 7450
+Wire Wire Line
+	2150 7350 1850 7350
+Wire Wire Line
+	2400 7250 1850 7250
+Wire Wire Line
+	2650 7150 1850 7150
+Text Label 2050 7150 0    50   ~ 0
+EN_6
+Text Label 2050 7250 0    50   ~ 0
+EN_5
+Text Label 2050 7350 0    50   ~ 0
+EN_4
+Text Label 2050 7450 0    50   ~ 0
+EN_3
+Text Label 2050 7550 0    50   ~ 0
+EN_2
+Text Label 2050 7650 0    50   ~ 0
+EN_1
+Text Notes 1600 4400 0    50   ~ 0
+SPI\n
+Text Notes 1750 2600 0    50   ~ 0
+LOGIC PWR\n
+Text Notes 1800 2000 0    50   ~ 0
+12V PWR
+Text Notes 1750 6850 0    50   ~ 0
+ENABLE DEBUG CONNECTIONS\nAND TEST POINTS
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D3C9F80
+P 2250 5600
+F 0 "SW1" H 2250 5800 50  0000 C CNN
+F 1 "~" H 2250 5794 50  0000 C CNN
+F 2 "layout:Button_223AM" H 2250 5800 50  0001 C CNN
+F 3 "" H 2250 5800 50  0001 C CNN
+F 4 "223AMVAAR" H 2250 5600 50  0001 C CNN "MPN"
+	1    2250 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 5D3CA0A0
+P 1500 5600
+F 0 "J11" H 1650 5500 50  0000 C CNN
+F 1 "Conn_01x02" H 1800 5600 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 1500 5600 50  0001 C CNN
+F 3 "~" H 1500 5600 50  0001 C CNN
+F 4 "22232021" H 1500 5600 50  0001 C CNN "MPN"
+	1    1500 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5D3D6794
+P 1950 6250
+F 0 "#PWR017" H 1950 6000 50  0001 C CNN
+F 1 "GND" H 1955 6077 50  0000 C CNN
+F 2 "" H 1950 6250 50  0001 C CNN
+F 3 "" H 1950 6250 50  0001 C CNN
+	1    1950 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D3D8324
+P 5000 6850
+F 0 "H1" H 5100 6896 50  0000 L CNN
+F 1 "M3" H 5100 6805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5000 6850 50  0001 C CNN
+F 3 "~" H 5000 6850 50  0001 C CNN
+	1    5000 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D3D8413
+P 5000 7100
+F 0 "H2" H 5100 7146 50  0000 L CNN
+F 1 "M3" H 5100 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5000 7100 50  0001 C CNN
+F 3 "~" H 5000 7100 50  0001 C CNN
+	1    5000 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5D3D9712
+P 5000 7300
+F 0 "H3" H 5100 7346 50  0000 L CNN
+F 1 "M3" H 5100 7255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5000 7300 50  0001 C CNN
+F 3 "~" H 5000 7300 50  0001 C CNN
+	1    5000 7300
+	1    0    0    -1  
+$EndComp
+Text Notes 3650 3050 0    50   ~ 0
+LOGIC\nPower\nIndicator
+Text Notes 4200 3100 0    50   ~ 0
+12V (LED)\nPower\nIndicator\n
+Text Notes 1750 2950 0    50   ~ 0
+3.3V or 5V Logic\nAcceptable Range:\n3.0V to 5.5V\n
+Text Notes 1700 5450 0    50   ~ 0
+PCB and External Reset
+Text Label 2500 4200 0    50   ~ 0
+~CS
+Text Label 2500 4300 0    50   ~ 0
+SCK
+Text Label 2500 4400 0    50   ~ 0
+MOSI
+Text Label 2500 4500 0    50   ~ 0
+MISO
+$Comp
+L power:VDD #PWR03
+U 1 1 5D3FD407
+P 3050 2350
+F 0 "#PWR03" H 3050 2200 50  0001 C CNN
+F 1 "VDD" H 3067 2523 50  0000 C CNN
+F 2 "" H 3050 2350 50  0001 C CNN
+F 3 "" H 3050 2350 50  0001 C CNN
+	1    3050 2350
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 6150 6000 750  550 
+U 5D3B9D8B
+F0 "LEDDriver6" 50
+F1 "Lights_Onboarding_LEDDriver_v0_1.sch" 50
+F2 "LEDEnable" I L 6150 6250 50 
+$EndSheet
+Wire Wire Line
+	1700 5600 1950 5600
+Connection ~ 1950 5600
+Wire Wire Line
+	1950 5600 2050 5600
+Wire Wire Line
+	1700 5500 2450 5500
+Wire Wire Line
+	2450 5600 2450 5500
+Connection ~ 2450 5500
+Wire Wire Line
+	2450 5500 2700 5500
+$Comp
+L power:GND #PWR018
+U 1 1 5D44B2DC
+P 2300 4650
+F 0 "#PWR018" H 2300 4400 50  0001 C CNN
+F 1 "GND" H 2305 4477 50  0000 C CNN
+F 2 "" H 2300 4650 50  0001 C CNN
+F 3 "" H 2300 4650 50  0001 C CNN
+	1    2300 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4650 2300 4600
+Wire Wire Line
+	2300 4600 2150 4600
+Wire Wire Line
+	2500 1950 3650 1950
+Wire Wire Line
+	4150 1950 4150 2550
+Wire Wire Line
+	4150 3050 4150 2850
+Wire Wire Line
+	3600 3050 3600 2850
+Wire Wire Line
+	3600 2500 3600 2550
+Wire Wire Line
+	2500 2600 2750 2600
+Wire Wire Line
+	2750 2600 2750 2050
+Wire Wire Line
+	2750 2050 2500 2050
+Connection ~ 2750 2600
+Wire Wire Line
+	2500 1850 2750 1850
+Wire Wire Line
+	2750 1850 2750 2050
+Connection ~ 2750 2050
+Wire Wire Line
+	3600 3350 3600 3450
+Wire Wire Line
+	3600 3450 4150 3450
+Wire Wire Line
+	4150 3450 4150 3350
+Wire Wire Line
+	3600 3450 2950 3450
+Wire Wire Line
+	2750 3450 2750 3700
+Connection ~ 3600 3450
+Wire Wire Line
+	2750 2600 2750 3450
+Connection ~ 2750 3450
+$Comp
+L device:C C1
+U 1 1 5D475E70
+P 2950 3200
+F 0 "C1" H 3065 3246 50  0000 L CNN
+F 1 "0.1uF" H 3065 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2988 3050 50  0001 C CNN
+F 3 "~" H 2950 3200 50  0001 C CNN
+F 4 "CAP CER 0.1UF 16V X5R 0603" H 2950 3200 50  0001 C CNN "MPN"
+	1    2950 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2500 3050 2500
+Wire Wire Line
+	2950 3350 2950 3450
+Connection ~ 2950 3450
+Wire Wire Line
+	2950 3450 2750 3450
+Wire Wire Line
+	2950 3050 3300 3050
+Wire Wire Line
+	3300 3050 3300 2500
+Connection ~ 3300 2500
+Wire Wire Line
+	3300 2500 3600 2500
+Wire Wire Line
+	3300 3050 3300 3850
+Connection ~ 3300 3050
+Wire Wire Line
+	3300 3850 3700 3850
+Wire Wire Line
+	3650 1700 3650 1950
+Connection ~ 3650 1950
+Wire Wire Line
+	3650 1950 4150 1950
+Wire Wire Line
+	3050 2350 3050 2500
+Connection ~ 3050 2500
+Wire Wire Line
+	3050 2500 3300 2500
+$Comp
+L power:VDD #PWR019
+U 1 1 5D488CDF
+P 2700 4900
+F 0 "#PWR019" H 2700 4750 50  0001 C CNN
+F 1 "VDD" H 2717 5073 50  0000 C CNN
+F 2 "" H 2700 4900 50  0001 C CNN
+F 3 "" H 2700 4900 50  0001 C CNN
+	1    2700 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R_US R5
+U 1 1 5D488D5B
+P 2700 5100
+F 0 "R5" H 2550 5150 50  0000 C CNN
+F 1 "10k" H 2550 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2740 5090 50  0001 C CNN
+F 3 "~" H 2700 5100 50  0001 C CNN
+F 4 "RES SMD 10K OHM 1% 1/4W 0603" H 2700 5100 50  0001 C CNN "MPN"
+	1    2700 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 5250 2700 5500
+Connection ~ 2700 5500
+Wire Wire Line
+	2700 4900 2700 4950
+Wire Wire Line
+	3000 5100 2850 5100
+Wire Wire Line
+	2850 5100 2850 5500
+Wire Wire Line
+	2700 5500 2850 5500
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5D491521
+P 2150 6150
+F 0 "TP7" V 2104 6338 50  0000 L CNN
+F 1 "~" V 2195 6338 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2350 6150 50  0001 C CNN
+F 3 "~" H 2350 6150 50  0001 C CNN
+	1    2150 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 6150 1950 6150
+Wire Wire Line
+	1950 6150 1950 6250
+Wire Wire Line
+	1950 5600 1950 6150
+Connection ~ 1950 6150
+$EndSCHEMATC
