@@ -101,7 +101,7 @@ int main() {
         	if(led5.read() == 0) {
         		led5.write(1);
         	} else {
-        		led.write(0);
+        		led5.write(0);
         	}
         }
 
