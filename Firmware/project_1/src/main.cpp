@@ -1,4 +1,4 @@
-/*
+ /*
  * This is where your main program code lives. On reset, after some basic
  * initialization code is run, main() is called.
  */
@@ -98,6 +98,11 @@ int main() {
         //task 1
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	if(led1.read()){ //returns 1 if LED is on, if so, sets pinout to logical zero, else, sets pinout to logical one
+        		led1.write(0);
+        	} else {
+        		led1.write(1);
+        	}
         }
 
 
