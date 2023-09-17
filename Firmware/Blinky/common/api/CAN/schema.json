@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+  
+    "definitions": {
+      "datatype": {
+        "$id": "#datatype",
+        "type": "string",
+        "enum": [
+          "FloatLE",
+          "Int32LE", 
+          "Uint32LE", 
+          "Int64LE", 
+          "Uint64LE", 
+          "Uint16LE", 
+          "Int16LE", 
+          "Uint8", 
+          "Uint8LE",
+          "BitMap8LE",
+          "BitMap16LE",
+          "BitMap32LE"
+        ]
+      },
+      "source": {
+        "$id": "#source",
+        "type": "string",
+        "enum": [
+          "Wheel",
+          "Neutrino0",
+          "Neutrino1",
+          "Neutrino2",
+          "Neutrino4",
+          "MCCL",
+          "MCCR",
+          "BMS",
+          "PDS",
+          "Dash",
+          "Telemetry",
+          "DataLogger",
+          "External"
+        ]
+      },
+      "destination": {
+        "$id": "#destination",
+        "type": "string",
+        "enum": [
+          "Wheel",
+          "Neutrino0",
+          "Neutrino1",
+          "Neutrino2",
+          "Neutrino4",
+          "MCCL",
+          "MCCR",
+          "BMS",
+          "PDS",
+          "Dash",
+          "Telemetry",
+          "DataLogger",
+          "External",
+          "Debug",
+          "Monitoring"
+        ]
+      },
+      "message": {
+        "type": "object",
+        "properties": {
+          "Source":     { "$ref": "#source"},
+          "DataName":   { "anyOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
+          "DataFormat": { "anyOf": [{"$ref": "#datatype"}, {"type": "array", "items": {"$ref": "#datatype"}}]},
+          "Destination": { "anyOf": [{"$ref": "#destination"}, {"type": "array", "items": {"$ref": "#destination"}}]},
+          "DataQty": { "type": "integer", "exclusiveMinimum": 0 },
+          "ValueNames": { "anyOf": [{"type": "string"}, {"type": "array"}]},
+          "Interval": { "type": "integer"},
+          "Description": { "type": "string"},
+          "Multiplier": { "anyOf": [{"type": "array", "items": {"type": "number"}}, {"type": "number"}]}
+        },
+        "required": ["Source", "DataName", "DataFormat", "DataQty"]
+      }
+    },
+  
+    "type": "object",
+    "additionalProperties": { "$ref": "#/definitions/message"}
+  }
