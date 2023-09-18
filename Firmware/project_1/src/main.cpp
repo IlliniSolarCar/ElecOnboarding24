@@ -6,6 +6,7 @@
 #include <mbed.h>
 // PROJECT 1 - Include something here!
 #include "peripherals.h"
+#include "pins.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
@@ -25,6 +26,10 @@ void heartbeat() {
 /** Stub to call hardware-interface for checking the CAN controller. */
 void checkCANController() {
     common.checkCANController();
+}
+
+void blinkLED() {
+	led5.write(!led5.read());
 }
 
 /*
@@ -48,6 +53,7 @@ void setup() {
 	//algorithm / purpose of this board such as the heartbeat.
 	timing.addCallback(BRIZO_CAN::DEMO_HEART.RATE / 2, heartbeat);
 	timing.addCallback(CHECK_CAN_RATE_US, checkCANController);
+	timing.addCallback(TASK_1_RATE_US, blinkLED);
 
 	bool wdt_reset;
 	//start the timing and check for wdt caused reset
