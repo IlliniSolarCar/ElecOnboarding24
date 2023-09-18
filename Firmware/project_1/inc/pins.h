@@ -35,6 +35,7 @@ extern DigitalOut led1;
 extern DigitalOut led2;
 extern DigitalOut led3;
 extern DigitalOut led4;
+extern DigitalOut led5;
 // PROJECT 1 - You can declare a DigitalOut object here
 
 /*

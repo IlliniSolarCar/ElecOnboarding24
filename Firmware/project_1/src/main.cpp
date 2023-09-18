@@ -5,7 +5,9 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "DigitalOut.h"
 #include "peripherals.h"
+#include "pins.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
@@ -98,6 +100,10 @@ int main() {
         //task 1
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	led5.mbed::DigitalOut::write(1);
+        	wait(TASK_1_RATE_US);
+        	led5.mbed::DigitalOut::write(0);
+
         }
 
 
