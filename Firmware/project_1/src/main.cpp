@@ -99,7 +99,7 @@ int main() {
         //task 1
         if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
-        	P_LED5 = !P_LED5;
+        	Blink_LED5.write(!Blink.LED.read());
         }
 
 
