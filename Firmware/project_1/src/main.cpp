@@ -95,10 +95,11 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        //task 1
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
         }
+
+        //PROJECT 2 - use the potentiometer to change the blink rate
 
 
 	}
