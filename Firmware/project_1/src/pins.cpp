@@ -17,7 +17,7 @@
 /*
  * COMMON PIN OBJECT INSTANTIATIONS
  */
-
+DigitalOut heartbeat_led(P_LED0);
 DigitalOut led1(P_LED1);
 DigitalOut led2(P_LED2);
 DigitalOut led3(P_LED3);

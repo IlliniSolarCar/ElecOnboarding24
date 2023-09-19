@@ -99,14 +99,13 @@ int main() {
         }
 
         //task 1
-        led = DigitalOut(LED1, 0);
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
-        	if (led.read()==0){
-        		led.write(1);
+        	if (heartbeat_led.read()==0){
+        		heartbeat_led.write(1);
         	}
         	else{
-        		led.write(0);
+        		heartbeat_led.write(0);
         	}
 
         }
