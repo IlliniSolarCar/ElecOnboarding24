@@ -22,4 +22,4 @@
 
 
 
-#endif /* SETUP_H_ */
+#endif MBED15X9_SKELETON_SETUP_H_
