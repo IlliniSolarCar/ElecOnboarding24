@@ -53,7 +53,7 @@ void setup() {
 	//algorithm / purpose of this board such as the heartbeat.
 	timing.addCallback(BRIZO_CAN::DEMO_HEART.RATE / 2, heartbeat);
 	timing.addCallback(CHECK_CAN_RATE_US, checkCANController);
-	timing.addCallback(TASK_1_RATE_US, blinkLED);
+	// timing.addCallback(TASK_1_RATE_US, blinkLED); initial blinking code
 
 	bool wdt_reset;
 	//start the timing and check for wdt caused reset
@@ -101,13 +101,14 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
-        }
+        // if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        // 	//PROJECT 1 - add code here to actually make the LED blink
+        // }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
-
+		if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US * (0.5 + potentiometer.read()))) {
+			blinkLED();
+		}
 	}
 
 	shutdown_method();
