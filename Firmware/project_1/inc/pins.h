@@ -43,6 +43,8 @@ extern DigitalOut blinkLed;
  * BOARD SPECIFIC PINS
  */
 
+// PROJECT 2 - You can declare a AnalogIn object here
+
 
 /*
  * BOARD SPECIFIC PIN OBJECT DECLARATIONS
