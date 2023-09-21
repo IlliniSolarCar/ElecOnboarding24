@@ -5,7 +5,7 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
-#include "led"
+#include <pins.h>
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -79,7 +79,7 @@ int main() {
 	uint32_t last_task_1_time = timing.onTick(NULL);
 
 	CANMessage msg;
-	bool shutdown = false
+	bool shutdown = false;
 	// Main functionality
 	while (!shutdown) {
 
@@ -100,6 +100,7 @@ int main() {
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
         	led = !led;
+        	wait(0.2);
         }
 
 
