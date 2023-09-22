@@ -519,7 +519,7 @@
     (property "Datasheet" "~" (at 92.71 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "MPN" "RES 105 OHM " (at 92.71 73.66 0)
+    (property "MPN" "RES 105 OHM 1/10W 5% AXIAL" (at 92.71 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Notes" "" (at 92.71 73.66 0)
