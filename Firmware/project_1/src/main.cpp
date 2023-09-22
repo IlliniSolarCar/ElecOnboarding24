@@ -5,6 +5,7 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -74,6 +75,7 @@ void shutdown_method() {
 
 int main() {
 	// Configure all of our peripherals and globals
+
 	setup();
 	uint32_t last_task_1_time = timing.onTick(NULL);
 
@@ -98,8 +100,13 @@ int main() {
         //task 1
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
-        }
+led5=1;
 
+
+        }
+if (led5==1){
+	led5=0;
+}
 
 	}
 
