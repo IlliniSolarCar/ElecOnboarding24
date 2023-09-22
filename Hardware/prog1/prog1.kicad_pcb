@@ -115,7 +115,7 @@
     (property "ki_keywords" "switch normally-open pushbutton push-button")
     (path "/32b1e1ac-8e91-4cbd-a93a-dedd72d09c55")
     (attr smd)
-    (fp_text reference "SW1" (at 0 -3.11 90) (layer "F.SilkS")
+    (fp_text reference "SW1" (at 0 -3.11 90) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c59805b0-78c3-4e15-aef5-f95d55d8d96a)
     )
@@ -123,11 +123,11 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2a076ab7-2f2c-4eb7-bcb8-73a10733a151)
     )
-    (fp_text user "${REFERENCE}" (at 2.58 0) (layer "F.Fab")
+    (fp_text user "${REFERENCE}" (at 2.58 0) (layer "F.Fab") hide
         (effects (font (size 0.6 0.6) (thickness 0.09)))
       (tstamp 596c2985-d40c-4dee-aff9-82700ad119be)
     )
-    (fp_text user "on" (at 0.4275 -1.3425 90) (layer "F.Fab")
+    (fp_text user "on" (at 0.4275 -1.3425 90) (layer "F.Fab") hide
         (effects (font (size 0.6 0.6) (thickness 0.09)))
       (tstamp d614e901-cedb-4681-8c01-cf1f60f1fd5b)
     )
@@ -253,7 +253,7 @@
     (property "ki_keywords" "connector")
     (path "/74dd55a4-7d47-4a53-96e1-07c1c44d65fc")
     (attr through_hole)
-    (fp_text reference "J1" (at 1.54 -4) (layer "F.SilkS")
+    (fp_text reference "J1" (at 1.54 -4) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3c3ea845-c932-452d-a30d-f3760ef43a8e)
     )
@@ -368,7 +368,7 @@
     (property "ki_keywords" "R res resistor")
     (path "/2a02e5ea-8954-439e-9711-a2896f429d02")
     (attr smd)
-    (fp_text reference "R1" (at 0.7875 1.4) (layer "F.SilkS")
+    (fp_text reference "R1" (at 0.7875 1.4) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 36a90ad0-117f-4a4c-9171-ee631a127ed0)
     )
@@ -376,7 +376,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 1705fc19-46b6-4bba-adb7-7abe8a502004)
     )
-    (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
+    (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab") hide
         (effects (font (size 0.4 0.4) (thickness 0.06)))
       (tstamp 0874a7e9-f61c-46e7-97e5-5c1aa1fd790b)
     )
@@ -424,7 +424,7 @@
     (property "ki_keywords" "LED diode")
     (path "/9f847d3a-6b34-40d7-bfa3-9d96fab4c8c5")
     (attr smd)
-    (fp_text reference "D1" (at 0 -1.25) (layer "F.SilkS")
+    (fp_text reference "D1" (at 0 -1.25) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f10abee5-e959-4c2b-918d-0e4100936244)
     )
@@ -481,17 +481,17 @@
     (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "REF**" (at 3 -4) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp b3254f04-bc0a-4e07-933e-be29cab348c3)
+      (tstamp 0303bcbf-bff6-4ecb-9600-e8b1fe246510)
     )
     (fp_text value "MountingHole_3.2mm_M3" (at 0 4.2) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp f8c7c6b9-22f8-45ff-a85b-f342c631043c)
+      (tstamp 6a833546-d302-4678-889a-67e72428aa47)
     )
     (fp_circle (center 0 0) (end 3.2 0)
-      (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp e37d286a-ae09-4baa-ab52-14c47115d4ad))
+      (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp ddcda647-d113-4a81-8941-4b258061a274))
     (fp_circle (center 0 0) (end 3.45 0)
-      (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp 55c14a09-a912-4a4f-9b8f-703e11f339bc))
-    (pad "" np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers "*.Cu" "*.Mask") (tstamp d4ad803e-7633-4347-8b4f-52bee8c37b96))
+      (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp fcbb39eb-8e20-48b3-8edf-80271c56141d))
+    (pad "" np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers "*.Cu" "*.Mask") (tstamp 156069c1-092d-4712-9bbf-72a912443194))
   )
 
   (gr_line (start 138 76) (end 146 76)
