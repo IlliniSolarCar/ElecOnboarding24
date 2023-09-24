@@ -1,0 +1,39 @@
+Info: Processing symbol 'D1:layout:LED_0603_Symbol_on_F.SilkS'.
+Info: Processing symbol 'J1:Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'R1:Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder'.
+Info: Processing symbol 'SW1:Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile'.
+Changed D1 value from LED_0603 to LED_RED.
+Updated D1 symbol association from  to /3001b2b8-3f15-448d-8ae3-5649fc0d2cd5.
+Updated D1 properties.
+Add net GND.
+Connected D1 pin 1 to GND.
+Add net Net-(D1-A).
+Connected D1 pin 2 to Net-(D1-A).
+Added J1 (footprint 'Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical').
+Changed REF** reference designator to J1.
+Changed J1 value from Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical to Conn_01x02.
+Updated J1 symbol association from  to /8ebee451-e77f-4a89-bf15-1cfa61f6cb0c.
+Updated J1 properties.
+Connected J1 pin 1 to GND.
+Add net +3V3.
+Connected J1 pin 2 to +3V3.
+Added D1 (footprint 'layout:LED_0603_Symbol_on_F.SilkS').
+Added R1 (footprint 'Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder').
+Changed REF** reference designator to R1.
+Changed R1 value from R_0201_0603Metric_Pad0.64x0.40mm_HandSolder to 105 .
+Updated R1 symbol association from  to /7b4955cc-1298-4de6-b7ac-f8c2c7dc45b1.
+Updated R1 properties.
+Connected R1 pin 1 to Net-(D1-A).
+Add net Net-(R1-Pad2).
+Connected R1 pin 2 to Net-(R1-Pad2).
+Changed REF** reference designator to D1.
+Added SW1 (footprint 'Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile').
+Changed REF** reference designator to SW1.
+Changed SW1 value from SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile to SW_Push.
+Updated SW1 symbol association from  to /3adea93d-ee8b-468f-8713-035d00db2c9b.
+Updated SW1 properties.
+Connected SW1 pin 1 to +3V3.
+Connected SW1 pin 2 to Net-(R1-Pad2).
+
+
+Info: Total warnings: 0, errors: 0.
