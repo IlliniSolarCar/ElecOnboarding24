@@ -20,7 +20,7 @@
 	- +24V
 	- GND
  - Horn Control
-        - HornToggle (Net Label)
+        - HORN_CTL
         - GND
  - Horn Out
         - HORN_IN
@@ -41,4 +41,7 @@
 - Power In
 
 ## LED Indicators
-- LED at Horn Out test point
+- CAN Transmit
+- CAN Receive
+- Power imput
+- Horn Output
