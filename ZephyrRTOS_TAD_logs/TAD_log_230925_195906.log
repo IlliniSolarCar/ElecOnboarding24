@@ -1,0 +1,6 @@
+"Task Aware Debugger for GDB" version 11.8.0 (202306131047)
+Copyright 2016-2023 NXP
+==================================
+19:58:51.929 INFO: [ZephyrRTOS] .config file could not be read [C:\Users\sjise\AppData\Local\Programs\Microsoft VS Code\.config (The system cannot find the file specified)]
+19:58:51.930 INFO: [TadModel] DSF session ID 2 has started.
+19:59:06.615 INFO: [TadModel] DSF session ID 2 has ended.
