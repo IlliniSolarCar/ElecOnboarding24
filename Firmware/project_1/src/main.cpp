@@ -98,7 +98,7 @@ int main() {
 
         //task 1
         if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE_US)){
-        	Blink_LED.write(!Blink.LED.read());
+        	blink.write(!blink.read());
         }
 
 
