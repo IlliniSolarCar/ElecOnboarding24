@@ -80,6 +80,7 @@ int main() {
 
 	CANMessage msg;
 	bool shutdown = false;
+	u_int32_t rate = 0;
 	// Main functionality
 	while (!shutdown) {
 
@@ -96,13 +97,13 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, rate)){
         	//PROJECT 1 - add code here to actually make the LED blink
         	blinkLed.write(!blinkLed.read());
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
+        rate = pot0.read() * TASK_1_RATE_US;
 
 	}
 
