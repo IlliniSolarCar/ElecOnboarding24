@@ -12,14 +12,16 @@
  * PIN OBJECT INSTANTIATIONS
  */
 
-
-
+// PROJECT 2 - You can instantiate your AnalogIn object here
+AnalogIn potentiometer(P0_5);
 /*
  * COMMON PIN OBJECT INSTANTIATIONS
  */
-DigitalOut heartbeat_led(P_LED0);
+
 DigitalOut led1(P_LED1);
 DigitalOut led2(P_LED2);
 DigitalOut led3(P_LED3);
 DigitalOut led4(P_LED4);
 // PROJECT 1 - You can instantiate your DigitalOut object here
+DigitalOut led5(heartbeat_led);
+

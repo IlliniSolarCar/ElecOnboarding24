@@ -99,15 +99,17 @@ int main() {
         }
 
         //task 1
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        float potentiometer_voltage = potentiometer.read();
+
+        if(timing.tickThreshold(last_task_1_time, (TASK_1_RATE_US * potentiometer_voltage) / 9) ){
         	//PROJECT 1 - add code here to actually make the LED blink
-        	if (heartbeat_led.read()==0){
-        		heartbeat_led.write(1);
+        	if (led5.read()==0){
+        		led5.write(1);
         	}
         	else{
-        		heartbeat_led.write(0);
+        		led5.write(0);
         	}
-
+        	//PROJECT 2 - use the potentiometer to change the blink rate
         }
 
 
