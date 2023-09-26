@@ -97,6 +97,13 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+			for(int i=0; i<last_task_1_time; i++){
+				CAN = 1;
+        		wait(TASK_1_RATE_US);
+       			CAN = 0;
+        		wait(TASK_1_RATE_US);
+				i+=TASK_1_RATE_US
+			}
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
