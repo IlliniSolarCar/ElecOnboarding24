@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.crt.advproject.config.lib.debug.1825597249.1756104248">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.crt.advproject.config.lib.debug.1825597249.1756104248" moduleId="org.eclipse.cdt.core.settings" name="LPC15x9">
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/mbed"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/mbed/LPC1549"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="mbed" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="LPC15x9 series MCU" errorParsers="org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="com.crt.advproject.config.lib.debug.1825597249.1756104248" name="LPC15x9" parent="com.crt.advproject.config.lib.debug" postannouncebuildStep="Performing post-build steps" postbuildStep="arm-none-eabi-size &quot;lib${BuildArtifactFileName}&quot; ; # arm-none-eabi-objdump -h -S &quot;lib${BuildArtifactFileName}&quot; &gt;&quot;${BuildArtifactFileBaseName}.lss&quot;">
+					<folderInfo id="com.crt.advproject.config.lib.debug.1825597249.1756104248." name="/" resourcePath="">
+						<toolChain id="com.crt.advproject.toolchain.lib.debug.1641829255" name="Code Red MCU Tools" superClass="com.crt.advproject.toolchain.lib.debug">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.GNU_ELF" id="com.crt.advproject.platform.lib.debug.1790535632" name="ARM-based MCU (Debug)" superClass="com.crt.advproject.platform.lib.debug"/>
+							<builder buildPath="${workspace_loc:/mbed}/Debug" id="com.crt.advproject.builder.lib.debug.878020526" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="com.crt.advproject.builder.lib.debug">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Release"/>
+								</outputEntries>
+							</builder>
+							<tool id="com.crt.advproject.cpp.lib.debug.223033296" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.lib.debug">
+								<option id="com.crt.advproject.cpp.arch.2019034530" name="Architecture" superClass="com.crt.advproject.cpp.arch" value="com.crt.advproject.cpp.target.cm3" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.thumb.1758964749" name="Thumb mode" superClass="com.crt.advproject.cpp.thumb" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.cpp.hdrlib.1586397103" name="Library headers" superClass="com.crt.advproject.cpp.hdrlib" value="com.crt.advproject.cpp.hdrlib.newlib" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.683587683" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__CODE_RED"/>
+									<listOptionValue builtIn="false" value="CPP_USE_HEAP"/>
+									<listOptionValue builtIn="false" value="TARGET_LPC15xx"/>
+									<listOptionValue builtIn="false" value="TARGET_M3"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+									<listOptionValue builtIn="false" value="TARGET_NXP"/>
+									<listOptionValue builtIn="false" value="TARGET_LPC15XX"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_CR"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									<listOptionValue builtIn="false" value="__CORTEX_M3"/>
+									<listOptionValue builtIn="false" value="ARM_MATH_CM3"/>
+									<listOptionValue builtIn="false" value="__NEWLIB__"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.other.other.87298348" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions" valueType="string"/>
+								<option id="com.crt.advproject.cpp.lib.debug.option.optimization.level.719138413" name="Optimization Level" superClass="com.crt.advproject.cpp.lib.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1695578396" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/hal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtos}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtx/TARGET_CORTEX_M}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtx/TARGET_CORTEX_M/TARGET_M3}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtx/TARGET_CORTEX_M/TARGET_M3/TOOLCHAIN_GCC}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/fat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/fat/ChaN}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/sd}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX\TOOLCHAIN_GCC_CR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+								</option>
+								<option id="com.crt.advproject.cpp.lto.945362235" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.cpp.lto" value="false" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.667897306" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++11" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.lib.debug.option.debugging.level.31695069" name="Debug Level" superClass="com.crt.advproject.cpp.lib.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.optimization.flags.1820221703" name="Other optimization flags" superClass="gnu.cpp.compiler.option.optimization.flags" value="" valueType="string"/>
+								<inputType id="com.crt.advproject.compiler.cpp.input.1565722383" superClass="com.crt.advproject.compiler.cpp.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gcc.lib.debug.338443488" name="MCU C Compiler" superClass="com.crt.advproject.gcc.lib.debug">
+								<option id="com.crt.advproject.gcc.arch.1563144910" name="Architecture" superClass="com.crt.advproject.gcc.arch" value="com.crt.advproject.gcc.target.cm3" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.thumb.1331386990" name="Thumb mode" superClass="com.crt.advproject.gcc.thumb" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.gcc.hdrlib.1606083594" name="Library headers" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlib" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1688078520" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__CODE_RED"/>
+									<listOptionValue builtIn="false" value="CPP_USE_HEAP"/>
+									<listOptionValue builtIn="false" value="TARGET_LPC1549"/>
+									<listOptionValue builtIn="false" value="TARGET_M3"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+									<listOptionValue builtIn="false" value="TARGET_NXP"/>
+									<listOptionValue builtIn="false" value="TARGET_LPC15XX"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_CR"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									<listOptionValue builtIn="false" value="__CORTEX_M3"/>
+									<listOptionValue builtIn="false" value="ARM_MATH_CM3"/>
+									<listOptionValue builtIn="false" value="__NEWLIB__"/>
+								</option>
+								<option id="gnu.c.compiler.option.misc.other.1220521089" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections" valueType="string"/>
+								<option id="com.crt.advproject.gcc.lib.debug.option.optimization.level.752872993" name="Optimization Level" superClass="com.crt.advproject.gcc.lib.debug.option.optimization.level" value="gnu.c.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.61187662" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/hal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtos}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtx/TARGET_CORTEX_M}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtx/TARGET_CORTEX_M/TARGET_M3}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtx/TARGET_CORTEX_M/TARGET_M3/TOOLCHAIN_GCC}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/fat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/fat/ChaN}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/sd}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX\TOOLCHAIN_GCC_CR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+								</option>
+								<option id="com.crt.advproject.gcc.lto.1296906612" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.gcc.lto" value="false" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.optimization.flags.1486373316" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" value="" valueType="string"/>
+								<option id="com.crt.advproject.c.misc.dialect.805569899" name="Language standard" superClass="com.crt.advproject.c.misc.dialect" value="com.crt.advproject.misc.dialect.c11" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.specs.1705879883" name="Specs" superClass="com.crt.advproject.gcc.specs" value="com.crt.advproject.gcc.specs.newlib" valueType="enumerated"/>
+								<inputType id="com.crt.advproject.compiler.input.849826839" superClass="com.crt.advproject.compiler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gas.lib.debug.2090217171" name="MCU Assembler" superClass="com.crt.advproject.gas.lib.debug">
+								<option id="com.crt.advproject.gas.arch.1302086570" name="Architecture" superClass="com.crt.advproject.gas.arch" value="com.crt.advproject.gas.target.cm3" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.thumb.1877701396" name="Thumb mode" superClass="com.crt.advproject.gas.thumb" value="true" valueType="boolean"/>
+								<option id="gnu.both.asm.option.flags.crt.1529675048" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__NEWLIB__ -DDEBUG -D__CODE_RED" valueType="string"/>
+								<option id="com.crt.advproject.gas.hdrlib.1440181346" name="Library headers" superClass="com.crt.advproject.gas.hdrlib" value="com.crt.advproject.gas.hdrlib.newlib" valueType="enumerated"/>
+								<option id="gnu.both.asm.option.include.paths.493205974" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/hal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtos}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtx/TARGET_CORTEX_M}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtx/TARGET_CORTEX_M/TARGET_M3}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtx/TARGET_CORTEX_M/TARGET_M3/TOOLCHAIN_GCC}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/fat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/fat/ChaN}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/sd}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX\TOOLCHAIN_GCC_CR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+								</option>
+								<option id="com.crt.advproject.gas.specs.1920973362" name="Specs" superClass="com.crt.advproject.gas.specs" value="com.crt.advproject.gas.specs.newlib" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.68813651" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.crt.advproject.assembler.input.1628792996" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.ar.lib.debug.873374595" name="MCU Archiver" superClass="com.crt.advproject.ar.lib.debug"/>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="com.crt.advproject.config.lib.debug.1825597249.1756104248.327737127" name="/" resourcePath="libraries">
+						<toolChain id="com.crt.advproject.toolchain.lib.debug.48977245" name="Code Red MCU Tools" superClass="com.crt.advproject.toolchain.lib.debug" unusedChildren="">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.GNU_ELF" id="com.crt.advproject.platform.lib.debug" name="ARM-based MCU (Debug)" superClass="com.crt.advproject.platform.lib.debug"/>
+							<tool id="com.crt.advproject.cpp.lib.debug.744108696" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.lib.debug.223033296">
+								<option id="gnu.cpp.compiler.option.include.paths.1929178730" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/hal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtos}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtx/TARGET_CORTEX_M}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/fat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/fat/ChaN}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/sd}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX\TOOLCHAIN_GCC_CR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+								</option>
+								<inputType id="com.crt.advproject.compiler.cpp.input.480670521" superClass="com.crt.advproject.compiler.cpp.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gcc.lib.debug.1161080841" name="MCU C Compiler" superClass="com.crt.advproject.gcc.lib.debug.338443488">
+								<inputType id="com.crt.advproject.compiler.input.56678152" superClass="com.crt.advproject.compiler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gas.lib.debug.698231204" name="MCU Assembler" superClass="com.crt.advproject.gas.lib.debug.2090217171">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1715536413" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.crt.advproject.assembler.input.1657192488" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.ar.lib.debug.586092326" name="MCU Archiver" superClass="com.crt.advproject.ar.lib.debug.873374595"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="libraries/mbed/targets/cmsis/TARGET_Atmel|libraries/mbed/targets/cmsis/TARGET_ARM_SSG|libraries/mbed/targets/hal/TARGET_Atmel|libraries/mbed/targets/hal/TARGET_ARM_SSG|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC2460|libraries/mbed/targets/cmsis/TARGET_WIZNET|libraries/mbed/targets/cmsis/TARGET_Silicon_Labs|libraries/mbed/targets/cmsis/TARGET_Maxim|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC2460|libraries/mbed/targets/hal/TARGET_WIZNET|libraries/mbed/targets/hal/TARGET_Silicon_Labs|libraries/mbed/targets/hal/TARGET_Maxim|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX/TOOLCHAIN_GCC_ARM|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX/TOOLCHAIN_IAR|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX/TOOLCHAIN_ARM_MICRO|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC11XX_11CXX|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11XX_11CXX|LPC1549|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11XX_11CXX/TOOLCHAIN_IAR|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11XX_11CXX/TOOLCHAIN_GCC_CS|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11XX_11CXX/TOOLCHAIN_GCC_CR|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11XX_11CXX/TOOLCHAIN_GCC_ARM|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11XX_11CXX/TOOLCHAIN_ARM_STD|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11XX_11CXX/TOOLCHAIN_ARM_MICRO|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC82X|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC81X|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC43XX|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC408X|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC23XX|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC13XX|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11UXX|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11U6X|libraries/mbed/targets/cmsis/TOOLCHAIN_GCC|libraries/mbed/targets/cmsis/TOOLCHAIN_IAR|libraries/mbed/targets/cmsis/TARGET_STM|libraries/mbed/targets/cmsis/TARGET_RENESAS|libraries/mbed/targets/cmsis/TARGET_NORDIC|libraries/mbed/targets/cmsis/TARGET_Freescale|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC82X|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC81X|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC43XX|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC408X|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC23XX|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC13XX|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC11UXX|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC11U6X|libraries/mbed/targets/hal/TARGET_STM|libraries/mbed/targets/hal/TARGET_RENESAS|libraries/mbed/targets/hal/TARGET_NORDIC|libraries/mbed/targets/hal/TARGET_Freescale|Debug|libraries/dsp|libraries/doc|libraries/USBHost|libraries/USBDevice|libraries/tests|libraries/rpc|libraries/net|travis|workspace_tools|libraries/rtos/rtx/TARGET_ARM7/|libraries/rtos/rtx/TARGET_CORTEX_A/|libraries/rtos/rtx/TARGET_CORTEX_M/TARGET_M0/|libraries/rtos/rtx/TARGET_CORTEX_M/TARGET_M0P/|libraries/rtos/rtx/TARGET_CORTEX_M/TARGET_M4/|libraries/rtos/rtx/TARGET_CORTEX_M/TARGET_M3/TOOLCHAIN_ARM/|libraries/rtos/rtx/TARGET_CORTEX_M/TARGET_M3/TOOLCHAIN_IAR/" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.crt.advproject.config.lib.debug.1825597249.1756104248.1292861909">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.crt.advproject.config.lib.debug.1825597249.1756104248.1292861909" moduleId="org.eclipse.cdt.core.settings" name="LPC1549-noRTOS">
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/mbed"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/mbed/LPC1549-noRTOS"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="mbed" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="LPC1549 No RTOS" errorParsers="org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="com.crt.advproject.config.lib.debug.1825597249.1756104248.1292861909" name="LPC1549-noRTOS" parent="com.crt.advproject.config.lib.debug" postannouncebuildStep="Performing post-build steps" postbuildStep="arm-none-eabi-size &quot;lib${BuildArtifactFileName}&quot; ; # arm-none-eabi-objdump -h -S &quot;lib${BuildArtifactFileName}&quot; &gt;&quot;${BuildArtifactFileBaseName}.lss&quot;">
+					<folderInfo id="com.crt.advproject.config.lib.debug.1825597249.1756104248.1292861909." name="/" resourcePath="">
+						<toolChain id="com.crt.advproject.toolchain.lib.debug.624312336" name="Code Red MCU Tools" superClass="com.crt.advproject.toolchain.lib.debug">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.GNU_ELF" id="com.crt.advproject.platform.lib.debug.1892403953" name="ARM-based MCU (Debug)" superClass="com.crt.advproject.platform.lib.debug"/>
+							<builder buildPath="${workspace_loc:/mbed}/Debug" id="com.crt.advproject.builder.lib.debug.1942013073" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="com.crt.advproject.builder.lib.debug">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Release"/>
+								</outputEntries>
+							</builder>
+							<tool id="com.crt.advproject.cpp.lib.debug.1745375088" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.lib.debug">
+								<option id="com.crt.advproject.cpp.arch.1568705039" name="Architecture" superClass="com.crt.advproject.cpp.arch" value="com.crt.advproject.cpp.target.cm3" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.thumb.1253512539" name="Thumb mode" superClass="com.crt.advproject.cpp.thumb" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.cpp.hdrlib.513533486" name="Library headers" superClass="com.crt.advproject.cpp.hdrlib" value="com.crt.advproject.cpp.hdrlib.newlib" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1647097872" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__CODE_RED"/>
+									<listOptionValue builtIn="false" value="CPP_USE_HEAP"/>
+									<listOptionValue builtIn="false" value="TARGET_LPC1549"/>
+									<listOptionValue builtIn="false" value="TARGET_M3"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+									<listOptionValue builtIn="false" value="TARGET_NXP"/>
+									<listOptionValue builtIn="false" value="TARGET_LPC15XX"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_CR"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									<listOptionValue builtIn="false" value="__CORTEX_M3"/>
+									<listOptionValue builtIn="false" value="ARM_MATH_CM3"/>
+									<listOptionValue builtIn="false" value="__NEWLIB__"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.other.other.294305903" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions" valueType="string"/>
+								<option id="com.crt.advproject.cpp.lib.debug.option.optimization.level.17891321" name="Optimization Level" superClass="com.crt.advproject.cpp.lib.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.626036991" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/hal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX\TOOLCHAIN_GCC_CR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+								</option>
+								<option id="com.crt.advproject.cpp.lto.1416307019" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.cpp.lto" value="false" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.2122744265" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.c++11" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.lib.debug.option.debugging.level.1461303286" name="Debug Level" superClass="com.crt.advproject.cpp.lib.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.optimization.flags.1611914743" name="Other optimization flags" superClass="gnu.cpp.compiler.option.optimization.flags" value="" valueType="string"/>
+								<inputType id="com.crt.advproject.compiler.cpp.input.153807371" superClass="com.crt.advproject.compiler.cpp.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gcc.lib.debug.1340443734" name="MCU C Compiler" superClass="com.crt.advproject.gcc.lib.debug">
+								<option id="com.crt.advproject.gcc.arch.1286583500" name="Architecture" superClass="com.crt.advproject.gcc.arch" value="com.crt.advproject.gcc.target.cm3" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.thumb.1440765058" name="Thumb mode" superClass="com.crt.advproject.gcc.thumb" value="true" valueType="boolean"/>
+								<option id="com.crt.advproject.gcc.hdrlib.873255574" name="Library headers" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlib" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.916100876" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__CODE_RED"/>
+									<listOptionValue builtIn="false" value="CPP_USE_HEAP"/>
+									<listOptionValue builtIn="false" value="TARGET_LPC1549"/>
+									<listOptionValue builtIn="false" value="TARGET_M3"/>
+									<listOptionValue builtIn="false" value="TARGET_CORTEX_M"/>
+									<listOptionValue builtIn="false" value="TARGET_NXP"/>
+									<listOptionValue builtIn="false" value="TARGET_LPC15XX"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC_CR"/>
+									<listOptionValue builtIn="false" value="TOOLCHAIN_GCC"/>
+									<listOptionValue builtIn="false" value="__CORTEX_M3"/>
+									<listOptionValue builtIn="false" value="ARM_MATH_CM3"/>
+									<listOptionValue builtIn="false" value="__NEWLIB__"/>
+								</option>
+								<option id="gnu.c.compiler.option.misc.other.2018466659" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections" valueType="string"/>
+								<option id="com.crt.advproject.gcc.lib.debug.option.optimization.level.1809956347" name="Optimization Level" superClass="com.crt.advproject.gcc.lib.debug.option.optimization.level" value="gnu.c.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.514437485" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/hal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX\TOOLCHAIN_GCC_CR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+								</option>
+								<option id="com.crt.advproject.gcc.lto.1976178013" name="Enable Link-time optimization (-flto)" superClass="com.crt.advproject.gcc.lto" value="false" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.optimization.flags.1012233024" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" value="" valueType="string"/>
+								<option id="com.crt.advproject.c.misc.dialect.1489362560" name="Language standard" superClass="com.crt.advproject.c.misc.dialect" value="com.crt.advproject.misc.dialect.c11" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.specs.48242572" name="Specs" superClass="com.crt.advproject.gcc.specs" value="com.crt.advproject.gcc.specs.newlib" valueType="enumerated"/>
+								<inputType id="com.crt.advproject.compiler.input.1791890466" superClass="com.crt.advproject.compiler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gas.lib.debug.1690045553" name="MCU Assembler" superClass="com.crt.advproject.gas.lib.debug">
+								<option id="com.crt.advproject.gas.arch.229068267" name="Architecture" superClass="com.crt.advproject.gas.arch" value="com.crt.advproject.gas.target.cm3" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.thumb.326033987" name="Thumb mode" superClass="com.crt.advproject.gas.thumb" value="true" valueType="boolean"/>
+								<option id="gnu.both.asm.option.flags.crt.1249484023" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__NEWLIB__ -DDEBUG -D__CODE_RED" valueType="string"/>
+								<option id="com.crt.advproject.gas.hdrlib.1580313642" name="Library headers" superClass="com.crt.advproject.gas.hdrlib" value="com.crt.advproject.gas.hdrlib.newlib" valueType="enumerated"/>
+								<option id="gnu.both.asm.option.include.paths.1031982097" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/hal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX\TOOLCHAIN_GCC_CR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+								</option>
+								<option id="com.crt.advproject.gas.specs.1715004118" name="Specs" superClass="com.crt.advproject.gas.specs" value="com.crt.advproject.gas.specs.newlib" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1306500673" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.crt.advproject.assembler.input.118279457" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.ar.lib.debug.137972507" name="MCU Archiver" superClass="com.crt.advproject.ar.lib.debug"/>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="com.crt.advproject.config.lib.debug.1825597249.1756104248.1292861909.libraries" name="/" resourcePath="libraries">
+						<toolChain id="com.crt.advproject.toolchain.lib.debug.1692170115" name="Code Red MCU Tools" superClass="com.crt.advproject.toolchain.lib.debug" unusedChildren="">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.GNU_ELF" id="com.crt.advproject.platform.lib.debug.1144546364" name="ARM-based MCU (Debug)" superClass="com.crt.advproject.platform.lib.debug"/>
+							<tool id="com.crt.advproject.cpp.lib.debug.796160747" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.lib.debug.1745375088">
+								<option id="gnu.cpp.compiler.option.include.paths.1218650283" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/hal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/common}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtos}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/rtos/rtx/TARGET_CORTEX_M}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/fat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/fat/ChaN}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/fs/sd}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX\TOOLCHAIN_GCC_CR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mbed/libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC15XX}&quot;"/>
+								</option>
+								<inputType id="com.crt.advproject.compiler.cpp.input.1335276128" superClass="com.crt.advproject.compiler.cpp.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gcc.lib.debug.2038114060" name="MCU C Compiler" superClass="com.crt.advproject.gcc.lib.debug.1340443734">
+								<inputType id="com.crt.advproject.compiler.input.342139466" superClass="com.crt.advproject.compiler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gas.lib.debug.1315281340" name="MCU Assembler" superClass="com.crt.advproject.gas.lib.debug.1690045553">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1982367713" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.crt.advproject.assembler.input.1030200772" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.ar.lib.debug.1441369134" name="MCU Archiver" superClass="com.crt.advproject.ar.lib.debug.137972507"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="libraries/mbed/targets/cmsis/TARGET_Atmel|libraries/mbed/targets/cmsis/TARGET_ARM_SSG|libraries/mbed/targets/hal/TARGET_Atmel|libraries/mbed/targets/hal/TARGET_ARM_SSG|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC2460|libraries/mbed/targets/cmsis/TARGET_WIZNET|libraries/mbed/targets/cmsis/TARGET_Silicon_Labs|libraries/mbed/targets/cmsis/TARGET_Maxim|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC2460|libraries/mbed/targets/hal/TARGET_WIZNET|libraries/mbed/targets/hal/TARGET_Silicon_Labs|libraries/mbed/targets/hal/TARGET_Maxim|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX/TOOLCHAIN_GCC_ARM|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX/TOOLCHAIN_IAR|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC15XX/TOOLCHAIN_ARM_MICRO|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC11XX_11CXX|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11XX_11CXX|LPC1549|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11XX_11CXX/TOOLCHAIN_IAR|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11XX_11CXX/TOOLCHAIN_GCC_CS|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11XX_11CXX/TOOLCHAIN_GCC_CR|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11XX_11CXX/TOOLCHAIN_GCC_ARM|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11XX_11CXX/TOOLCHAIN_ARM_STD|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11XX_11CXX/TOOLCHAIN_ARM_MICRO|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC82X|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC81X|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC43XX|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC408X|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC23XX|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC176X|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC13XX|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11UXX|libraries/mbed/targets/cmsis/TARGET_NXP/TARGET_LPC11U6X|libraries/mbed/targets/cmsis/TOOLCHAIN_GCC|libraries/mbed/targets/cmsis/TOOLCHAIN_IAR|libraries/mbed/targets/cmsis/TARGET_STM|libraries/mbed/targets/cmsis/TARGET_RENESAS|libraries/mbed/targets/cmsis/TARGET_NORDIC|libraries/mbed/targets/cmsis/TARGET_Freescale|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC82X|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC81X|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC43XX|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC408X|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC23XX|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC176X|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC13XX|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC11UXX|libraries/mbed/targets/hal/TARGET_NXP/TARGET_LPC11U6X|libraries/mbed/targets/hal/TARGET_STM|libraries/mbed/targets/hal/TARGET_RENESAS|libraries/mbed/targets/hal/TARGET_NORDIC|libraries/mbed/targets/hal/TARGET_Freescale|Debug|libraries/dsp|libraries/doc|libraries/rtos/|libraries/USBHost|libraries/USBDevice|libraries/tests|libraries/rpc|libraries/net|travis|workspace_tools" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="mbed.com.crt.advproject.projecttype.lib.1507720232" name="Static Library" projectType="com.crt.advproject.projecttype.lib"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="com.crt.config">
+		<projectStorage>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;
+&lt;TargetConfig&gt;&#13;
+&lt;Properties property_2="LPC15xx_256K.cfx" property_3="NXP" property_4="LPC1549" property_count="5" version="70200"/&gt;&#13;
+&lt;infoList vendor="NXP"&gt;&lt;info chip="LPC1549" connectscript="LPC15RunBootRomConnect.scp" flash_driver="LPC15xx_256K.cfx" match_id="0x0" name="LPC1549" resetscript="LPC15RunBootRomReset.scp" stub="crt_emu_cm3_gen"&gt;&lt;chip&gt;&lt;name&gt;LPC1549&lt;/name&gt;&#13;
+&lt;family&gt;LPC15xx&lt;/family&gt;&#13;
+&lt;vendor&gt;NXP (formerly Philips)&lt;/vendor&gt;&#13;
+&lt;reset board="None" core="Real" sys="Real"/&gt;&#13;
+&lt;clock changeable="TRUE" freq="12MHz" is_accurate="TRUE"/&gt;&#13;
+&lt;memory can_program="true" id="Flash" is_ro="true" type="Flash"/&gt;&#13;
+&lt;memory id="RAM" type="RAM"/&gt;&#13;
+&lt;memory id="Periph" is_volatile="true" type="Peripheral"/&gt;&#13;
+&lt;memoryInstance derived_from="Flash" id="MFlash256" location="0x0" size="0x40000"/&gt;&#13;
+&lt;memoryInstance derived_from="RAM" id="Ram0_16" location="0x2000000" size="0x4000"/&gt;&#13;
+&lt;memoryInstance derived_from="RAM" id="Ram1_16" location="0x2004000" size="0x4000"/&gt;&#13;
+&lt;memoryInstance derived_from="RAM" id="Ram2_4" location="0x2008000" size="0x1000"/&gt;&#13;
+&lt;peripheralInstance derived_from="V7M_MPU" id="MPU" location="0xe000ed90"/&gt;&#13;
+&lt;peripheralInstance derived_from="V7M_NVIC" id="NVIC" location="0xe000e000"/&gt;&#13;
+&lt;peripheralInstance derived_from="V7M_DCR" id="DCR" location="0xe000edf0"/&gt;&#13;
+&lt;peripheralInstance derived_from="V7M_ITM" id="ITM" location="0xe0000000"/&gt;&#13;
+&lt;peripheralInstance derived_from="GPIO-PORT" id="GPIO-PORT" location="0x1c000000"/&gt;&#13;
+&lt;peripheralInstance derived_from="DMA" id="DMA" location="0x1c004000"/&gt;&#13;
+&lt;peripheralInstance derived_from="USB" id="USB" location="0x1c00c000"/&gt;&#13;
+&lt;peripheralInstance derived_from="CRC" id="CRC" location="0x1c010000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SCT0" id="SCT0" location="0x1c018000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SCT1" id="SCT1" location="0x1c01c000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SCT2" id="SCT2" location="0x1c020000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SCT3" id="SCT3" location="0x1c024000"/&gt;&#13;
+&lt;peripheralInstance derived_from="ADC0" id="ADC0" location="0x40000000"/&gt;&#13;
+&lt;peripheralInstance derived_from="DAC" id="DAC" location="0x40004000"/&gt;&#13;
+&lt;peripheralInstance derived_from="ACMP" id="ACMP" location="0x40008000"/&gt;&#13;
+&lt;peripheralInstance derived_from="INMUX" id="INMUX" location="0x40014000"/&gt;&#13;
+&lt;peripheralInstance derived_from="RTC" id="RTC" location="0x40028000"/&gt;&#13;
+&lt;peripheralInstance derived_from="WWDT" id="WWDT" location="0x4002c000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SWM" id="SWM" location="0x40038000"/&gt;&#13;
+&lt;peripheralInstance derived_from="PMU" id="PMU" location="0x4003c000"/&gt;&#13;
+&lt;peripheralInstance derived_from="USART0" id="USART0" location="0x40040000"/&gt;&#13;
+&lt;peripheralInstance derived_from="USART1" id="USART1" location="0x40044000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SPI0" id="SPI0" location="0x40048000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SPI1" id="SPI1" location="0x4004c000"/&gt;&#13;
+&lt;peripheralInstance derived_from="I2C0" id="I2C0" location="0x40050000"/&gt;&#13;
+&lt;peripheralInstance derived_from="QEI" id="QEI" location="0x40058000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SYSCON" id="SYSCON" location="0x40074000"/&gt;&#13;
+&lt;peripheralInstance derived_from="ADC1" id="ADC1" location="0x40080000"/&gt;&#13;
+&lt;peripheralInstance derived_from="MRT" id="MRT" location="0x400a0000"/&gt;&#13;
+&lt;peripheralInstance derived_from="PINT" id="PINT" location="0x400a4000"/&gt;&#13;
+&lt;peripheralInstance derived_from="GINT0" id="GINT0" location="0x400a8000"/&gt;&#13;
+&lt;peripheralInstance derived_from="GINT1" id="GINT1" location="0x400ac000"/&gt;&#13;
+&lt;peripheralInstance derived_from="RIT" id="RIT" location="0x400b4000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SCTIPU" id="SCTIPU" location="0x400b8000"/&gt;&#13;
+&lt;peripheralInstance derived_from="FLASHCTRL" id="FLASHCTRL" location="0x400bc000"/&gt;&#13;
+&lt;peripheralInstance derived_from="USART2" id="USART2" location="0x400c0000"/&gt;&#13;
+&lt;peripheralInstance derived_from="C-CAN0" id="C-CAN0" location="0x400f0000"/&gt;&#13;
+&lt;peripheralInstance derived_from="IOCON" id="IOCON" location="0x400f8000"/&gt;&#13;
+&lt;/chip&gt;&#13;
+&lt;processor&gt;&lt;name gcc_name="cortex-m3"&gt;Cortex-M3&lt;/name&gt;&#13;
+&lt;family&gt;Cortex-M&lt;/family&gt;&#13;
+&lt;/processor&gt;&#13;
+&lt;link href="LPC15xx_peripheral.xme" show="embed" type="simple"/&gt;&#13;
+&lt;/info&gt;&#13;
+&lt;/infoList&gt;&#13;
+&lt;/TargetConfig&gt;</projectStorage>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/mbed"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/mbed"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="com.crt.advproject"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.release.97057321;com.crt.advproject.config.lib.release.97057321.;com.crt.advproject.gas.lib.release.75548711;com.crt.advproject.assembler.input.1475238554">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.debug.1825597249.1756104248.1292861909;com.crt.advproject.config.lib.debug.1825597249.1756104248.1292861909.;com.crt.advproject.gcc.lib.debug.1340443734;com.crt.advproject.compiler.input.1791890466">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.debug.1825597249.1756104248.1292861909;com.crt.advproject.config.lib.debug.1825597249.1756104248.1292861909.;com.crt.advproject.cpp.lib.debug.1745375088;com.crt.advproject.compiler.cpp.input.153807371">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.debug.1825597249.1756104248;com.crt.advproject.config.lib.debug.1825597249.1756104248.;com.crt.advproject.cpp.lib.debug.223033296;com.crt.advproject.compiler.cpp.input.1565722383">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.debug.1825597249;com.crt.advproject.config.lib.debug.1825597249.;com.crt.advproject.cpp.lib.debug.1143292825;com.crt.advproject.compiler.cpp.input.1438277909">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.debug.1825597249.1756104248;com.crt.advproject.config.lib.debug.1825597249.1756104248.;com.crt.advproject.gcc.lib.debug.338443488;com.crt.advproject.compiler.input.849826839">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.release.97057321;com.crt.advproject.config.lib.release.97057321.;com.crt.advproject.cpp.lib.release.1621564568;com.crt.advproject.compiler.cpp.input.1666370227">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.debug.1825597249;com.crt.advproject.config.lib.debug.1825597249.;com.crt.advproject.gas.lib.debug.201637101;com.crt.advproject.assembler.input.80403252">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.debug.1825597249;com.crt.advproject.config.lib.debug.1825597249.;com.crt.advproject.gcc.lib.debug.1126841005;com.crt.advproject.compiler.input.2145906187">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.debug.1825597249.1756104248;com.crt.advproject.config.lib.debug.1825597249.1756104248.;com.crt.advproject.gas.lib.debug.2090217171;com.crt.advproject.assembler.input.1628792996">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.release.97057321;com.crt.advproject.config.lib.release.97057321.;com.crt.advproject.gcc.lib.release.135240214;com.crt.advproject.compiler.input.624139689">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.lib.debug.1825597249.1756104248.1292861909;com.crt.advproject.config.lib.debug.1825597249.1756104248.1292861909.;com.crt.advproject.gas.lib.debug.1690045553;com.crt.advproject.assembler.input.118279457">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.crt.advproject.GCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>
