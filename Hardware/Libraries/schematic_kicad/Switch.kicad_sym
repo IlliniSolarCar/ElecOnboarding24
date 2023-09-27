@@ -3111,7 +3111,7 @@
     (property "Datasheet" "~" (id 3) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "ki_keywords" "temerature switch dual double-pole single-throw OFF-ON" (id 4) (at 0 0 0)
+    (property "ki_keywords" "temperature switch dual double-pole single-throw OFF-ON" (id 4) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "ki_description" "Double Pole Single Throw (DPST) Switch, temperature dependent" (id 5) (at 0 0 0)
