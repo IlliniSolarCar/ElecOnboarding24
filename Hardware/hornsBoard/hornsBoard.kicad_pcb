@@ -6,11 +6,11 @@
 
   (paper "USLetter")
   (title_block
-    (title "Template")
-    (date "2022-08-16")
-    (rev "0.0")
+    (title "Horn Control Board")
+    (date "2023-09-27")
+    (rev "1.0")
     (company "Illini Solar Car")
-    (comment 1 "Designed By: Your Name")
+    (comment 1 "Designed By: Yubo Wu")
   )
 
   (layers
