@@ -109,7 +109,8 @@ int main() {
         	}
         }
 
-
+        uint32_t task_rate = TASK_1_RATE_US;
+        task_rate *= potentiometer.read_u16();
 	}
 
 	shutdown_method();

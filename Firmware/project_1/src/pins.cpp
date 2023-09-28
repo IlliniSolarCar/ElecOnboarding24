@@ -12,7 +12,7 @@
  * PIN OBJECT INSTANTIATIONS
  */
 
-
+AnalogIn potentiometer(P_LED5);
 
 /*
  * COMMON PIN OBJECT INSTANTIATIONS

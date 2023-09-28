@@ -47,7 +47,7 @@ extern DigitalOut led5;
  */
 
 
-
+extern AnalogIn potentiometer;
 
 
 #endif // __MBED1549_SKELETON_PINS_H__
