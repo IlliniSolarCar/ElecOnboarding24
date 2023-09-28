@@ -96,6 +96,7 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
+
         //task 1
 //        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
 //        	int a = led5.read();
@@ -111,7 +112,6 @@ int main() {
         pRate = pot1.read();
         if(timing.tickThreshold(last_task_1_time, pRate)) {
         	led5.write(!led5.read());
-        }
 
 
 	}

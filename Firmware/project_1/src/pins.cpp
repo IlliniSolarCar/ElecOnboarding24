@@ -12,6 +12,7 @@
  * PIN OBJECT INSTANTIATIONS
  */
 
+
 AnalogIn pot1(P_POT1);
 
 /*

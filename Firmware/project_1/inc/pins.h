@@ -45,7 +45,9 @@ extern DigitalOut led5;
  * BOARD SPECIFIC PINS
  */
 
+
 #define P_POT1 P0_8
+
 
 
 /*
