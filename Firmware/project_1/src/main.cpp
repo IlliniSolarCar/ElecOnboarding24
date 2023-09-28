@@ -10,7 +10,7 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
-
+#include "pins.h"
 
 /*
  * This is an example function. It blinks the heartbeat LED and sends
@@ -41,7 +41,7 @@ void setup() {
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
-	common.setupLEDs(&led1, &led2, &led3, &led4);
+	common.setupLEDs(&led1, &led2, &led3, &led4, &led5);
 
 	//Set Callbacks:
 	//These are side tasks (up to 8) that are run independently of the main
@@ -52,7 +52,8 @@ void setup() {
 	bool wdt_reset;
 	//start the timing and check for wdt caused reset
 	common.startTimingCommon(&timing, &wdt_reset);
-
+    //if LED is on or not
+	boolean onn = false;
 	//if watchdog caused reset do something (probably log on CAN)
 	if(wdt_reset){
 
@@ -87,6 +88,7 @@ int main() {
         uint32_t now = common.loopTime(&timing, &overflow);
 
         //clear CAN Buffer
+
         while(!common.readCANMessage(msg)) {
         	//you should do something with the relevant CAN messages here
         	//toggle the CAN receive LED for only the messages you need to
@@ -95,9 +97,20 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
+
+
         //task 1
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	if(onn){
+        		digitalwrite(led5,off);
+        		onn = false;
+        	}
+        	else{
+        		digitalwrite(led5,on);
+        		onn=true;
+
+        	}
         }
 
 
