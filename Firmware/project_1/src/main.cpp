@@ -10,7 +10,6 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
-#include "pins.h"
 
 
 /*
@@ -82,7 +81,7 @@ int main() {
 	bool shutdown = false;
 	// Main functionality
 	while (!shutdown) {
-
+		float voltage = potentiometer;
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
         bool overflow;
         uint32_t now = common.loopTime(&timing, &overflow);
@@ -95,17 +94,14 @@ int main() {
         	//total messages. Do nothing for irrelevant messages
         	common.toggleReceiveCANLED();
         }
-
         //task 1
-        if(timing.tickThreshold(last_task_1_time, BLINK_RATE)){
+        if(timing.tickThreshold(last_task_1_time, BLINK_RATE/((voltage + 0.01) * 100))) {
         	//PROJECT 1 - add code here to actually make the LED blink
         	if (led.read() == 0)
         		led.write(1);
         	else
         		led.write(0);
         }
-
-
 	}
 
 	shutdown_method();
