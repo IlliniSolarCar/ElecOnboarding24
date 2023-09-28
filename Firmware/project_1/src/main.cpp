@@ -4,7 +4,7 @@
  */
 
 #include <mbed.h>
-// PROJECT 1 - Include something here!
+#include "setup.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -96,8 +96,13 @@ int main() {
         }
 
         //task 1
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US) == 1){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	led4.write(1);
+        	led4.read();
+        }
+        else{
+        	led4.write(0);
         }
 
 
