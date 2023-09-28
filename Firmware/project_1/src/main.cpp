@@ -101,7 +101,7 @@ int main() {
         //task 1
         float potentiometer_voltage = potentiometer.read();
 
-        if(timing.tickThreshold(last_task_1_time, (TASK_1_RATE_US * potentiometer_voltage) / 9) ){
+        if(timing.tickThreshold(last_task_1_time, (TASK_1_RATE_US * potentiometer_voltage))){
         	//PROJECT 1 - add code here to actually make the LED blink
         	if (led5.read()==0){
         		led5.write(1);
