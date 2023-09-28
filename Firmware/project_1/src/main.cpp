@@ -5,7 +5,6 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
-#include "DigitalOut.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -77,6 +76,7 @@ int main() {
 	// Configure all of our peripherals and globals
 	setup();
 	uint32_t last_task_1_time = timing.onTick(NULL);
+	uint32_t pRate = -1;
 
 	CANMessage msg;
 	bool shutdown = false;
@@ -97,14 +97,20 @@ int main() {
         }
 
         //task 1
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	int a = led5.read();
-        	if (a == 0) {
-        		led5.write(1);
-        	} else {
-        		led5.write(0);
-        	}
+//        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+//        	int a = led5.read();
+//        	if (a == 0) {
+//        		led5.write(1);
+//        	} else {
+//        		led5.write(0);
+//        	}
+//
+//        }
 
+        //Potentiometer Blink Rate - Rewrite above code
+        pRate = pot1.read();
+        if(timing.tickThreshold(last_task_1_time, pRate)) {
+        	led5.write(!led5.read());
         }
 
 
