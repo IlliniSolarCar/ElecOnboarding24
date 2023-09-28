@@ -95,14 +95,16 @@ int main() {
         	common.toggleReceiveCANLED();
         }
         //task 1
-        if(timing.tickThreshold(last_task_1_time, BLINK_RATE/((voltage + 0.01) * 100))) {
+        if(timing.tickThreshold(last_task_1_time, BLINK_RATE)) {
         	//PROJECT 1 - add code here to actually make the LED blink
         	if (led.read() == 0)
         		led.write(1);
         	else
         		led.write(0);
         }
+
 	}
+
 
 	shutdown_method();
 }

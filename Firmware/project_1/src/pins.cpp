@@ -12,6 +12,9 @@
  * PIN OBJECT INSTANTIATIONS
  */
 
+
+// PROJECT 2 - You can instantiate your AnalogIn object here
+
 AnalogIn potentiometer(P_POT);
 
 
@@ -25,4 +28,6 @@ DigitalOut led3(P_LED3);
 DigitalOut led4(P_LED4);
 // PROJECT 1 - You can instantiate your DigitalOut object here
 DigitalOut led(P_LED);
+
+
 
