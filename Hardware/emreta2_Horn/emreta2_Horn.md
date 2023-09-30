@@ -52,8 +52,9 @@
 	- Requires one 2A fuse
 
 ## Test Points
-- One test point for each Horn out, to test if voltage is supplied
-- Three test points, one for each leg of the MOSFET
+- HORN_CONNECTION test point for voltage at the wire connecting horns in series.
+- MOSFET HORN_IN test pad
+- MOSFET HORN_CONTROL test pad
 
 ## LED Indicators
 - List any functions that should have an LED to indicate they are doing something. Include the 4 default debug LEDs for ISC boards
