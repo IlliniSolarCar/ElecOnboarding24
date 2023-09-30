@@ -30,6 +30,7 @@
 /*
  * COMMON PIN OBJECT DECLARATIONS
  */
+#define P_POT P0_1
 
 extern DigitalOut led1;
 extern DigitalOut led2;
@@ -40,7 +41,7 @@ extern DigitalOut led;
 /*
  * BOARD SPECIFIC PINS
  */
-
+extern AnalogIn pot;
 
 /*
  * BOARD SPECIFIC PIN OBJECT DECLARATIONS
