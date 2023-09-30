@@ -97,7 +97,7 @@ int main() {
         }
 
         //task 1
-        if(timing.tickThreshold(last_task_1_time, BLINK_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, BLINK_RATE_US * pot1.read())){
         	//PROJECT 1 - add code here to actually make the LED blink
         	int currentOutput = pin5.read();
         	pin5.write(!currentOutput);
