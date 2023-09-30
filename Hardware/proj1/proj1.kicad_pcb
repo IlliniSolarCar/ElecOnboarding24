@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 (kicad_pcb (version 20221018) (generator pcbnew)
+=======
+(kicad_pcb (version 20211014) (generator pcbnew)
+>>>>>>> Stashed changes
 
   (general
     (thickness 1.6)
@@ -6,11 +10,19 @@
 
   (paper "USLetter")
   (title_block
+<<<<<<< Updated upstream
     (title "proj1")
     (date "2022-08-16")
     (rev "1.0")
     (company "Illini Solar Car")
     (comment 1 "Designed By: Dylan")
+=======
+    (title "Template")
+    (date "2022-08-16")
+    (rev "0.0")
+    (company "Illini Solar Car")
+    (comment 1 "Designed By: Your Name")
+>>>>>>> Stashed changes
   )
 
   (layers
@@ -49,15 +61,24 @@
     (pad_to_mask_clearance 0)
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
+<<<<<<< Updated upstream
       (plot_on_all_layers_selection 0x0000000_00000000)
+=======
+>>>>>>> Stashed changes
       (disableapertmacros false)
       (usegerberextensions false)
       (usegerberattributes true)
       (usegerberadvancedattributes true)
       (creategerberjobfile true)
+<<<<<<< Updated upstream
       (dashed_line_dash_ratio 12.000000)
       (dashed_line_gap_ratio 3.000000)
       (svgprecision 6)
+=======
+      (svguseinch false)
+      (svgprecision 6)
+      (excludeedgelayer true)
+>>>>>>> Stashed changes
       (plotframeref false)
       (viasonmask false)
       (mode 1)
@@ -84,6 +105,7 @@
   )
 
   (net 0 "")
+<<<<<<< Updated upstream
   (net 1 "GND")
   (net 2 "Net-(D1-A)")
   (net 3 "+3V3")
@@ -2058,4 +2080,7 @@
       )
     )
   )
+=======
+
+>>>>>>> Stashed changes
 )

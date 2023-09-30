@@ -1,10 +1,15 @@
+<<<<<<< Updated upstream
 (kicad_sch (version 20230121) (generator eeschema)
+=======
+(kicad_sch (version 20211123) (generator eeschema)
+>>>>>>> Stashed changes
 
   (uuid 1e1b062d-fad0-427c-a622-c5b8a80b5268)
 
   (paper "USLetter")
 
   (title_block
+<<<<<<< Updated upstream
     (title "proj1")
     (date "2023-09-06")
     (rev "1.0")
@@ -657,6 +662,18 @@
       )
     )
   )
+=======
+    (title "Template")
+    (date "2022-08-16")
+    (rev "0.0")
+    (company "Illini Solar Car")
+    (comment 1 "Designed By: Your Name")
+  )
+
+  (lib_symbols
+  )
+
+>>>>>>> Stashed changes
 
   (sheet_instances
     (path "/" (page "1"))

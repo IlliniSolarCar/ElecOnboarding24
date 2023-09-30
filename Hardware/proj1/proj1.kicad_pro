@@ -57,26 +57,39 @@
       "rule_severities": {
         "annular_width": "error",
         "clearance": "error",
+<<<<<<< Updated upstream
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
+=======
+        "copper_edge_clearance": "error",
+>>>>>>> Stashed changes
         "courtyards_overlap": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
+<<<<<<< Updated upstream
         "footprint": "error",
+=======
+>>>>>>> Stashed changes
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
+<<<<<<< Updated upstream
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
         "lib_footprint_mismatch": "warning",
+=======
+        "item_on_disabled_layer": "error",
+        "items_not_allowed": "error",
+        "length_out_of_range": "error",
+>>>>>>> Stashed changes
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
@@ -86,6 +99,7 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
+<<<<<<< Updated upstream
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
@@ -94,6 +108,11 @@
         "starved_thermal": "error",
         "text_height": "warning",
         "text_thickness": "warning",
+=======
+        "silk_over_copper": "warning",
+        "silk_overlap": "warning",
+        "skew_out_of_range": "error",
+>>>>>>> Stashed changes
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
@@ -102,6 +121,10 @@
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
+<<<<<<< Updated upstream
+=======
+        "zone_has_empty_net": "error",
+>>>>>>> Stashed changes
         "zones_intersect": "error"
       },
       "rules": {
@@ -109,22 +132,30 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.0,
+<<<<<<< Updated upstream
         "min_connection": 0.0,
+=======
+>>>>>>> Stashed changes
         "min_copper_edge_clearance": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
+<<<<<<< Updated upstream
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
+=======
+        "min_silk_clearance": 0.0,
+>>>>>>> Stashed changes
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.19999999999999998,
         "min_via_annular_width": 0.049999999999999996,
         "min_via_diameter": 0.39999999999999997,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
+<<<<<<< Updated upstream
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -168,6 +199,10 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
+=======
+        "use_height_for_length_calcs": true
+      },
+>>>>>>> Stashed changes
       "track_widths": [],
       "via_dimensions": [],
       "zones_allow_external_fillets": false,
