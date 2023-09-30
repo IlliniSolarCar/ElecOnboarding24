@@ -83,7 +83,7 @@ int main() {
 	bool shutdown = false;
 	// Main functionality
 	while (!shutdown) {
-
+		float volt = potentiometer;
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
         bool overflow;
         uint32_t now = common.loopTime(&timing, &overflow);
@@ -98,8 +98,9 @@ int main() {
         }
 
         //task 1
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        //if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US/((volt + .01) * 100))){
         	if(led5.read() == 0){
         		led5.write(1);
         	} else {

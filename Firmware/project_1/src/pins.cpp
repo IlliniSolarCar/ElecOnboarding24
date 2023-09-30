@@ -12,7 +12,7 @@
  * PIN OBJECT INSTANTIATIONS
  */
 
-
+AnalogIn potentiometer(P_POT);
 
 /*
  * COMMON PIN OBJECT INSTANTIATIONS
