@@ -10,6 +10,7 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
+#include "pins.h"
 
 
 /*
@@ -96,7 +97,9 @@ int main() {
         }
 
         //task 1
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        float potRate = pot0.read();
+
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US*potRate)){
         	//PROJECT 1 - add code here to actually make the LED blink
         	//reads the current value of the LED and changes it to the opposite
         	if(led0.read() == 0){
@@ -104,8 +107,9 @@ int main() {
         	} else{
         		led0.write(0);
         	}
-        }
-
+        }        
+        //PROJECT 2 - use the potentiometer to change the blink rate
+        
 
 	}
 
