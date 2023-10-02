@@ -1,0 +1,22 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 1e1b062d-fad0-427c-a622-c5b8a80b5268)
+
+  (paper "USLetter")
+
+  (title_block
+    (title "Horns")
+    (date "2023-10-01")
+    (rev "0.1")
+    (company "Illini Solar Car")
+    (comment 1 "Designed By: Jiseob")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
