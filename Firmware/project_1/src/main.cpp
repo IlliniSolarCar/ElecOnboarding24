@@ -10,6 +10,7 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
+#include "pins.h"
 
 
 /*
@@ -96,8 +97,11 @@ int main() {
         }
 
         //task 1
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE_US) == 1){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	blink = !blink;	//toggling the LEDs state
+
+
         }
 
 
