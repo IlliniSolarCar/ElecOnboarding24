@@ -96,10 +96,15 @@ int main() {
         }
 
         //task 1
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US * pot1.read())){
         	//PROJECT 1 - add code here to actually make the LED blink]
 			led.write(!led.read());
         }
+
+
+
+
 
 
 
