@@ -349,7 +349,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Template_v0.0.kicad_pro",
+    "filename": "Project_1.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -505,7 +505,7 @@
   "sheets": [
     [
       "1e1b062d-fad0-427c-a622-c5b8a80b5268",
-      ""
+      "Root"
     ]
   ],
   "text_variables": {}
