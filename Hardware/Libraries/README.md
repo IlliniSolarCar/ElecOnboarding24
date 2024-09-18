@@ -4,6 +4,8 @@ Illini Solar Car's shared libraries for hardware -- KiCAD libraries and footprin
 ## Repository Structure
 This is meant to be [submoduled](https://git-scm.com/book/en/v2/Git-Tools-Submodules) into a higher-level project.
 
+CHECK THIS SHIT OUT!
+
 - [layout.pretty] - Footprints go here.
 - [schematic] - Schematic elements go here.
 - [packages3d] - 3D models of parts go here.
