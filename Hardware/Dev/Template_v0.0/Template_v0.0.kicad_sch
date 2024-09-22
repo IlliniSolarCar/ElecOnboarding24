@@ -5,11 +5,11 @@
 	(uuid "1e1b062d-fad0-427c-a622-c5b8a80b5268")
 	(paper "USLetter")
 	(title_block
-		(title "Template")
+		(title "Proj 1")
 		(date "2022-08-16")
 		(rev "0.0")
 		(company "Illini Solar Car")
-		(comment 1 "Designed By: Your Name")
+		(comment 1 "Designed By: Enrique Garcia - eg20")
 	)
 	(lib_symbols)
 	(sheet_instances
