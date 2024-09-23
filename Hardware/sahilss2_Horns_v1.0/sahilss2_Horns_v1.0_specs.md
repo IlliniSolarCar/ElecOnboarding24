@@ -23,12 +23,7 @@
   - D->HORN_IN
   - G->HORN_CTL
 - Rectifier Diode (ES2DA-13-F)
-  - Anode->HORN_IN
-  - Cathode->24V
-
-## Buttons/Switches
-- External Horn Button
-  - Connects to HORN_CTL
+  - HORN_IN<-24V
 
 ## Power System
 - 24V Rail
@@ -44,11 +39,3 @@
 - HORN_CTL
 - 24V
 - GND
-
-## Schematic Setup Instructions
-- Once the Spec Sheet is completed, push it to your branch and move onto the Schematic.
-
-Remember to add:
-- Connectors detailed configurations and orientations to prevent improper connections.
-- Net labels with meaningful names for easier identification and troubleshooting.
-- Proper component placement in the schematic to ensure optimal functionality and ease of debugging.
