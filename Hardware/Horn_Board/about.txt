@@ -1,0 +1,48 @@
+(Challenge) Project 2: Horns Board
+
+Note, this is a long project. Do not try and finish this in one night, pace yourself and take your time.
+
+So you've finished both easy projects and decided to start the harder hardware project! This hardware project #2 is a more in-depth look into how we do actual schematic and board design, using one of our old boards we designed for use in our solar cars!
+
+We will be having you design a board that we really use on the car. This is the Horn Breakout board which we use to power the electronic horn. It will get +24V from the Low Voltage Bus Board and a digital signal from the Dash Board to sound a very loud horn. You will be going through the whole process, from Specs to Schematic to Layout. Feel free to work as a group and do not be discouraged if this is difficult!
+
+Since you already know how to use KiCad, there's no setup needed aside from making a new folder in the Hardware directory of your local repo and naming it something like "jdoe_Horns_v1.0."
+
+Here are the instructions for the second hardware project!
+
+    Copy/paste the template files into your second project folder and rename everything starting with "Template..." to your second project name again.
+
+Using a text editor, edit the specs file to be updated for everything needed for the horns board
+
+    We will have 2 of these horns ​ in series, so it would be nice to add the link to the specs
+    We will have 2  main High-Level Requirements
+        A Horn On/Off which will be a digital signal for whether or not it should be on
+        A Horn Output which will output 24V at 150mA
+    As far as communication protocols, we use a digital GPIO to switch the horn
+    We will have 4 connectors for the board
+        Power in
+        Horn Control
+        And then 2 Horn outs linked in series
+    There are will be no ICs
+    You can choose to add a Button that would be used to debug the board
+    The power system is 24V from the LV Bus
+    You should add test points to any net you would like to add
+    You can add LED Indicators to any net you would like
+
+Once you write the Spec Sheet, push it to your branch and move onto the Schematic
+
+    The first thing to set up for the schematic is the connectors
+        You will need a 1x3pin connector for power, we use 3 pin connectors for Power so that they do not get plugged in backwards. We put +24V in the middle and two GND pins on the outside
+        You will want a 1x2pin connector for Horn Control. We want 1 pin to be grounded and another to be connected to a "Net Label" (Click L to add one). Give it a meaningful name
+        You will want two 1x2pin connectors for Horn Out. You need to link them together in series, from HORN_IN to 24V.
+    You will next want to add a way of switching from "on to off." To perform a switch at this level, we use a MOSFET. We recommend using the IRFR010PBF (this is the MPN), but you can go to octopart.com to find replacements.
+        Source should be tied GND, Drain should be tied to the HORN_IN of the series connectors, and Gate should be tied to the horn control net label you created earlier.
+        You will want a 1k ohm resistor and a .1uF capacitor between HORN_CTL and GND before it reaches the MOSFET to help with noise reduction.
+        Between the MOSFET and the connectors, add a 2A fuse.
+    The next thing to add are capacitors between +24V and GND
+        We recommend adding 3 .1uF capacitors, 2 1uF capacitors, 2 10uF capacitors, and 1 100uF polarized radial capacitor in parallel
+    Finally, you will want to add a rectifier diode from HORN_IN to +24V to ensure we do not short power to ground. You can use ES2DA-13-F or find an alternative from octopart.com.
+
+After you have finished your schematic, make sure to run ERC. Once you pass, push your schematic to GitHub and move onto the layout. Once all parts are added to the layout, and you pass DRC, push to your branch again. Once pushed, add a blurb to your pull request saying what you have done.
+
+The final step in the process is to complete an Instant DFM Report . The first thing you will need to do is get the Gerber files for your PCB. In your layout editor, go File > Fabrication Outputs > Gerbers. Follow this tutorial for instructions on how to extract the files. Once you have gotten the files, compress them into a zip file, push the zip file (not each individual Gerber) to GitHub, and use Bay Area Circuits' Instant DFM to check if your board matches their manufacturing capabilities. Once all of them are green, add a link to the pdf file to your pull request, and you are done with your project! 

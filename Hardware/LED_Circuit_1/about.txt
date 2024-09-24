@@ -1,0 +1,48 @@
+Project 1: LED Circuit
+
+This project is relatively simple: in order to get used to the KiCad application and a few of its typical shortcuts, you'll build an LED circuit in the schematic editor before laying it out. Ryder has made a few videos on youtube to walk through the process, but here are the steps written out:
+
+    Make sure you have KiCad v8 downloaded. You'll have a hard time opening any files if you don't.
+    In your File Explorer, you'll want to navigate to the folder you copied the Onboarding Repo into (make sure that you copied the ElecOnboarding23 Repo when setting up Git rather than the B-fw or PCB repos).
+    In the Hardware folder, you should see a Dev folder. Navigate into that and then go into the Template_v0.0 folder. There is another folder named Lights_Onboarding_v0_1 that has a developed project inside that you can take a look at, but for right now you won't be needing it.
+    Select everything in the folder and copy/paste to a new folder in the Hardware directory (two folders back); you can name the folder something like "prog1" to differentiate that it is your first hardware project!
+    Now you have a couple of files in your folder. These should be the seven files you see: (don't worry about the v7 tag, you should be able to open these files)
+        fb-lib-table (your footprint libraries table, this is crucial to making your layouts exist and print properly!!)
+        sym-lib-table (your symbol libraries table, this is important to making your schematics exist!)
+        template_v0.0_specs.md
+        Template_v0.0_v7.kicad_pcb
+        Template_v0.0_v7.kicad_pro
+        Template_v0.0_v7.kicad_sch
+        Title_Block.kicad_wks
+    These files are important to making any board project in KiCad! Please always make sure that at least these 7 files are included in any project.
+    You will need to change any file that starts with "Template_v0.0_v7" to the name of your project. I recommend that it matches your folder name-- so in this case, your KiCad project file name should look like "prog1.kicad_pcb". Keep the kicad_pcb at the end!!
+    Double click the file that ends in "kicad_pro" to open the KiCad Project. Your screen should look like this!
+
+KiCad Interface.png
+
+    This is the project manager for all KiCad projects. It has navigation to each of the tools you need to build a board.
+        The Schematic Editor allows you to work on schematics, which is where you can choose circuit components and design your circuits.
+        The PCB Editor uses the information you put in the Schematic Editor to produce a footprint puzzle that you'll put together to create the physical dimensions of the board.
+        The other tools are less important. For this project and a majority of Solar Car projects, you won't really need to use them.
+    Here's an in-depth KiCad tutorial that explains the different Editors and each of the tools you can use for your boards. There are a multitude of shortcuts and tricks you'll learn to use the more you use KiCad, that can make board design quicker and easier!
+    To start the project, you want to open the Schematic Editor first.
+    You'll see that the sheet that opens up is empty. This is where you will design your project! The first thing you can do is to double-click on the title block in the bottom left corner and update the comments and date on the schematic sheet. You can see what this looks like below:
+
+Title Editing in KiCad.jpg
+Now you can start working on the circuit! From here on out you can use tricks you've learned on the previous video linked above (or watch through Rahul's KiCad tutorial from a few years ago) to follow the below instructions. The specs.md file in your folder also has the requirements for this project if you don't want to keep checking back to this page. Note that the user interface may not look exactly the same, however you will still have access to the same tools.
+To build the circuit for this project:
+
+    Follow Rahul's KiCad tutorial steps. This will teach you important knowledge on building circuits, what tools we normally use, and how to import your schematics from one editor to another. Be sure to watch through the videos to have a good understanding of what our interface looks like! Some of what Rahul explains in his videos is already written out here. You can start watching from his second video to go straight to the onboarding project!
+    There are a few differences from Rahul's video to our onboarding. Please be aware of a few things while you watch this tutorial!
+        The version of KiCad we use is v8. Rahul uses v5, but that was a couple of years ago! Make sure you're aware of the version you're using since some library errors can occur between different versions.
+        Use the onboarding repo for your work only.
+        When adding power flags to your circuit in the first Schematic video, you will need to add two more components: one PWR_FLAG on both your +3v3 and GND wires. It should look like this
+        PWR FLAGS.png
+
+In the layout tutorial, when you add dimensions to your board, you'll need to go to the top bar and select [Place -> Add Orthogonal Dimension], seen below:
+Add Orthogonal Dimension.png
+
+            Remember that your version of KiCad will look different from Rahul's! Things change with time, as did the software. Don't panic! Everything he can do in the video, you can too. Try playing around with the tools for a while before asking one of the elec members if you're having issues with the software.
+
+    After watching through Rahul's fourth tutorial, you're done with the schematic and layout! Normally you'll need to export your Bill of Materials (A.K.A BOM) to a spreadsheet and generate a DFM, but we'll learn these later during the harder hardware project. These are two important steps to our process that you can learn from the wiki later since it's not a huge focus during onboarding.
+    All done! You've just made your first board. Congrats! Now push your changes in your branch to the online repo using git add -u to add any updates you made to the files you worked on, then git commit -m "[some comment here]" to commit, and finally git push to push your changes to the onboarding repo.
