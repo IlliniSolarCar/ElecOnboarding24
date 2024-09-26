@@ -5,6 +5,7 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -42,7 +43,8 @@ void setup() {
 	common.setupCAN();
 	//set up LEDs and turn them all off
 	common.setupLEDs(&led1, &led2, &led3, &led4);
-
+//	led5ptr = &led5;
+//    *led5ptr = 0;
 	//Set Callbacks:
 	//These are side tasks (up to 8) that are run independently of the main
 	//algorithm / purpose of this board such as the heartbeat.
@@ -71,7 +73,7 @@ void shutdown_method() {
 		wdt.feed();
 	}
 }
-
+bool led_on = true;
 int main() {
 	// Configure all of our peripherals and globals
 	setup();
@@ -95,8 +97,10 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	led5.write(led_on);
+        	led_on = !led_on;
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
