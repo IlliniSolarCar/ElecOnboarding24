@@ -10,6 +10,7 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
+#include "pins.h"
 
 
 /*
@@ -80,7 +81,9 @@ int main() {
 	CANMessage msg;
 	bool shutdown = false;
 	// Main functionality
+	bool led5_on=false;
 	while (!shutdown) {
+
 
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
         bool overflow;
@@ -97,12 +100,15 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	led5.write((led5_on)?1:0);
+        	led5_on = !led5_on;
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
 
 
 	}
+	delete led5_on;	//free memory
 
 	shutdown_method();
 }
