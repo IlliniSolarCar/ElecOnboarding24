@@ -12,7 +12,6 @@
 #include "CAN/can_data.h"
 #include "can_buffer.h"
 
-
 /*
  * This is an example function. It blinks the heartbeat LED and sends
  * a Heartbeat CAN Message. The message sends when the LED turns on.
@@ -27,7 +26,7 @@ void heartbeat() {
 void checkCANController() {
     common.checkCANController();
 }
-
+int led_blink_rate = 1000000;
 /*
  * This is where basic, one-time configuration code is run before entering
  * normal operation. It is recommended that you keep your configuration
@@ -97,15 +96,15 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE)){
+        if(timing.tickThreshold(last_task_1_time, led_blink_rate)){
         	//PROJECT 1 - add code here to actually make the LED blink
         	led5.write(led_on);
         	led_on = !led_on;
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
-
+        float blink_rate = potentiomter.read();
+        led_blink_rate = 1000000*blink_rate;
 	}
 
 	shutdown_method();
