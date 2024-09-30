@@ -5,7 +5,7 @@
  *
  */
 
-#include <mbed.h>
+
 #include <pins.h>
 
 /*
@@ -13,7 +13,7 @@
  */
 
 // PROJECT 2 - You can instantiate your AnalogIn object here
-
+AnalogIn potentiomter(P0_1);
 /*
  * COMMON PIN OBJECT INSTANTIATIONS
  */
@@ -23,3 +23,5 @@ DigitalOut led2(P_LED2);
 DigitalOut led3(P_LED3);
 DigitalOut led4(P_LED4);
 // PROJECT 1 - You can instantiate your DigitalOut object here
+DigitalOut led5(P_LED5);
+

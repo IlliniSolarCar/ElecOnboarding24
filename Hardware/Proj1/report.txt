@@ -1,0 +1,50 @@
+Info: Processing symbol 'D1:layout:LED_0603_Symbol_on_F.SilkS'.
+Info: Processing symbol 'J1:Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'R1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'SW1:Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile'.
+Changed D1 value from LED_0603 to LED_RED.
+Updated D1 symbol association from  to /c6091f84-aaf8-4adf-9c6e-8ec2a98b8dac.
+Updated D1 fields.
+Updated D1 sheetname to 'Root'.
+Updated D1 sheetfile to 'Proj1.kicad_pro.kicad_sch'.
+Updated D1 footprint filters to 'LED* LED_SMD:* LED_THT:*'.
+Add net Net-(D1-A).
+Connected D1 pin 2 to Net-(D1-A).
+Add net GND.
+Connected D1 pin 1 to GND.
+Added J1 (footprint 'Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical').
+Changed REF** reference designator to J1.
+Changed J1 value from Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical to Conn_01x02.
+Updated J1 symbol association from  to /cd4bc915-6ebc-4bd7-8164-1f642c2c2f48.
+Updated J1 fields.
+Updated J1 sheetname to 'Root'.
+Updated J1 sheetfile to 'Proj1.kicad_pro.kicad_sch'.
+Updated J1 footprint filters to 'Connector*:*_1x??_*'.
+Add net +3V3.
+Connected J1 pin 2 to +3V3.
+Connected J1 pin 1 to GND.
+Added D1 (footprint 'layout:LED_0603_Symbol_on_F.SilkS').
+Added R1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R1.
+Changed R1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 105.
+Updated R1 symbol association from  to /8f8f8d57-8242-4b41-a91e-646e16ba5bb0.
+Updated R1 fields.
+Updated R1 sheetname to 'Root'.
+Updated R1 sheetfile to 'Proj1.kicad_pro.kicad_sch'.
+Updated R1 footprint filters to 'R_*'.
+Add net Net-(R1-Pad1).
+Connected R1 pin 1 to Net-(R1-Pad1).
+Connected R1 pin 2 to Net-(D1-A).
+Changed REF** reference designator to D1.
+Added SW1 (footprint 'Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile').
+Changed REF** reference designator to SW1.
+Changed SW1 value from SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile to SW_Push.
+Updated SW1 symbol association from  to /f94b2ded-822a-44a4-88ae-02286dee944d.
+Updated SW1 fields.
+Updated SW1 sheetname to 'Root'.
+Updated SW1 sheetfile to 'Proj1.kicad_pro.kicad_sch'.
+Connected SW1 pin 1 to +3V3.
+Connected SW1 pin 2 to Net-(R1-Pad1).
+
+
+Info: Total warnings: 0, errors: 0.

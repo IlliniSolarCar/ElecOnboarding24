@@ -5,12 +5,12 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
-
 
 /*
  * This is an example function. It blinks the heartbeat LED and sends
@@ -26,7 +26,7 @@ void heartbeat() {
 void checkCANController() {
     common.checkCANController();
 }
-
+int led_blink_rate = 1000000;
 /*
  * This is where basic, one-time configuration code is run before entering
  * normal operation. It is recommended that you keep your configuration
@@ -42,7 +42,8 @@ void setup() {
 	common.setupCAN();
 	//set up LEDs and turn them all off
 	common.setupLEDs(&led1, &led2, &led3, &led4);
-
+//	led5ptr = &led5;
+//    *led5ptr = 0;
 	//Set Callbacks:
 	//These are side tasks (up to 8) that are run independently of the main
 	//algorithm / purpose of this board such as the heartbeat.
@@ -71,7 +72,7 @@ void shutdown_method() {
 		wdt.feed();
 	}
 }
-
+bool led_on = true;
 int main() {
 	// Configure all of our peripherals and globals
 	setup();
@@ -95,13 +96,15 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, led_blink_rate)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	led5.write(led_on);
+        	led_on = !led_on;
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
-
+        float blink_rate = potentiomter.read();
+        led_blink_rate = 1000000*blink_rate;
 	}
 
 	shutdown_method();
