@@ -100,9 +100,11 @@ int main() {
         	//returns 1 if the threshold has been met as of current tick, else 0
         	//param: last time function was run, interval which program is supposed to run
         	//1 = true here
-        	led.write(1);
-        	wait(1.0);
-        	led.write(0);
+        	if read() == 0
+            {
+        		led.write(1);
+        		led.write(0);
+            }
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
