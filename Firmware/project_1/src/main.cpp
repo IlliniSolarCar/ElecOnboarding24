@@ -4,13 +4,11 @@
  */
 
 #include <mbed.h>
-// PROJECT 1 - Include something here!
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
-
 
 /*
  * This is an example function. It blinks the heartbeat LED and sends
@@ -24,7 +22,7 @@ void heartbeat() {
 
 /** Stub to call hardware-interface for checking the CAN controller. */
 void checkCANController() {
-    common.checkCANController();
+	common.checkCANController();
 }
 
 /*
@@ -37,7 +35,6 @@ void checkCANController() {
  * be a good place to do it.
  */
 void setup() {
-
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
@@ -54,7 +51,7 @@ void setup() {
 	common.startTimingCommon(&timing, &wdt_reset);
 
 	//if watchdog caused reset do something (probably log on CAN)
-	if(wdt_reset){
+	if (wdt_reset) {
 
 	}
 }
@@ -66,8 +63,7 @@ void setup() {
  * Don't forget to feed the WDT to avoid a reset!
  */
 void shutdown_method() {
-
-	while(1) {
+	while (1) {
 		wdt.feed();
 	}
 }
@@ -75,33 +71,35 @@ void shutdown_method() {
 int main() {
 	// Configure all of our peripherals and globals
 	setup();
-	uint32_t last_task_1_time = timing.onTick(NULL);
+
+	uint32_t led_blink_rate_us = LED_BLINK_RATE_US;
+	uint32_t last_led_blink_time = timing.onTick(NULL);
+	bool led_blink_state = false;
 
 	CANMessage msg;
 	bool shutdown = false;
 	// Main functionality
 	while (!shutdown) {
-
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
-        bool overflow;
-        uint32_t now = common.loopTime(&timing, &overflow);
+		bool overflow;
+		uint32_t now = common.loopTime(&timing, &overflow);
 
-        //clear CAN Buffer
-        while(!common.readCANMessage(msg)) {
-        	//you should do something with the relevant CAN messages here
-        	//toggle the CAN receive LED for only the messages you need to
-        	//receive for this board to function. This should be only a few
-        	//total messages. Do nothing for irrelevant messages
-        	common.toggleReceiveCANLED();
-        }
+		//clear CAN Buffer
+		while (!common.readCANMessage(msg)) {
+			//you should do something with the relevant CAN messages here
+			//toggle the CAN receive LED for only the messages you need to
+			//receive for this board to function. This should be only a few
+			//total messages. Do nothing for irrelevant messages
+			common.toggleReceiveCANLED();
+		}
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
-        }
+		// scale from 0.5 to 1.5 seconds
+		led_blink_rate_us = (potentiometer.read() * 1e6) + 5e5;
 
-        //PROJECT 2 - use the potentiometer to change the blink rate
-
-
+		if (timing.tickThreshold(last_led_blink_time, led_blink_rate_us)){
+			led_blink_state = !led_blink_state;
+			ledBlink.write(led_blink_state);
+		}
 	}
 
 	shutdown_method();
