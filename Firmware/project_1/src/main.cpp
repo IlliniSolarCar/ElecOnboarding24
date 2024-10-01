@@ -98,9 +98,6 @@ int main() {
         if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE)){
         	//PROJECT 1 - add code here to actually make the LED blink
         	led5.write(not led5.read());
-        } else {
-        	led5.write(0);
-        	// should be off by default i think
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
