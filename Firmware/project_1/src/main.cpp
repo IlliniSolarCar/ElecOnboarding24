@@ -41,7 +41,7 @@ void setup() {
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
-	common.setupLEDs(&led1, &led2, &led3, &led4);
+	common.setupLEDs(&led4);
 
 	//Set Callbacks:
 	//These are side tasks (up to 8) that are run independently of the main
@@ -95,8 +95,14 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, rateOfBlink)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	//returns 1 if the threshold has been met as of current tick, else 0
+        	//param: last time function was run, interval which program is supposed to run
+        	//1 = true here
+        	led.write(1);
+        	wait(1.0);
+        	led.write(0);
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
