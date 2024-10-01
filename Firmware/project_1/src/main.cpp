@@ -77,7 +77,7 @@ int main() {
 	setup();
 	uint32_t last_task_1_time = timing.onTick(NULL);
 
-	CANMessage msg;
+	CANMessage msg;1
 	bool shutdown = false;
 	// Main functionality
 	while (!shutdown) {
@@ -96,7 +96,12 @@ int main() {
         }
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
+        	if(led5.read()){
+            	led5.write(0);
+        	}
+        	else{
+        		led5.write(1);
+        	}
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
