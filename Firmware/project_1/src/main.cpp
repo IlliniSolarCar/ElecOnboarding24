@@ -77,7 +77,7 @@ int main() {
 	setup();
 	uint32_t last_task_1_time = timing.onTick(NULL);
 
-	CANMessage msg;1
+	CANMessage msg;
 	bool shutdown = false;
 	// Main functionality
 	while (!shutdown) {
