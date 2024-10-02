@@ -41,7 +41,7 @@ void setup() {
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
-	common.setupLEDs(&led1, &led2, &led3, &led4);
+	common.setupLEDs(&led1, &led2, &led3, &led4, &heart_led);
 
 	//Set Callbacks:
 	//These are side tasks (up to 8) that are run independently of the main
@@ -79,6 +79,7 @@ int main() {
 
 	CANMessage msg;
 	bool shutdown = false;
+	int led_on = 0;
 	// Main functionality
 	while (!shutdown) {
 
@@ -97,6 +98,8 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	heart_led.write(led_on);
+        	led_on = !led_on;
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
