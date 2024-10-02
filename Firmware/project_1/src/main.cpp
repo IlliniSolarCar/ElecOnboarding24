@@ -5,6 +5,7 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -41,7 +42,7 @@ void setup() {
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
-	common.setupLEDs(&led1, &led2, &led3, &led4);
+	common.setupLEDs(&led1, &led2, &led3, &led4, &led5);
 
 	//Set Callbacks:
 	//These are side tasks (up to 8) that are run independently of the main
@@ -51,7 +52,7 @@ void setup() {
 
 	bool wdt_reset;
 	//start the timing and check for wdt caused reset
-	common.startTimingCommon(&timing, &wdt_reset);
+	common.startTimingCommon(&timing, &wdt_reset);i
 
 	//if watchdog caused reset do something (probably log on CAN)
 	if(wdt_reset){
@@ -95,11 +96,15 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US * in1.read())){
+        	if(led5.read()){
+			led5.write(0);
+		}
+		else {
+			led5.write(1);
+		}
         }
 
-        //PROJECT 2 - use the potentiometer to change the blink rate
 
 
 	}
