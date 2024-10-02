@@ -104,7 +104,7 @@ int main() {
         //PROJECT 2 - use the potentiometer to change the blink rate
         if(timing.tickThreshold(last_task_1_time, delay)) {
         	led4.write(!led4.read());
-        	delay = static_cast<uint32_t>(pot.read() * TASK_1_RATE_US);
+        	delay = static_cast<uint32_t>(pot.read() * TASK_1_RATE_US); // update delay based on voltage reading
         }
 	}
 
