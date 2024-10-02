@@ -81,6 +81,10 @@ int main() {
 	CANMessage msg;
 	bool shutdown = false;
 	// Main functionality
+
+	int base_time = 1000000;
+	int run_time = 1000000;
+
 	while (!shutdown) {
 
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
@@ -96,7 +100,7 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, run_time)){
         	//PROJECT 1 - add code here to actually make the LED blink
 
         	//Checks to see if LED is currently off, turns on if it is
@@ -110,6 +114,7 @@ int main() {
 
         //PROJECT 2 - use the potentiometer to change the blink rate
 
+        run_time = base_time * potentiometer1.read();
 
 	}
 
