@@ -5,6 +5,7 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -41,7 +42,7 @@ void setup() {
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
-	common.setupLEDs(&led1, &led2, &led3, &led4);
+	common.setupLEDs(&led1, &led2, &led3, &led4, &led5);
 
 	//Set Callbacks:
 	//These are side tasks (up to 8) that are run independently of the main
@@ -80,6 +81,10 @@ int main() {
 	CANMessage msg;
 	bool shutdown = false;
 	// Main functionality
+
+	int base_time = 1000000;
+	int run_time = 1000000;
+
 	while (!shutdown) {
 
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
@@ -95,12 +100,21 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, run_time)){
         	//PROJECT 1 - add code here to actually make the LED blink
+
+        	//Checks to see if LED is currently off, turns on if it is
+        	if (led5.read()==0);
+        		led5.write(1);
+        	//Since the LED is now on, it can execute the next conditional and turn it off
+        	if (led5.read()==1);
+        		led5.write(0);
+
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
 
+        run_time = base_time * potentiometer1.read();
 
 	}
 
