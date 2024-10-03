@@ -9,12 +9,11 @@
 
 ## Overview and Description
 - What is the primary function of this board?
-    The primary function of this board is to light up an LED using an external power source.
 - What does this board replace?
-    This board could be used to replace less efficient lights like incandescent lights.
 - One or two more bullets (if necessary) talking about other things this board does
-    * This board uses a resistor to control the voltage given to the LED to use as energy to produce light
 - Other board integration (List other boards and communication protocols)
+	- Board 1 (CAN)
+	- Board 2 (USB)
 - Wiki page: [add link to page]
 
 ## High-Level Requirements
@@ -27,9 +26,10 @@
 - List any features this board must have
 	- Describe each feature in a general way
 		- (Optional) Describe any requirements this feature might need as open-ended as possible
-        * LED: Light emitting diode, which is color blue in this board
-        * Connector: Connects the circuit to external voltage source
-        * 3 Volts: This is the labelled voltage that is applied to the whole circuit
+  -LED
+  - Connector
+     - 3 Volts
+     -       
 
 ## Communication Protocols
 - List each communication protocol used to send data to/from other systems or boards
@@ -41,7 +41,9 @@
  - List any general requirements for connectors here (e.g. no through-hole, low-profile, minimum 1A current capacity, etc.)
  - Then list each connector, specific type/requirements, and pinout such as:
  - Power In (KK 2.54)
-	
+	- GND
+	- +12V
+	- GND
 
 ## ICs
 - Only list specific ICs if the board require this specific component to work
@@ -53,7 +55,6 @@
 
 ## Buttons/Switches
 - If the board needs buttons, describe what they do and how they will connect to the board
-        * The button in this circuit turns on or off the LED
 
 ## Power System
 - List each source that the board will need to function within the scope of this document
