@@ -39,7 +39,7 @@ void checkCANController() {
 void setup() {
 
 	//set up the CAN interrupts and handling.
-
+	common.setupCAN();
 	//set up LEDs and turn them all off
 	common.setupLEDs(&led1, &led2, &led3, &led4);
 
@@ -102,9 +102,9 @@ int main() {
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-        if(timing.tickThreshold(last_task_1_time, (int)p1.read())){
-                	led4.write(1 - (int)led4.read());
-                }
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US*p1.read())){
+            led4.write(1 - (int)led4.read());
+        }
 
 	}
 
