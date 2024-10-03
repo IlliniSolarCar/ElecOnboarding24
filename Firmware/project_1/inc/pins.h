@@ -28,10 +28,12 @@
 // PROJECT 1 - You can define a pin macro here
 #define P_LED5 P0_4
 #define P_POT1 P0_1
+
+
 /*
  * COMMON PIN OBJECT DECLARATIONS
+ * I believe this is all right :)
  */
-
 extern DigitalOut led1;
 extern DigitalOut led2;
 extern DigitalOut led3;
