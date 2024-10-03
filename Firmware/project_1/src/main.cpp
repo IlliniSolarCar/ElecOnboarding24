@@ -95,8 +95,13 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	if(led5.read() == 0){
+        		led5.write(1);
+        	} else {
+        		led5.write(0);
+        	}
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
