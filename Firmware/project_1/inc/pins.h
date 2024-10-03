@@ -44,8 +44,8 @@ extern DigitalOut led5;
  */
 
 // PROJECT 2 - You can declare a AnalogIn object here
-
-
+extern AnalogIn analogIn1;
+#define P_POT1 P0_3;
 /*
  * BOARD SPECIFIC PIN OBJECT DECLARATIONS
  */

@@ -13,7 +13,7 @@
  */
 
 // PROJECT 2 - You can instantiate your AnalogIn object here
-
+AnalogIn analogIn1(P_POT1);
 /*
  * COMMON PIN OBJECT INSTANTIATIONS
  */
