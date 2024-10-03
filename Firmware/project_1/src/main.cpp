@@ -5,6 +5,8 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
+
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -97,6 +99,15 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+			int read(){
+				return gpio_read(&gpio);
+			}
+			if(testLED.read()==1){
+				testLED.write(0);
+			}
+			else {
+				(testLED.write(1);)
+			}
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
