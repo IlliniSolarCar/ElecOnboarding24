@@ -10,6 +10,7 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
+#include "led_blinker"
 
 
 /*
@@ -81,7 +82,7 @@ int main() {
 	bool shutdown = false;
 	// Main functionality
 	while (!shutdown) {
-
+		double blink_rate = potentiometer.read() * 1000000;
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
         bool overflow;
         uint32_t now = common.loopTime(&timing, &overflow);
@@ -95,8 +96,10 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, blink_rate)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	led5.write(not led5.read())
+
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
