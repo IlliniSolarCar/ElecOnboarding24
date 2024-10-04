@@ -10,6 +10,7 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
+#include "pins.h"
 
 
 /*
@@ -95,11 +96,68 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US))
+        {
         	//PROJECT 1 - add code here to actually make the LED blink
+        	if (led5.read()==0)
+        	{
+        		led.write(1);
+        	}
+        	else
+        	{
+        		led.write(0);
+        	}
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
+        while (!shutdown)
+        {
+        	float volta = potentiometer1.read();
+        	 bool overflow;
+        	 uint32_t now = common.loopTime(&timing, &overflow);
+
+        	        //clear CAN Buffer
+        	 while(!common.readCANMessage(msg))
+        	 {
+        	        	//you should do something with the relevant CAN messages here
+        	        	//toggle the CAN receive LED for only the messages you need to
+        	        	//receive for this board to function. This should be only a few
+        	        	//total messages. Do nothing for irrelevant messages
+        		 	 	common.toggleReceiveCANLED();
+        	 }
+        	if (volta>0.5)
+        	{
+        		if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US-volta*100)) //I want to decrease the
+        		{																     //interval (increase the rate) by subtracting
+        		 if (led5.read()==0)													  //voltage from the potentiometer1
+        		 {																		  //from the default TASK_1_RATE_US
+        		   led.write(1);
+        		 }
+        		 else
+        		 {
+        		  led.write(0);
+        		 }
+        		}
+
+        	}
+        	else																		//I want to increase the
+    		{																		    //interval (decrease the rate) by subtracting
+        		                                                                        //from the default TASK_1_RATE_US if voltage
+        		if(timing.tickThreshold(last_task_1_time, abs(TASK_1_RATE_US+volta*100)))//>0.5
+        		{
+        		 //PROJECT 1 - add code here to actually make the LED blink
+        		 if (led5.read()==0)
+        		 {
+        		   led.write(1);
+        		 }
+        		 else
+        		 {
+        			led.write(0);
+        		 }
+        		}
+
+        	}
+        }
 
 
 	}
