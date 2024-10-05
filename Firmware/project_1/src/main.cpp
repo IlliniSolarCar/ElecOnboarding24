@@ -106,9 +106,20 @@ int main() {
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
+        	float blinkRate;
+        	float potValue = pot1.read();
+
+        	 blinkRate = 0.1f + (0.9f * potValue);
+
+        	        led5 = 1;
+        	        wait(blinkRate);
+
+        	        led5 = 0;
+        	        wait(blinkRate);
+        	    }
 
 
 	}
 
 	shutdown_method();
-	}}
+	}
