@@ -103,8 +103,10 @@ int main()
 			// total messages. Do nothing for irrelevant messages
 			common.toggleReceiveCANLED();
 		}
+		float val = pot.read();
+		float blinkrate = TASK_1_RATE_US * val;
 
-		if (timing.tickThreshold(last_task_1_time, TASK_1_RATE_US))
+		if (timing.tickThreshold(last_task_1_time, blinkrate))
 		{
 			// PROJECT 1 - add code here to actually make the LED blink
 			int r = led5.read();
@@ -112,7 +114,7 @@ int main()
 		}
 
 		// PROJECT 2 - use the potentiometer to change the blink rate
-	}
+		}
 
 	shutdown_method();
 }
