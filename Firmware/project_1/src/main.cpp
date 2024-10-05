@@ -79,6 +79,7 @@ int main() {
 
 	CANMessage msg;
 	bool shutdown = false;
+	bool led_value = 0;
 	// Main functionality
 	while (!shutdown) {
 
@@ -95,7 +96,9 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US*pot1.read())){
+        	led_value = !led_value;
+        	pot.write(led_value);
         	//PROJECT 1 - add code here to actually make the LED blink
         }
 
