@@ -10,7 +10,8 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
-
+#include "pins.h"
+#include "setup.h"
 
 /*
  * This is an example function. It blinks the heartbeat LED and sends
@@ -81,6 +82,7 @@ int main() {
 	bool shutdown = false;
 	// Main functionality
 	while (!shutdown) {
+		float blink_rate = potentio.read()*100000;
 
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
         bool overflow;
@@ -95,8 +97,14 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE_CONTROL)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	int n = led5.read();
+        		if (n==0){
+        			led5.write(1);
+        		}else{
+        			led5.write(0);
+        		}
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
