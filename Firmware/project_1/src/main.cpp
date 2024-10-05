@@ -82,6 +82,7 @@ int main() {
 	bool shutdown = false;
 	// Main functionality
 	while (!shutdown) {
+		float blink_rate = potentio.read()*100000;
 
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
         bool overflow;
