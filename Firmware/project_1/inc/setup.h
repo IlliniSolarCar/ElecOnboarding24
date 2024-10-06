@@ -13,7 +13,7 @@
 #define CHECK_CAN_RATE_US 500000
 
 //how long without a feed for watch dog timer to trigger a reset
-//be warned this oscialltor is only accurate +/- 40% so make this time bigger than you think you need
+//be warned this oscillator is only accurate +/- 40% so make this time bigger than you think you need
 #define WDT_TIMEOUT_US 10000000
 
 //task 1 rate

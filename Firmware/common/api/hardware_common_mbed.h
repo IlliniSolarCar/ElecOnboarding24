@@ -43,6 +43,7 @@ public:
     virtual int toggleHardwareLED(bool on);
     virtual int loopTime(TimingCommon* timing, bool* outOverflow);
 
+
 private:
     // 32-message buffer.
     CANRXTXBuffer<32, 16>* p_canBuffer;
