@@ -47,7 +47,7 @@ public:
      */
     DigitalOut(PinName pin) : gpio() {
         gpio_init_out(&gpio, pin);
-    }
+    })()
 
     /** Create a DigitalOut connected to the specified pin
      *

@@ -79,7 +79,7 @@ public:
 	/*
 	 * Determine if as threshold has been met as of current tick
 	 * @param last time the function was run, will be changed to last tick if 1 is returned
-	 * @param the interal at which the task is supposed to run
+	 * @param the interval at which the task is supposed to run
 	 * @return 1 - the threshold to run again has been met; 0 the threshold has not been met
 	 */
 	int tickThreshold(uint32_t& last, const uint32_t interval);
