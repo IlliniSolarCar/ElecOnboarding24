@@ -95,17 +95,47 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
+        // PROJECT 1 COMPLETE so the working for project 1 is commented out
+//        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+
+        //PROJECT 1 - add code here to actually make the LED blink
         	
-        	led5.write(!led5.read());
+//        	led5.write(!led5.read());
 
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
 
+       float voltage = potResistor.read();
 
-	}
+       // we are assuming resistance of potentiometer starts in the middle, so you can increase it above 50% of its max resistance and LED will blink faster,
+       // while decreasing it below 50% of its max resistance will make the LED blink slower
+
+       if (voltage == 0.5) {
+    	   if (timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+
+    		   led5.write(!led5.read());
+
+    	   	   }
+    	   }
+
+       if (voltage > 0.5) {
+    	   // increasing the rate by decreasing the time interval
+    	   if (timing.tickThreshold(last_task_1_time, abs(TASK_1_RATE_US - voltage*100))) {
+
+    		   led5.write(!led5.read());
+
+    	   	   	}
+			}
+
+       if (voltage < 0.5) {
+    	   // decreasing the rate by increasing the time interval
+    	   if (timing.tickThreshold(last_task_1_time, abs(TASK_1_RATE_US + voltage*100))) {
+
+    		   led5.write(!led5.read());
+
+    	   	   }
+       	   }
 
 	shutdown_method();
 }

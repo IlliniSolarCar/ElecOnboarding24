@@ -67,6 +67,7 @@ public:
      */
     virtual void setupLEDs(DigitalOut* heartbeatLED, DigitalOut* receiveCANLED, DigitalOut* sendCANLED, DigitalOut* hardwarestatusLED) = 0;
 
+
     /**
      *  Toggle the heartbeat LED
      *  @return 0 if LED off, 1 if LED on
