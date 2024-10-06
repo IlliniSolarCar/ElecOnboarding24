@@ -36,7 +36,7 @@ extern DigitalOut led2;
 extern DigitalOut led3;
 extern DigitalOut led4;
 // PROJECT 1 - You can declare a DigitalOut object here
-extern DigitalOut blink;
+extern DigitalOut led5;
 /*
  * BOARD SPECIFIC PINS
  */
