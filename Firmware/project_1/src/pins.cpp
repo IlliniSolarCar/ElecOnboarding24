@@ -7,12 +7,13 @@
 
 #include <mbed.h>
 #include <pins.h>
+#include "pins.h"
 
 /*
  * PIN OBJECT INSTANTIATIONS
  */
 
-// PROJECT 2 - You can instantiate your AnalogIn object here
+AnalogIn potentiometer(P_POTENTIOMETER); // PROJECT 2 - You can instantiate your AnalogIn object here
 
 /*
  * COMMON PIN OBJECT INSTANTIATIONS

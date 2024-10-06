@@ -79,6 +79,12 @@ int main() {
 
 	CANMessage msg;
 	bool shutdown = false;
+
+	const uint32_t MIN_BLINK_RATE_US = 100000;   // 0.1 seconds
+	const uint32_t MAX_BLINK_RATE_US = 2000000;  // 2 seconds
+
+	uint32_t current_blink_rate_us = MAX_BLINK_RATE_US; // Initialize with max rate
+
 	// Main functionality
 	while (!shutdown) {
 
@@ -94,6 +100,11 @@ int main() {
         	//total messages. Do nothing for irrelevant messages
         	common.toggleReceiveCANLED();
         }
+
+        float pot_value = potentiometer.read();
+
+        current_blink_rate_us = MIN_BLINK_RATE_US + (uint32_t)((MAX_BLINK_RATE_US - MIN_BLINK_RATE_US) * (1.0f - pot_value));
+
 
         if(timing.tickThreshold(last_task_1_time, LED_BLINK_RATE_US)){
         	led_blink = !led_blink; //PROJECT 1 - add code here to actually make the LED blink
