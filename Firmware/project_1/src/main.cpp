@@ -10,7 +10,7 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
-
+#include "pins.h"
 
 /*
  * This is an example function. It blinks the heartbeat LED and sends
@@ -95,9 +95,16 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time,TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	if(P_LED5.read() == 0){
+        		DigitalOut(P_LED5,1);
+        	}
+        	else{
+        		DigitalOut(P_LED5,0);
+        	}
         }
+        else {DigitalOut(P_LED5,0)}
 
         //PROJECT 2 - use the potentiometer to change the blink rate
 
