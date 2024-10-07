@@ -13,7 +13,7 @@
  */
 
 // PROJECT 2 - You can instantiate your AnalogIn object here
-AnalogIn resistor(P_LED6);
+AnalogIn resistor(P_POTENTIOMETER6);
 /*
  * COMMON PIN OBJECT INSTANTIATIONS
  */

@@ -687,7 +687,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.58 0 360)
+			(at 2.58 0 0)
 			(layer "F.Fab")
 			(uuid "6441ac06-1869-4f1e-a23d-27c0930a8994")
 			(effects
@@ -1652,7 +1652,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R1"
-			(at -0.25 1.525 360)
+			(at -0.25 1.525 0)
 			(layer "F.SilkS")
 			(uuid "68ac82df-2808-41d0-b68c-a03da519a9b0")
 			(effects
@@ -1663,7 +1663,7 @@
 			)
 		)
 		(property "Value" "105"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "a0f7bf06-6c2c-4468-968f-1e758b338f3a")
 			(effects
@@ -1674,7 +1674,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "71dc0b0f-8519-401d-bfbe-ffd64460e9d5")
@@ -1686,7 +1686,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fb36f2bb-9fa2-4cb1-8823-45e93f706cbc")
@@ -1698,7 +1698,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "30983ddc-8d46-4a99-a328-f5d8092feb97")
@@ -1841,7 +1841,7 @@
 			(uuid "b773807d-578f-4393-9aa0-cf22088427cf")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "887bc1a1-bc88-45e8-a47a-adc2fc712c63")
 			(effects
@@ -2102,20 +2102,20 @@
 			(extension_offset 0.5) keep_text_aligned)
 	)
 	(segment
-		(start 123.6 97.225)
+		(start 123.6 95.8)
+		(end 123.475 95.925)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "bc6a23ae-4484-436f-9adb-c4789d0207a7")
+	)
+	(segment
+		(start 123.475 95.925)
 		(end 123.475 97.35)
 		(width 0.25)
 		(layer "F.Cu")
 		(net 1)
-		(uuid "5e8920d9-4272-4376-b766-fbd62fdf1d7d")
-	)
-	(segment
-		(start 123.6 95.8)
-		(end 123.6 97.225)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "a7bfeef5-2c20-4be2-876e-1708a3cddc3a")
+		(uuid "f898e342-2b1f-486b-b828-e09d84916fb8")
 	)
 	(via
 		(at 123.475 97.35)

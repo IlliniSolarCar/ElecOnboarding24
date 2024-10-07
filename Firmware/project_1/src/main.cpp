@@ -111,7 +111,7 @@ int main() {
 
         //PROJECT 2 - use the potentiometer to change the blink rate
         float value = resistor.read();
-        blink_rate = TASK_1_RATE_US * (1.0f + value);
+        blink_rate = TASK_1_RATE_US * value;
 
 	}
 
