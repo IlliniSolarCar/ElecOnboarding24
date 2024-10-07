@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CP3
+D Polarised capacitor
+K cap capacitor
+$ENDCMP
+#
+$CMP D_Dual_KAAK
+D Dual Diode
+K diode
+F ~
+$ENDCMP
+#
+#End Doc Library
