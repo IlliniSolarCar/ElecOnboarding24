@@ -558,7 +558,7 @@
           "group_by": false,
           "label": "Notes",
           "name": "Notes",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",
