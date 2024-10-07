@@ -42,6 +42,7 @@ extern DigitalOut led4;
  */
 
 // PROJECT 2 - You can declare a AnalogIn object here
+extern AnalogIn poten1;
 
 
 /*
