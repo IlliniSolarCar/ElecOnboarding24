@@ -88,16 +88,18 @@ int main() {
 
         //clear CAN Buffer
         while(!common.readCANMessage(msg)) {
+        	common.toggleReceiveCANLED();
         	//you should do something with the relevant CAN messages here
         	//toggle the CAN receive LED for only the messages you need to
         	//receive for this board to function. This should be only a few
         	//total messages. Do nothing for irrelevant messages
-        	common.toggleReceiveCANLED();
+
         }
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
-        }
+        	led=!led;
+        	last_task_1_time=now;
+
 
         //PROJECT 2 - use the potentiometer to change the blink rate
 
