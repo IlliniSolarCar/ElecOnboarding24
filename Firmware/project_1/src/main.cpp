@@ -104,8 +104,14 @@ int main() {
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
-
+        PortIn(P_POT1);
+        mode(PullUp);
+        int voltage = read();
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US*voltage)){
+			DigitalWrite(P_LED5);
+			int cur = read(P_LED5);
+			write(!cur);
+		}
 	}
 
 	shutdown_method();
