@@ -97,8 +97,7 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        float value = resistor.read();
-        blink_rate = TASK_1_RATE_US * (1.0f + value);
+        float blink_rate = TASK_1_RATE_US * (1.0f + value);
 
         if(timing.tickThreshold(last_task_1_time, blink_rate)){
         	//PROJECT 1 - add code here to actually make the LED blink
@@ -111,7 +110,8 @@ int main() {
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
+        float value = resistor.read();
+        blink_rate = TASK_1_RATE_US * (1.0f + value);
 
 	}
 
