@@ -72,18 +72,6 @@ void shutdown_method() {
 	}
 }
 
-DigitalOut led_hb(P_LED_HB);
-
-void heartbeat() {
-      
-     while(1) {
-        {
-            led_hb = !led_hb;
-         wait(1);
-     }
- };
-}
-
 int main() {
 	// Configure all of our peripherals and globals
 	setup();
@@ -109,8 +97,13 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
-        
-        	heartbeat{};
+
+        	if(led_hb.read() == 0){
+        	   led_hb.write(1);
+            } else if(led_hb.read() == 1) {
+        	   led_hb.write(0);
+        	       }
+        	}
 
         }
 
