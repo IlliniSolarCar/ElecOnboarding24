@@ -42,7 +42,7 @@ void setup() {
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
-	common.setupLEDs(&led1, &led2, &led3, &led4, &led5);
+	common.setupLEDs(&led1, &led2, &led3, &led4);
 
 	//Set Callbacks:
 	//These are side tasks (up to 8) that are run independently of the main
@@ -52,7 +52,7 @@ void setup() {
 
 	bool wdt_reset;
 	//start the timing and check for wdt caused reset
-	common.startTimingCommon(&timing, &wdt_reset);i
+	common.startTimingCommon(&timing, &wdt_reset);
 
 	//if watchdog caused reset do something (probably log on CAN)
 	if(wdt_reset){
@@ -97,7 +97,7 @@ int main() {
         }
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US * in1.read())){
-        	if(led5.read()){
+        if(led5.read()){
 			led5.write(0);
 		}
 		else {

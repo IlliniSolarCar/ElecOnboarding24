@@ -36,7 +36,7 @@ extern DigitalOut led1;
 extern DigitalOut led2;
 extern DigitalOut led3;
 extern DigitalOut led4;
-extern DigitalOUt led5;
+extern DigitalOut led5;
 
 /*
  * BOARD SPECIFIC PINS
