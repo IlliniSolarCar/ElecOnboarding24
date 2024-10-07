@@ -204,7 +204,7 @@
 		(descr "Molex KK-254 Interconnect System, old/engineering part number: AE-6410-02A example for new part number: 22-27-2021, 2 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf), generated with kicad-footprint-generator")
 		(tags "connector Molex KK-254 vertical")
 		(property "Reference" "J1"
-			(at 1.27 -4.12 360)
+			(at 1.27 -4.12 0)
 			(layer "F.SilkS")
 			(uuid "34b5c579-0990-49ae-af24-d7c272d18e27")
 			(effects
@@ -215,7 +215,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 1.27 4.08 360)
+			(at 1.27 4.08 0)
 			(layer "F.Fab")
 			(uuid "24f18ca1-f3c5-4f92-8816-794ff23dfe84")
 			(effects
@@ -226,7 +226,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "08e164e0-a7f6-4464-ad49-2afbb60c34af")
@@ -238,7 +238,7 @@
 			)
 		)
 		(property "Datasheet" "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/641/6410/022272021_sd.pdf?inline"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "827e9a31-466a-411b-84e4-11cde2d2c35b")
@@ -250,7 +250,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "77a17968-ae89-4c1e-a4a2-a5200c96401b")
@@ -583,7 +583,7 @@
 			(uuid "62c5ded0-6a23-4200-bb6c-e644d6f71e3a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 -2.22 360)
+			(at 1.27 -2.22 0)
 			(layer "F.Fab")
 			(uuid "2120918f-e000-4450-82ab-d125abf94df7")
 			(effects
@@ -873,7 +873,7 @@
 		(property "Reference" "REF**"
 			(at 0 -4.2 0)
 			(layer "F.SilkS")
-			(uuid "51e35302-0fe0-4ea4-9511-99e3187d3533")
+			(uuid "289d4b1d-4a1f-4b72-af87-e342c91fce1c")
 			(effects
 				(font
 					(size 1 1)
@@ -884,7 +884,7 @@
 		(property "Value" "MountingHole_3.2mm_M3"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "d9ecf1e5-2dcb-4e63-89c3-b269c277623b")
+			(uuid "f6b602d3-ca1b-437e-956f-976064e54a8c")
 			(effects
 				(font
 					(size 1 1)
@@ -938,7 +938,7 @@
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "cf336c58-da52-4c2a-a68d-54894af535a5")
+			(uuid "e1b7f1fc-22f1-4d99-aa4d-369491205e90")
 		)
 		(fp_circle
 			(center 0 0)
@@ -949,12 +949,12 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "e0e6dc07-9245-4d76-be94-6be9045b3b5c")
+			(uuid "32b6bd74-cc0a-43fe-967c-513f0d06c620")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "1083b573-aaa7-4a5a-a67d-0165a376c90a")
+			(uuid "a5c00330-d3a8-47ec-8603-79dfbf54afbf")
 			(effects
 				(font
 					(size 1 1)
@@ -967,7 +967,7 @@
 			(size 3.2 3.2)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
-			(uuid "5b4a198f-8bb1-49d1-92c4-5228d2789f79")
+			(uuid "12a8dfdb-f77a-40ec-8ccc-99d21df87eb7")
 		)
 	)
 	(footprint "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile"
@@ -977,7 +977,7 @@
 		(descr "SMD 1x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 6.7x4.1mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile")
 		(tags "SMD DIP Switch SPST Slide 8.61mm 338mil SMD LowProfile")
 		(property "Reference" "SW1"
-			(at 0 -3.11 360)
+			(at 0 -3.11 0)
 			(layer "F.SilkS")
 			(uuid "dc2fe50a-cea9-4843-ba4b-701ccd87b3fa")
 			(effects
@@ -988,7 +988,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 0 3.11 360)
+			(at 0 3.11 0)
 			(layer "F.Fab")
 			(uuid "8cd7c1a8-24ab-4c00-a5be-caf09c03e68b")
 			(effects
@@ -999,7 +999,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "332ef824-d2ad-4863-9d0a-302423cd5e06")
@@ -1011,7 +1011,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.com/en/products/detail/te-connectivity-alcoswitch-switches/1825910-6/1632536?utm_adgroup=Supplier_TE&utm_source=google&utm_medium=cpc&utm_campaign=EN_Product_SKU_MBR&utm_term=%2B1825910-6&utm_content=Supplier_TE&gclid=Cj0KCQjwp4j6BRCRARIsAGq4yMGhBEsv1v5KcRzgW34aOMlPkoRB4A-7BCN08FfGaiq_Dk_nlKJ0QU8aAhZPEALw_wcB"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "abb12076-7f44-413d-b5d4-c900a0835ce3")
@@ -1023,7 +1023,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bddbd65f-394a-40cd-a296-acc7f242dc54")
@@ -1566,7 +1566,7 @@
 			)
 		)
 		(fp_text user "on"
-			(at 0.4275 -1.3425 360)
+			(at 0.4275 -1.3425 0)
 			(layer "F.Fab")
 			(uuid "e5373598-ba4b-4d37-b27e-8045e336df99")
 			(effects
@@ -2118,23 +2118,23 @@
 		(uuid "79d7285b-8ea8-4f93-968a-ba1db1049dda")
 	)
 	(segment
-		(start 132.2 87)
-		(end 132.2 87.8)
+		(start 132.5 88.25)
+		(end 132.5 87.3)
 		(width 0.25)
 		(layer "F.Cu")
 		(net 2)
-		(uuid "3e1b7d16-eeaa-4fcc-8793-b13626e33702")
+		(uuid "193f9833-20e9-42c3-bc5b-bfb07e76fa4e")
 	)
 	(segment
-		(start 132.2 87.8)
-		(end 132 88)
+		(start 132.5 87.3)
+		(end 132.2 87)
 		(width 0.25)
 		(layer "F.Cu")
 		(net 2)
-		(uuid "ed71e659-f844-44f9-ab4e-ccfedfea8bc6")
+		(uuid "24d77ad4-d754-489f-bc5e-eaaa15fbe038")
 	)
 	(via
-		(at 132 88)
+		(at 132.5 88.25)
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
