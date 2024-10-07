@@ -110,7 +110,7 @@ int main() {
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
+        AnalogIn potentiometer(P_POT1);
 
 	}
 
