@@ -30,6 +30,7 @@
 /*
  * COMMON PIN OBJECT DECLARATIONS
  */
+#define P_POTENTIOMETER P05
 
 extern DigitalOut led1;
 extern DigitalOut led2;
@@ -42,7 +43,7 @@ extern DigitalOut newled;
  */
 
 // PROJECT 2 - You can declare a AnalogIn object here
-
+extern AnalogIn potentiometer;
 
 /*
  * BOARD SPECIFIC PIN OBJECT DECLARATIONS

@@ -102,6 +102,9 @@ int main() {
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
+        float value = potentiometer.read();
+        current_blink_rate_us = MIN_BLINK_RATE_US + (value*(MAX_BLINK_RATE_US - MIN_BLINK_RATE_US));
+
 
 
 	}
