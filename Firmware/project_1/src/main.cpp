@@ -95,8 +95,17 @@ int main() {
         	//total messages. Do nothing for irrelevant messages
         	common.toggleReceiveCANLED();
         }
-
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        	//EDIT PROJECT 2: The if statement is replaced with an inequality comparing
+        	//the ratio of the time elapsed over the task rate to the 
+        	//variable voltage from the potentiometer as a decimal value.
+        	//High voltage reads from the AnalogIn pot object will yield a 
+        	//larger decimal that will be subtracted from one, creating a 
+        	//low time barrier entry for the task rate, increasing the rate
+        	//at which led5 writes. For low voltages, this inversion creates a 
+        	//high barrier ratio which requires more time to pass to write to 
+        	//the led.
+        
+        if((last_task_1_time / TASK_1_RATE_US) >= (1 - (pot.read() / 100))){
         	//PROJECT 1 - add code here to actually make the LED blink
         	led5.write((led5.read() - 1) * -1);
         	

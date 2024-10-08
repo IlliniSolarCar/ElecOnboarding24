@@ -12,6 +12,8 @@
  * PIN OBJECT INSTANTIATIONS
  */
 
+AnalogIn pot(P_LED5);
+
 // PROJECT 2 - You can instantiate your AnalogIn object here
 
 /*
@@ -22,5 +24,5 @@ DigitalOut led1(P_LED1);
 DigitalOut led2(P_LED2);
 DigitalOut led3(P_LED3);
 DigitalOut led4(P_LED4);
-DigitalOut led5(P_LED5);
+DigitalOut led5(P_LED5, 0);
 // PROJECT 1 - You can instantiate your DigitalOut object here
