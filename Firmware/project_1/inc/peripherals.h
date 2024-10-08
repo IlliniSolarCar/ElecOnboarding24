@@ -15,14 +15,12 @@
 #include <TimingCommon.h>
 #include "setup.h"
 
-
 // The extern keyword allows code that imports peripherals.h to use the variables
 // defined here. Functions and structs have an implicit extern.
 extern CAN can;
 extern Timer timer;
 extern WDT wdt;
-extern hardware_common& common;
+extern hardware_common &common;
 extern TimingCommon timing;
-
 
 #endif // __MBED1549_SKELETON_PERIPHERALS_H__

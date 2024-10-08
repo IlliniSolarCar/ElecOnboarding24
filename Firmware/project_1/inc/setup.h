@@ -20,6 +20,8 @@
 // PROJECT 1 - You can change the macro name to something more descriptive if you'd like
 #define TASK_1_RATE_US 1000000
 
+#define TASK_2_RATE_US 1000000*poten1.read()
+
 
 
 #endif /* SETUP_H_ */
