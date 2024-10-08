@@ -104,7 +104,7 @@ int main() {
 
         //PROJECT 2 - use the potentiometer to change the blink rate
 	float value = pot.read();
-	uint32 rate = value * 1000;
+	uint32_t rate = value * TASK_1_RATE_US;
         if(timing.tickThreshold(last_task_1_time, rate)){
         	heart_led.write(led_on);
         	led_on = !led_on;
