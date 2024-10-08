@@ -10,7 +10,7 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
-//#include
+#include "pins.h"
 
 
 /*
@@ -96,6 +96,8 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
+
+
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
 
@@ -110,7 +112,36 @@ int main() {
 
         }
 
+
+
         //PROJECT 2 - use the potentiometer to change the blink rate
+
+        /* I'm slightly unsure as to if this is exactly what the project is
+         * asking, i.e. how exactly should the voltage influence the LED's period?
+         * Maybe I'm missing info on the circuit somewhere, but I figure I'd just
+         * arbitrarily say that a higher voltage decreases the period of the LED and
+         * a lower voltage decreases the period.
+         *
+         * Additionally, I collaborated with Philip Chen (github:phcheesesteak, netid: philipc6)
+         * so our code is very similar
+        */
+        float v = potResistor.read();
+
+        if (v == 0.5){
+        	if (timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        		led5.write(!led5.read());}
+        }
+
+        if (v > 0.5){
+        	if (timing.tickThreshold(last_task_1_time, abs(TASK_1_RATE_US - v*100))){
+        		led5.write(!led5.read());}
+        }
+
+
+        if (v < 0.5){
+        	if (timing.tickThreshold(last_task_1_time, abs(TASK_1_RATE_US + v*100))){
+        		led5.write(!led5.read());}
+        }
 
 
 	}

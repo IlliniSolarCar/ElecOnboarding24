@@ -14,6 +14,12 @@
 
 // PROJECT 2 - You can instantiate your AnalogIn object here
 
+AnalogIn potResistor(P_POTRESISTOR);
+
+
+
+
+
 /*
  * COMMON PIN OBJECT INSTANTIATIONS
  */
