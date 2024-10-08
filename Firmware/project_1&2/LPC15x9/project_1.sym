@@ -1,0 +1,244 @@
+00000570 T _malloc_r
+00000408 D __malloc_av_
+000002b6 T __udivmoddi4
+000001fc T _free_r
+00000140 t can_irq
+00000138 B __sf
+00000120 D _impure_data
+000000fc T ResetISR
+000000fc T g_pfnVectors
+000000fc T can_read
+000000ec T memcpy
+000000e0 B can
+000000dc T SystemInit
+000000da T TimingCommon::onTick(bool*)
+000000d8 T can_init
+000000c4 T can_write
+000000b8 t timing_pts
+000000b8 W CANRXTXBuffer<32, 16>::handleIrq()
+000000b8 T _malloc_trim_r
+000000ac B timing
+000000ac T can_frequency
+000000a0 T memset
+00000094 T us_ticker_read
+00000090 W CANRXTXBuffer<32, 16>::write(mbed::CANMessage)
+00000088 t _GLOBAL__sub_I_can
+00000078 T TimingCommon::TimingCommon()
+00000078 T TimingCommon::TimingCommon()
+00000074 T us_ticker_init
+00000070 T main
+00000070 T can_irq_set
+00000070 T setup()
+00000064 T hardware_common_mbed::setupLEDs(mbed::DigitalOut*, mbed::DigitalOut*, mbed::DigitalOut*, mbed::DigitalOut*)
+0000005a T TimingCommon::addCallback(unsigned long, void (*)())
+00000058 T gpio_init
+00000058 T hardware_common_mbed::hardware_common_mbed(mbed::Timer*, mbed::CAN*, WDT*)
+00000058 T hardware_common_mbed::hardware_common_mbed(mbed::Timer*, mbed::CAN*, WDT*)
+00000052 W CircularBuffer<mbed::CANMessage, 32>::write(mbed::CANMessage)
+00000052 W CircularBuffer<mbed::CANMessage, 16>::write(mbed::CANMessage)
+00000050 T pin_mode
+00000050 T mbed::CAN::CAN(PinName, PinName)
+00000050 T mbed::CAN::CAN(PinName, PinName)
+00000050 T __libc_init_array
+0000004c T WDT::WDT(unsigned long)
+0000004c T WDT::WDT(unsigned long)
+0000004c T hardware_common_mbed::setupCAN()
+0000004a T ticker_irq_handler
+00000048 W CircularBuffer<mbed::CANMessage, 32>::read()
+00000048 T heartbeat()
+00000046 W mbed::CANMessage::CANMessage()
+00000046 W mbed::CANMessage::CANMessage()
+00000044 t gpio_read
+00000044 T gpio_dir
+00000044 T hardware_common_mbed::~hardware_common_mbed()
+00000044 T hardware_common_mbed::~hardware_common_mbed()
+00000044 W CANRXTXBuffer<32, 16>::read(mbed::CANMessage&)
+00000044 T TimingCommon::tickThreshold(unsigned long&, unsigned long)
+00000042 T TimingCommon::resetCallbackLastTicks(unsigned long)
+00000040 T vtable for hardware_common_mbed
+00000040 V vtable for hardware_common
+00000040 T WDT::setTimeout(unsigned long)
+00000040 T hardware_common_mbed::checkCANController()
+00000040 T TimingCommon::start(mbed::Timer*)
+0000003e t gpio_write
+0000003e T hardware_common_mbed::toggleReceiveCANLED()
+0000003e T hardware_common_mbed::toggleHeartbeatLED()
+0000003e T hardware_common_mbed::toggleHardwareLED()
+0000003e T hardware_common_mbed::toggleSendCANLED()
+0000003e T hardware_common_mbed::writeCANMessage(mbed::CANMessage)
+0000003c T NVIC_SetVector
+0000003c T hardware_common_mbed::startTimingCommon(TimingCommon*, bool*)
+0000003c T _sbrk
+0000003a W CANRXTXBuffer<32, 16>::CANRXTXBuffer(mbed::CAN&, int)
+0000003a W CANRXTXBuffer<32, 16>::CANRXTXBuffer(mbed::CAN&, int)
+00000038 W CircularBuffer<mbed::CANMessage, 32>::full() const
+00000038 W CircularBuffer<mbed::CANMessage, 16>::full() const
+00000038 W CircularBuffer<mbed::CANMessage, 32>::CircularBuffer()
+00000038 W CircularBuffer<mbed::CANMessage, 32>::CircularBuffer()
+00000038 W CircularBuffer<mbed::CANMessage, 16>::CircularBuffer()
+00000038 W CircularBuffer<mbed::CANMessage, 16>::CircularBuffer()
+00000034 T mbed::CAN::attach(void (*)(), mbed::CAN::IrqType)
+00000034 t _GLOBAL__sub_I_led1
+00000032 T gpio_init_out
+0000002e T mbed::CAN::_irq_handler(unsigned long, CanIrqType)
+0000002e T hardware_common_mbed::toggleHardwareLED(bool)
+0000002e W CircularBuffer<mbed::CANMessage, 16>::discard()
+0000002c T can_irq_free
+0000002c T WDT::feed()
+0000002c T WDT::causedReset()
+0000002a T mbed::CAN::write(mbed::CANMessage)
+0000002a T hardware_common_mbed::readCANMessage(mbed::CANMessage&)
+0000002a T TimingCommon::difference(unsigned long, unsigned long)
+00000028 W CircularBuffer<mbed::CANMessage, 32>::empty() const
+00000028 W CircularBuffer<mbed::CANMessage, 16>::empty() const
+00000028 T mbed::CAN::~CAN()
+00000028 T WDT::enable()
+00000028 T hardware_common_mbed::loopTime(TimingCommon*, bool*)
+00000028 B __malloc_current_mallinfo
+00000024 T us_ticker_set_interrupt
+00000024 B common_
+00000024 W mbed::DigitalOut::operator=(mbed::DigitalOut&)
+00000024 T _sbrk_r
+00000020 T mbed::Timer::Timer()
+00000020 T mbed::Timer::Timer()
+00000020 T mbed::CAN::~CAN()
+00000020 T mbed::CAN::~CAN()
+00000020 W hardware_common::~hardware_common()
+00000020 W hardware_common::~hardware_common()
+00000020 W hardware_common::hardware_common()
+00000020 W hardware_common::hardware_common()
+00000020 T TimingCommon::~TimingCommon()
+00000020 T TimingCommon::~TimingCommon()
+0000001e T wait_ms
+0000001e W CANRXTXBuffer<32, 16>::txEmpty() const
+0000001e W CANRXTXBuffer<32, 16>::txFull() const
+0000001e T hardware_common_mbed::~hardware_common_mbed()
+0000001e W hardware_common::~hardware_common()
+0000001e W CircularBuffer<mbed::CANMessage, 16>::peek()
+0000001e T TimingCommon::~TimingCommon()
+0000001c T sysconf
+0000001c T can_tx_status
+0000001c T can_free
+0000001c W mbed::DigitalOut::operator=(int)
+0000001c W mbed::DigitalOut::write(int)
+0000001a W CANRXTXBuffer<32, 16>::rxEmpty() const
+0000001a W CANRXTXBuffer<32, 16>::rxFull() const
+0000001a T mbed::Timer::read_us()
+0000001a W mbed::DigitalOut::DigitalOut(PinName)
+0000001a W mbed::DigitalOut::DigitalOut(PinName)
+0000001a W mbed::DigitalOut::read()
+00000018 B led4
+00000018 B led3
+00000018 B led2
+00000018 B led1
+00000018 T mbed::Timer::start()
+00000018 W mbed::DigitalOut::operator int()
+00000018 T _handleCANMessage()
+00000018 T __check_heap_overflow
+00000014 t us_interface
+00000014 T can_irq_init
+00000012 W mbed_die
+00000010 T us_ticker_disable_interrupt
+00000010 T us_ticker_clear_interrupt
+00000010 B timer
+00000010 T malloc
+00000010 T free
+00000010 T vtable for mbed::CAN
+00000010 T vtable for TimingCommon
+00000010 T checkCANController()
+0000000c T us_ticker_irq_handler
+0000000c T __malloc_unlock
+0000000c T __malloc_lock
+0000000c T __errno
+00000008 t us_data
+00000008 T gpio_mode
+00000008 T get_us_ticker_data
+00000008 b events
+00000006 T ticker_read
+00000006 T mbed::CAN::frequency(int)
+00000006 T mbed::CAN::txstatus()
+00000006 T mbed::CAN::read(mbed::CANMessage&, int)
+00000004 B us_ticker_inited
+00000004 b tx_interrupts
+00000004 D SystemCoreClock
+00000004 b rx_interrupts
+00000004 T mbed_assert_internal
+00000004 b irq_handler
+00000004 b gpio_enabled
+00000004 B errno
+00000004 T common
+00000004 b can_irq_id
+00000004 T operator new(unsigned int)
+00000004 b _handleCANMessageBuffer
+00000004 T operator delete(void*)
+00000004 D _impure_ptr
+00000004 D __malloc_trim_threshold
+00000004 B __malloc_top_pad
+00000004 D __malloc_sbrk_base
+00000004 B __malloc_max_total_mem
+00000004 B __malloc_max_sbrked_mem
+00000004 B __end_of_heap
+00000004 T __aeabi_atexit
+00000002 W WDT_IRQHandler
+00000002 W USBWakeup_IRQHandler
+00000002 W USB_IRQHandler
+00000002 W USB_FIQHandler
+00000002 W UsageFault_Handler
+00000002 W UART2_IRQHandler
+00000002 W UART1_IRQHandler
+00000002 W UART0_IRQHandler
+00000002 W SysTick_Handler
+00000002 W SVC_Handler
+00000002 W SPI1_IRQHandler
+00000002 W SPI0_IRQHandler
+00000002 W SCT3_IRQHandler
+00000002 W SCT2_IRQHandler
+00000002 W SCT1_IRQHandler
+00000002 W SCT0_IRQHandler
+00000002 W RTC_WAKE_IRQHandler
+00000002 W RTC_ALARM_IRQHandler
+00000002 W RIT_IRQHandler
+00000002 W QEI_IRQHandler
+00000002 W PIN_INT7_IRQHandler
+00000002 W PIN_INT6_IRQHandler
+00000002 W PIN_INT5_IRQHandler
+00000002 W PIN_INT4_IRQHandler
+00000002 W PIN_INT3_IRQHandler
+00000002 W PIN_INT2_IRQHandler
+00000002 W PIN_INT1_IRQHandler
+00000002 W PIN_INT0_IRQHandler
+00000002 W PendSV_Handler
+00000002 W NMI_Handler
+00000002 W MRT_IRQHandler
+00000002 W MemManage_Handler
+00000002 W IntDefaultHandler
+00000002 W I2C0_IRQHandler
+00000002 W HardFault_Handler
+00000002 W GINT1_IRQHandler
+00000002 W GINT0_IRQHandler
+00000002 W FMC_IRQHandler
+00000002 W EEPROM_IRQHandler
+00000002 W DMA_IRQHandler
+00000002 W DebugMon_Handler
+00000002 W DAC_IRQHandler
+00000002 W CAN_IRQHandler
+00000002 W BusFault_Handler
+00000002 W BOD_IRQHandler
+00000002 W ADC1B_IRQHandler
+00000002 W ADC1A_IRQHandler
+00000002 W ADC1_THCMP_IRQHandler
+00000002 W ADC1_OVR_IRQHandler
+00000002 W ADC0B_IRQHandler
+00000002 W ADC0A_IRQHandler
+00000002 W ADC0_THCMP_IRQHandler
+00000002 W ADC0_OVR_IRQHandler
+00000002 W ACMP3_IRQHandler
+00000002 W ACMP2_IRQHandler
+00000002 W ACMP1_IRQHandler
+00000002 W ACMP0_IRQHandler
+00000002 T __retarget_lock_release_recursive
+00000002 T __retarget_lock_acquire_recursive
+00000002 W __aeabi_ldiv0
+00000002 W __aeabi_idiv0
+00000001 B wdt
+00000001 B __lock___malloc_recursive_mutex
