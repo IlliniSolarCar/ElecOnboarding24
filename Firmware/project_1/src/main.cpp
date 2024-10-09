@@ -41,7 +41,7 @@ void setup() {
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
-	common.setupLEDs(&led1, &led2, &led3, &led4);
+	common.setupLEDs(&led4);
 
 	//Set Callbacks:
 	//These are side tasks (up to 8) that are run independently of the main
@@ -94,9 +94,20 @@ int main() {
         	//total messages. Do nothing for irrelevant messages
         	common.toggleReceiveCANLED();
         }
-
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        //since we want to read the voltage. we can use an AnalogIn object
+        float voltage = potentiometer.read(); //returns a value from 0 to 1
+        float blinkingRate = voltage*rateOfBlink;
+        if(timing.tickThreshold(last_task_1_time, blinkingRate)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	//returns 1 if the threshold has been met as of current tick, else 0
+        	//param: last time function was run, interval which program is supposed to run
+        	//1 = true here
+        	
+        	if read() == 0
+            {
+        		led1.write(1);
+        		led1.write(0);
+            }
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
