@@ -38,6 +38,3 @@ Thumbs.db
 desktop.ini
 .metadata
 doc/
-
-# Exclude lock files #
-*.lck
