@@ -54,8 +54,6 @@ void toggleMyLED(DigitalOut led)
  * be a good place to do it.
  */
 void setup() {
-	//NEW KZ
-	DigitalOut myLED(P_MYLED);
 
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
@@ -68,8 +66,8 @@ void setup() {
 	timing.addCallback(BRIZO_CAN::DEMO_HEART.RATE / 2, heartbeat);
 	timing.addCallback(CHECK_CAN_RATE_US, checkCANController);
 
-	//NEW KZ - method 2 alternative in use
-	timing.addCallback(TASK_1_RATE_US, toggleMyLED(myLED));
+	//NEW KZ - method 2 alternative
+	//timing.addCallback(TASK_1_RATE_US, toggleMyLED(myLED));
 
 	bool wdt_reset;
 	//start the timing and check for wdt caused reset
@@ -126,7 +124,7 @@ int main() {
         	//PROJECT 1 - add code here to actually make the LED blink
 
         	//method 1 below; commented out for alternative method
-        	//toggleMyLED(myLED);
+        	toggleMyLED(myLED);
 
         }
 
