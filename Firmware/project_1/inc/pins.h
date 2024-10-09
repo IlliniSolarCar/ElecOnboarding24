@@ -21,14 +21,16 @@
  */
 #define P_CAN_rd P0_13
 #define P_CAN_td P0_18
-#define P_LED4 P0_4
+#define P_LED1 P0_4
+#define P_POTENTIOMETER P0_5
 // PROJECT 1 - You can define a pin macro here
 
 /*
  * COMMON PIN OBJECT DECLARATIONS
  */
 
-extern DigitalOut led4;
+extern DigitalOut led1;
+extern AnalogIn potentiometer;
 // PROJECT 1 - You can declare a DigitalOut object here
 
 /*
