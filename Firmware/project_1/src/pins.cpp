@@ -13,7 +13,7 @@
  */
 
 // PROJECT 2 - You can instantiate your AnalogIn object here
-
+AnalogIn pResistor(P_POT);
 /*
  * COMMON PIN OBJECT INSTANTIATIONS
  */
@@ -22,4 +22,5 @@ DigitalOut led1(P_LED1);
 DigitalOut led2(P_LED2);
 DigitalOut led3(P_LED3);
 DigitalOut led4(P_LED4);
+DigitalOut led5(P_LED5); // just used the next values
 // PROJECT 1 - You can instantiate your DigitalOut object here
