@@ -5,6 +5,8 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
+
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -28,6 +30,21 @@ void checkCANController() {
 }
 
 /*
+ * kevin zhang alternate led blink
+ */
+void toggleMyLED(DigitalOut led)
+{
+	if(led.read()==0)
+	{
+	     led.write(1);
+	}
+	else
+	{
+	     led.write(0);
+	}
+}
+
+/*
  * This is where basic, one-time configuration code is run before entering
  * normal operation. It is recommended that you keep your configuration
  * code in setup() and call it at the beginning of main(), but it is not
@@ -37,6 +54,8 @@ void checkCANController() {
  * be a good place to do it.
  */
 void setup() {
+	//NEW KZ
+	DigitalOut myLED(P_MYLED);
 
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
@@ -49,6 +68,9 @@ void setup() {
 	timing.addCallback(BRIZO_CAN::DEMO_HEART.RATE / 2, heartbeat);
 	timing.addCallback(CHECK_CAN_RATE_US, checkCANController);
 
+	//NEW KZ - method 2 alternative in use
+	timing.addCallback(TASK_1_RATE_US, toggleMyLED(myLED));
+
 	bool wdt_reset;
 	//start the timing and check for wdt caused reset
 	common.startTimingCommon(&timing, &wdt_reset);
@@ -58,6 +80,7 @@ void setup() {
 
 	}
 }
+
 
 /*
  * The shutdown function may not be required in all projects.
@@ -80,6 +103,10 @@ int main() {
 	CANMessage msg;
 	bool shutdown = false;
 	// Main functionality
+
+	DigitalOut myLED(P_MYLED);
+
+
 	while (!shutdown) {
 
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
@@ -97,6 +124,10 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+
+        	//method 1 below; commented out for alternative method
+        	//toggleMyLED(myLED);
+
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
