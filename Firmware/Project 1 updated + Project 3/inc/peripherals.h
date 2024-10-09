@@ -23,6 +23,7 @@ extern Timer timer;
 extern WDT wdt;
 extern hardware_common& common;
 extern TimingCommon timing;
+extern DigitalOut led;
 
 
 #endif // __MBED1549_SKELETON_PERIPHERALS_H__

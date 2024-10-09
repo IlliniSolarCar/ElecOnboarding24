@@ -30,5 +30,5 @@ WDT wdt(WDT_TIMEOUT_US);
 hardware_common_mbed common_(&timer, &can, &wdt);
 hardware_common& common = common_;
 
-
+DigitalOut led(P_LED1);
 
