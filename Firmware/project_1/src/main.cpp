@@ -97,6 +97,7 @@ int main() {
 	// Configure all of our peripherals and globals
 	setup();
 	uint32_t last_task_1_time = timing.onTick(NULL);
+	uint32_t last_task_2_time = timing.onTick(NULL); //for proj 2
 
 	CANMessage msg;
 	bool shutdown = false;
@@ -129,7 +130,11 @@ int main() {
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
+        //note: cannot run in sync with project 1; one or the other must be commented out,
+        //since they control the timing of the same LED
+        if(timing.tickThreshold(last_task_2_time, (uint32_t)(myPot.read()*TASK_1_RATE_US))){
+        		toggleMyLED(myLED);
+		}
 
 	}
 
