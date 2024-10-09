@@ -4,7 +4,7 @@
  */
 
 #include <mbed.h>
-// PROJECT 1 - Include something here!
+#include "pins.h"// PROJECT 1 - Include something here!
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -80,6 +80,7 @@ int main() {
 	CANMessage msg;
 	bool shutdown = false;
 	// Main functionality
+	float task_rate_multiplier = 1f; // For PROJECT 2
 	while (!shutdown) {
 
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
@@ -95,11 +96,21 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US * task_rate_multiplier)){
+
+        	if (led0.read() == 0)
+        {
+        		led5.write(1);
+        }
+        	else
+		{
+        		led5.write(0);
+		}
+        //PROJECT 1 - add code here to actually make the LED blink
+        	}
         }
 
-        //PROJECT 2 - use the potentiometer to change the blink rate
+        task_rate_multiplier = potentiometer.read();//PROJECT 2 - use the potentiometer to change the blink rate
 
 
 	}
