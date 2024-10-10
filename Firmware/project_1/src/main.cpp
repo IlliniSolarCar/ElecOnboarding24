@@ -96,7 +96,7 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, potentiometer.read()*TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
         	// if-statement returns 1 when:
         	// last_task_time - last_tick_time > TASK_RATE

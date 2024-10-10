@@ -13,7 +13,7 @@
  */
 
 // PROJECT 2 - You can instantiate your AnalogIn object here
-AnalogIn potentiometer;
+AnalogIn potentiometer(P_POTENT);
 /*
  * COMMON PIN OBJECT INSTANTIATIONS
  */
