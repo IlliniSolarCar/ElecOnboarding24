@@ -1,0 +1,5 @@
+../src/main.cpp:26:6:void checkCANController()	0	static
+../src/main.cpp:20:6:void heartbeat()	48	static
+../src/main.cpp:39:6:void setup()	32	static
+../src/main.cpp:68:6:void shutdown_method()	8	static
+../src/main.cpp:75:5:int main()	48	static
