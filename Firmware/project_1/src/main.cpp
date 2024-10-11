@@ -22,7 +22,7 @@ void heartbeat() {
 		common.writeCANMessage(makeMessage(BRIZO_CAN::DEMO_HEART.ID, timer.read_us()));
 }
 
-/** Stub to call hardware-interface for checking the CAN controller. */
+/** Stub to call hardware-interface for checking the CAN controller. */ 
 void checkCANController() {
     common.checkCANController();
 }
