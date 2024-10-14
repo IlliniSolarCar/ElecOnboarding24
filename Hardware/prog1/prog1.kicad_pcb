@@ -1081,7 +1081,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.58 0 360)
+			(at 2.58 0 0)
 			(layer "F.Fab")
 			(uuid "3ed6d055-cbb2-479d-aaa6-762ba4e1c14d")
 			(effects
@@ -1128,7 +1128,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R1"
-			(at 0.0875 1.25 360)
+			(at 0.0875 1.25 0)
 			(layer "F.SilkS")
 			(uuid "c1eaa591-8a06-4092-9243-91c15d44548e")
 			(effects
@@ -1139,7 +1139,7 @@
 			)
 		)
 		(property "Value" "105"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "a4d82b35-65dd-4bdc-8529-64a0d56e0464")
 			(effects
@@ -1150,7 +1150,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8cbadd46-de8a-4cde-87e6-a6f187f6863e")
@@ -1162,7 +1162,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "63623220-c7b8-4dc8-8581-7e2d6b8b8105")
@@ -1174,7 +1174,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "24249a3b-4992-453f-a025-c221edd375a1")
@@ -1304,7 +1304,7 @@
 			(uuid "dd50b9fe-214c-47ab-9544-e77bf9f75007")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "c19d355d-9ac8-4d62-a7ff-09e632cc1d4d")
 			(effects
