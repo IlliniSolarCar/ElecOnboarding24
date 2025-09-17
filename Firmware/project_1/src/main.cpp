@@ -5,6 +5,8 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include <pins.h>
+
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -95,11 +97,20 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
+        uint32_t refreshTime = TASK_1_RATE_US;
+
+        if(timing.tickThreshold(last_task_1_time, refreshTime)){
+        	uint32_t ledstatus = ledmain.read();
+        	if(ledstatus == 0){
+        		ledmain.write(1);
+        	}
+        	if(ledstatus == 1){
+        		ledmain.write(0);
+        	}
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
+        refreshTime = TASK_1_RATE_US * pot1.read();
 
 
 	}
