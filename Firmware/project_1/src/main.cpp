@@ -5,6 +5,8 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
+#include "setup.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -97,11 +99,26 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	led5 = !led5;
+        	//wait(0.5);
+
+
+
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
+        //gets the voltage, by calculating the reduction in resistance
+        	float holder = pot1.read();
+       //the minimum rate of flickering
+        	float minRate = 1;
+        	//However much you subtract from the rate, to increase the rate of flickering
+        	float factor = -0.9;
+        	float result = minRate + (holder * factor);
+        	if(timing.tickThreshold(last_task_1_time, (int) (TASK_1_RATE_US * result))){
+        	        	//PROJECT 1 - add code here to actually make the LED blink
+        	        	led5 = !led5;
 
-
+	}
 	}
 
 	shutdown_method();
