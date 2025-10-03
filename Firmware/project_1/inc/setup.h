@@ -21,5 +21,4 @@
 #define TASK_1_RATE_US 1000000
 
 
-
 #endif /* SETUP_H_ */
