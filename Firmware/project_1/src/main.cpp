@@ -5,6 +5,8 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
+#include "DigitalOut.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -97,10 +99,14 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+			led = !led;
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
+			float pot_input = pot.read();
+			const float scaling = 900000.0f;
+			const float min = 100000.0f;
+			int TASK1_RATE_US = min + pot_input * scaling;
 
 	}
 
