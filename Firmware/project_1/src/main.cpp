@@ -5,11 +5,14 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
+#include "setup.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
+
 
 
 /*
@@ -37,7 +40,7 @@ void checkCANController() {
  * be a good place to do it.
  */
 void setup() {
-
+	// yes this works
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
@@ -81,10 +84,11 @@ int main() {
 	bool shutdown = false;
 	// Main functionality
 	while (!shutdown) {
-
+		
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
         bool overflow;
         uint32_t now = common.loopTime(&timing, &overflow);
+        
 
         //clear CAN Buffer
         while(!common.readCANMessage(msg)) {
@@ -94,9 +98,14 @@ int main() {
         	//total messages. Do nothing for irrelevant messages
         	common.toggleReceiveCANLED();
         }
+        // project 2
+        float pot_val = pot.read();
+        uint32_t blink = pot_val * BLINK_RATE;
+        		
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, BLINK_RATE)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	test_led = !test_led;
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
