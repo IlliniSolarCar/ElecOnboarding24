@@ -60,13 +60,14 @@ bool hardware_common_mbed::checkCANController() {
     return true;
 }
 
-void hardware_common_mbed::setupLEDs(DigitalOut* heartbeatLED, DigitalOut* receiveCANLED, DigitalOut* sendCANLED, DigitalOut* hardwareLED) {
+void hardware_common_mbed::setupLEDs(DigitalOut* heartbeatLED, DigitalOut* receiveCANLED, DigitalOut* sendCANLED, DigitalOut* hardwareLED, DigitalOut* myLED) {
 	p_heartbeatLED = heartbeatLED;
 	p_receiveCANLED = receiveCANLED;
 	p_sendCANLED = sendCANLED;
 	p_hardwareLED = hardwareLED;
+  p_myLED = myLED;
 
-	*p_heartbeatLED = *p_receiveCANLED = *p_sendCANLED = *p_hardwareLED = 0;
+	*p_heartbeatLED = *p_receiveCANLED = *p_sendCANLED = *p_hardwareLED = *p_myLED =  0;
 
 }
 
@@ -89,6 +90,12 @@ int hardware_common_mbed::toggleHardwareLED(){
 	*p_hardwareLED = !*p_hardwareLED;
 	return *p_hardwareLED;
 }
+
+int hardware_common_mbed::toggleMyLED(){
+	*p_myLED = !*p_myLED;
+	return *p_myLED;
+}
+
 
 int hardware_common_mbed::toggleHardwareLED(bool on){
 	*p_hardwareLED = on;

@@ -18,7 +18,7 @@
 
 //task 1 rate
 // PROJECT 1 - You can change the macro name to something more descriptive if you'd like
-#define TASK_1_RATE_US 1000000
+#define LED_BLINK_RATE_US 1000000
 
 
 
