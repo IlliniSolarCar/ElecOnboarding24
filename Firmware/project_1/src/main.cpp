@@ -11,7 +11,8 @@
 #include "CAN/can_data.h"
 #include "can_buffer.h"
 
-
+static const uint32_t BLINK_MIN_US = 100000;
+static const uint32_t BLINK_MAX_US = 1000000;
 /*
  * This is an example function. It blinks the heartbeat LED and sends
  * a Heartbeat CAN Message. The message sends when the LED turns on.
@@ -97,10 +98,16 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	led1.write(1 - led1.read());
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
+        float pot_val = pot.read();
+        uint32_t blink_interval_us =
+            BLINK_MIN_US + (uint32_t)((BLINK_MAX_US - BLINK_MIN_US) * pot_val);
+        if (timing.tickThreshold(last_task_1_time, blink_interval_us)) {
+            led1.write(1 - led1.read());  // toggle
+        }
 
 	}
 
