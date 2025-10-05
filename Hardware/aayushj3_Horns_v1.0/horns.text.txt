@@ -1,0 +1,10 @@
+Function: Horn breakout board to provide +24V and digital signal from dashboard to horn
+Inputs: +24V input from Low Voltage Bus Board, Digital signal input from Dashboard.
+
+Outputs: +24V horn output (switched on/off).
+
+Key Components: relay or MOSFET for switching, connectors, maybe fuses, etc.
+
+Electrical constraints: voltage levels, current limits, connector type, board size restrictions.
+
+Interfaces: how it connects to the rest of the system (pin headers, Molex connectors, etc.).

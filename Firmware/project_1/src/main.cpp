@@ -95,8 +95,22 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
+        float pot_value = pot.read();
+
+        blink_interval_us = 250000+static_cast<unit32_t>(pot_value*1750000)
+
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+
+
+        	if(led1.read() == 1)
+				{
+					led1.write() = 0
+				}
+			else
+				{
+					led1.write = 1;
+				}
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
