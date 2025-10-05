@@ -4,7 +4,9 @@
  */
 
 #include <mbed.h>
-// PROJECT 1 - Include something here!
+#include <setup.h>
+#include <pins.h>
+// PROJECT 1 - Heartbeat
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -83,6 +85,7 @@ int main() {
 	while (!shutdown) {
 
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
+
         bool overflow;
         uint32_t now = common.loopTime(&timing, &overflow);
 
@@ -93,16 +96,26 @@ int main() {
         	//receive for this board to function. This should be only a few
         	//total messages. Do nothing for irrelevant messages
         	common.toggleReceiveCANLED();
-        }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
+	float val = potentiometer1.read();
+	float scal = 900000.0;
+	float min = 100000.0;
+	int TASK_1_RATE_US = val*scal + min;
 
-
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        	//PROJECT 1 - add code here to actually make the LED blink
+		if (led5.read() == false) {
+			led5.write(true);
+		}
+		else{
+			led5.write(false);
+		}
 	}
+
+
 
 	shutdown_method();
 }

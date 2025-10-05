@@ -36,6 +36,7 @@ extern DigitalOut led2;
 extern DigitalOut led3;
 extern DigitalOut led4;
 // PROJECT 1 - You can declare a DigitalOut object here
+extern DigitalOut led5;
 
 /*
  * BOARD SPECIFIC PINS
@@ -43,6 +44,7 @@ extern DigitalOut led4;
 
 // PROJECT 2 - You can declare a AnalogIn object here
 
+extern AnalogIn potentiometer1(P_POT1);
 
 /*
  * BOARD SPECIFIC PIN OBJECT DECLARATIONS
