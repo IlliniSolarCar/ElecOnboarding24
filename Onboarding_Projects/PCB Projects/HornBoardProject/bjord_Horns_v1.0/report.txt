@@ -1,0 +1,202 @@
+Info: Processing symbol 'C1:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'F1:Fuse:Fuse_1206_3216Metric'.
+Info: Processing symbol 'C2:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C3:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C7:Capacitor_SMD:C_0805_2012Metric'.
+Info: Total warnings: 8, errors: 0.
+Info: Processing symbol 'C4:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C8:Capacitor_THT:CP_Radial_D6.3mm_P2.50mm'.
+Info: Processing symbol 'C9:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C6:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'C5:Capacitor_SMD:C_0805_2012Metric'.
+Info: Processing symbol 'J1:Connector_Molex:Molex_CLIK-Mate_505405-0270_1x02-1MP_P1.50mm_Vertical'.
+Info: Processing symbol 'J2:Connector_Molex:Molex_CLIK-Mate_505405-0270_1x02-1MP_P1.50mm_Vertical'.
+Info: Processing symbol 'J3:Connector_Molex:Molex_CLIK-Mate_502585-0370_1x03-1MP_P1.50mm_Horizontal'.
+Info: Processing symbol 'J4:Connector_Molex:Molex_CLIK-Mate_505405-0270_1x02-1MP_P1.50mm_Vertical'.
+Info: Processing symbol 'R1:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'Q1:Package_TO_SOT_THT:TO-92_Inline'.
+Info: Processing symbol 'R2:Resistor_SMD:R_0805_2012Metric'.
+Add net Net-(J1-Pin_2).
+Connected C1 pin 1 to Net-(J1-Pin_2).
+Add net GND.
+Connected C1 pin 2 to GND.
+Added C2 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Changed REF** reference designator to C2.
+Changed C2 value from C_0805_2012Metric to 0.1uF.
+Updated C2 symbol association from  to /33b6bac3-db71-43dc-ae12-f01984e35e2d.
+Updated C2 fields.
+Updated C2 sheetname to '/'.
+Updated C2 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Connected C2 pin 1 to Net-(J1-Pin_2).
+Connected C2 pin 2 to GND.
+Added C3 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Changed C3 value from C_0805_2012Metric to 0.1uF.
+Updated C3 symbol association from  to /36a45a39-3989-49fc-bef3-a62b281532d5.
+Updated C3 fields.
+Updated C3 sheetname to '/'.
+Updated C3 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Connected C3 pin 1 to Net-(J1-Pin_2).
+Connected C3 pin 2 to GND.
+Added C4 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Changed REF** reference designator to C4.
+Changed C4 value from C_0805_2012Metric to 1uF.
+Updated C4 symbol association from  to /0494d781-630e-45cc-a7fa-47cb7750487e.
+Updated C4 fields.
+Updated C4 sheetname to '/'.
+Updated C4 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Connected C4 pin 1 to Net-(J1-Pin_2).
+Connected C4 pin 2 to GND.
+Added C5 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Changed REF** reference designator to C5.
+Changed C5 value from C_0805_2012Metric to 1uF.
+Updated C5 symbol association from  to /d57cf402-4e1c-48f2-9790-a8a70209e13d.
+Updated C5 fields.
+Updated C5 sheetname to '/'.
+Updated C5 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Connected C5 pin 2 to GND.
+Connected C5 pin 1 to Net-(J1-Pin_2).
+Added C6 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Changed REF** reference designator to C6.
+Changed C6 value from C_0805_2012Metric to 10uF.
+Updated C6 symbol association from  to /affd25a6-f3e5-48cd-a54a-73239f06103e.
+Updated C6 fields.
+Updated C6 sheetname to '/'.
+Updated C6 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Connected C6 pin 1 to Net-(J1-Pin_2).
+Connected C6 pin 2 to GND.
+Added C7 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Changed REF** reference designator to C7.
+Changed C7 value from C_0805_2012Metric to 10uF.
+Updated C7 symbol association from  to /3aca737c-2a2b-43f9-8ca0-189db128d0a7.
+Updated C7 fields.
+Updated C7 sheetname to '/'.
+Updated C7 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Connected C7 pin 1 to Net-(J1-Pin_2).
+Connected C7 pin 2 to GND.
+Added C8 (footprint 'Capacitor_THT:CP_Radial_D6.3mm_P2.50mm').
+Changed REF** reference designator to C8.
+Changed C8 value from CP_Radial_D6.3mm_P2.50mm to 100uF.
+Updated C8 symbol association from  to /6fbde11b-4f4e-43b6-9196-b969f978870b.
+Updated C8 fields.
+Updated C8 sheetname to '/'.
+Updated C8 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Updated C8 footprint filters to 'CP_*'.
+Connected C8 pin 2 to GND.
+Connected C8 pin 1 to Net-(J1-Pin_2).
+Added C9 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Changed REF** reference designator to C9.
+Changed C9 value from C_0805_2012Metric to 1uF.
+Updated C9 symbol association from  to /58be8149-0378-4295-ace8-09876f45c750.
+Updated C9 fields.
+Updated C9 sheetname to '/'.
+Updated C9 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Connected C9 pin 1 to GND.
+Add net Net-(Q1-S).
+Connected C9 pin 2 to Net-(Q1-S).
+Added F1 (footprint 'Fuse:Fuse_1206_3216Metric').
+Changed REF** reference designator to F1.
+Changed F1 value from Fuse_1206_3216Metric to 2A.
+Updated F1 symbol association from  to /a9598046-4741-4a0a-a997-4e7291987906.
+Changed REF** reference designator to C3.
+Updated F1 sheetname to '/'.
+Updated F1 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Updated F1 footprint filters to '*Fuse*'.
+Add net Net-(J3-Pin_2).
+Connected F1 pin 1 to Net-(J3-Pin_2).
+Connected F1 pin 2 to Net-(J1-Pin_2).
+Added C1 (footprint 'Capacitor_SMD:C_0805_2012Metric').
+Added J1 (footprint 'Connector_Molex:Molex_CLIK-Mate_505405-0270_1x02-1MP_P1.50mm_Vertical').
+Changed REF** reference designator to J1.
+Changed J1 value from Molex_CLIK-Mate_505405-0270_1x02-1MP_P1.50mm_Vertical to Horn Out 2.
+Updated J1 symbol association from  to /ae09cdcb-d0b0-4275-b7bc-ccb46bda6c00.
+Updated J1 fields.
+Updated J1 sheetname to '/'.
+Updated J1 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Updated J1 footprint filters to 'Connector*:*_1x??_*'.
+Add net Net-(J1-Pin_1).
+Connected J1 pin 1 to Net-(J1-Pin_1).
+Connected J1 pin 2 to Net-(J1-Pin_2).
+Changed REF** reference designator to C1.
+Added J2 (footprint 'Connector_Molex:Molex_CLIK-Mate_505405-0270_1x02-1MP_P1.50mm_Vertical').
+Changed REF** reference designator to J2.
+Changed J2 value from Molex_CLIK-Mate_505405-0270_1x02-1MP_P1.50mm_Vertical to Horn Out 1.
+Updated J2 symbol association from  to /6f6de07b-068f-48ce-897b-17a492ec25b9.
+Updated J2 fields.
+Updated J2 sheetname to '/'.
+Updated J2 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Updated J2 footprint filters to 'Connector*:*_1x??_*'.
+Add net Net-(J2-Pin_1).
+Connected J2 pin 1 to Net-(J2-Pin_1).
+Connected J2 pin 2 to Net-(J1-Pin_1).
+Changed C1 value from C_0805_2012Metric to 0.1uF.
+Added J3 (footprint 'Connector_Molex:Molex_CLIK-Mate_502585-0370_1x03-1MP_P1.50mm_Horizontal').
+Changed REF** reference designator to J3.
+Changed J3 value from Molex_CLIK-Mate_502585-0370_1x03-1MP_P1.50mm_Horizontal to 24V.
+Updated J3 symbol association from  to /4ea8393a-7c26-45fb-9d53-0c2bb9cc0175.
+Updated J3 fields.
+Updated J3 sheetname to '/'.
+Updated J3 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Updated J3 footprint filters to 'Connector*:*_1x??_*'.
+Connected J3 pin 2 to Net-(J3-Pin_2).
+Connected J3 pin 1 to GND.
+Connected J3 pin 3 to GND.
+Updated C1 symbol association from  to /bee675b1-1177-4513-9de8-8daa3e780e53.
+Added J4 (footprint 'Connector_Molex:Molex_CLIK-Mate_505405-0270_1x02-1MP_P1.50mm_Vertical').
+Updated C1 fields.
+Changed J4 value from Molex_CLIK-Mate_505405-0270_1x02-1MP_P1.50mm_Vertical to Horn Control Connector.
+Updated J4 symbol association from  to /8133d0bf-66c9-4ca0-952d-1267ed4e3566.
+Updated J4 fields.
+Updated J4 sheetname to '/'.
+Updated J4 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Updated J4 footprint filters to 'Connector*:*_1x??_*'.
+Connected J4 pin 1 to GND.
+Add net Net-(J4-Pin_2).
+Connected J4 pin 2 to Net-(J4-Pin_2).
+Updated C1 sheetname to '/'.
+Added Q1 (footprint 'Package_TO_SOT_THT:TO-92_Inline').
+Changed REF** reference designator to Q1.
+Changed Q1 value from TO-92_Inline to DN2540N3-G.
+Updated Q1 symbol association from  to /34470667-a914-4522-829f-c97222a7d3cf.
+Updated Q1 fields.
+Updated Q1 sheetname to '/'.
+Updated Q1 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Updated Q1 footprint filters to 'TO?92*'.
+Connected Q1 pin 1 to Net-(Q1-S).
+Connected Q1 pin 3 to GND.
+Connected Q1 pin 2 to Net-(J2-Pin_1).
+Updated F1 fields.
+Added R1 (footprint 'Resistor_SMD:R_0805_2012Metric').
+Changed REF** reference designator to R1.
+Changed R1 value from R_0805_2012Metric to 1k.
+Updated R1 symbol association from  to /2c3022a6-8d76-4d82-b9c6-d8174cca6f39.
+Updated R1 fields.
+Updated R1 sheetname to '/'.
+Updated R1 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Updated R1 footprint filters to 'R_*'.
+Connected R1 pin 1 to Net-(J4-Pin_2).
+Connected R1 pin 2 to Net-(Q1-S).
+Updated C1 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Added R2 (footprint 'Resistor_SMD:R_0805_2012Metric').
+Changed REF** reference designator to R2.
+Changed R2 value from R_0805_2012Metric to 100k.
+Updated R2 symbol association from  to /a85894ff-99e7-4cb5-ae71-de413935bc04.
+Updated R2 fields.
+Updated R2 sheetname to '/'.
+Updated R2 sheetfile to 'bjord_Horns_v0.0.kicad_sch'.
+Updated R2 footprint filters to 'R_*'.
+Connected R2 pin 1 to GND.
+Connected R2 pin 2 to Net-(Q1-S).
+
+
+Changed REF** reference designator to J4.
+Warning: No net found for component J4 pad MP (no pin MP in symbol).
+Warning: No net found for component J2 pad MP (no pin MP in symbol).
+Warning: No net found for component J3 pad MP (no pin MP in symbol).
+Warning: No net found for component J1 pad MP (no pin MP in symbol).
+Warning: No net found for component J2 pad MP (no pin MP in symbol).
+Warning: No net found for component J3 pad MP (no pin MP in symbol).
+Warning: No net found for component J4 pad MP (no pin MP in symbol).
+Warning: No net found for component J1 pad MP (no pin MP in symbol).
+
+
+Info: Total warnings: 8, errors: 0.
