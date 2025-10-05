@@ -10,6 +10,7 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
+#include "DigitalOut.h"
 
 
 /*
@@ -97,6 +98,12 @@ int main() {
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	if (P_LED5.read() == 0){
+        		P_LED5.write(1);
+        	}else{
+        		P_LED5.write(0);
+        	}
+
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
