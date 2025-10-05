@@ -10,6 +10,7 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
+#include "pins.h"
 
 
 /*
@@ -82,6 +83,16 @@ int main() {
 	// Main functionality
 	while (!shutdown) {
 
+		if (timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)) {
+if(led.read()==0)
+{
+	led=1;
+}
+else {
+	led =0;
+}
+
+		}
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
         bool overflow;
         uint32_t now = common.loopTime(&timing, &overflow);
