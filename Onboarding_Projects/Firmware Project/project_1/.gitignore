@@ -1,0 +1,11 @@
+# Ignore the temporary build directory
+/Debug
+/Release
+
+# Ignore local, user-specific launch configurations
+*.launch
+/LPC1549/
+/LPC1517/
+/LPC15x9/
+/LPC15x8/
+/LPC15x7/
