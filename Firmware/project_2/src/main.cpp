@@ -94,10 +94,14 @@ int main() {
         	//total messages. Do nothing for irrelevant messages
         	common.toggleReceiveCANLED();
         }
+        
+        //PROJECT 2 - use the potentiometer to change the blink rate
+        float analogV = potm.read() * 10;
+        uint32_t intMult = static_cast<uint32_t>(analogV);
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US * intMult)){
         	//PROJECT 1 - add code here to actually make the LED blink
-        	bool ledState = (led5.read()) ? true : false;
+        	int ledState = (led5.read()) ? 1 : 0;
 			led5.write(ledState);
 			/* This works too I guess but I wanted to be special
         	if (led5.read() == 0) {
@@ -108,8 +112,6 @@ int main() {
         	}
         	*/
         }
-
-        //PROJECT 2 - use the potentiometer to change the blink rate
 
 	}
 
