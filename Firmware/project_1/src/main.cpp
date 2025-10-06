@@ -5,11 +5,14 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
+#include "setup.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
+#include "hardware_common.h"
 
 
 /*
@@ -36,6 +39,23 @@ void checkCANController() {
  * If you have global variables that need to be initialized, here would
  * be a good place to do it.
  */
+
+void Toggleled ()
+{
+	//first read the pin to check to state if it off turn on if on turn off
+
+	int state_led5 = led5.read();
+	if (state_led5 == 0)
+	{
+	 led5.write(1);
+	}
+	else
+	{
+	 led5.write(0);
+	}
+}
+
+
 void setup() {
 
 	//set up the CAN interrupts and handling.
@@ -95,8 +115,18 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+
+        if(timing.tickThreshold(last_task_1_time, DELAY_TIMER)){
         	//PROJECT 1 - add code here to actually make the LED blink
+
+
+        	Toggleled();
+
+
+
+
+
+
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
