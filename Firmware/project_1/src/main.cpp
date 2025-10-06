@@ -5,6 +5,8 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
+
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -37,7 +39,8 @@ void checkCANController() {
  * be a good place to do it.
  */
 void setup() {
-
+	// set up led for blinking
+	DigitalOut proj_led(P_PROJLED, 0);
 	//set up the CAN interrupts and handling.
 	common.setupCAN();
 	//set up LEDs and turn them all off
@@ -95,8 +98,9 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, LED_RATE)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	proj_led.write(!proj_led.read());
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
