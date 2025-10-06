@@ -5,6 +5,7 @@
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -94,12 +95,16 @@ int main() {
         	//total messages. Do nothing for irrelevant messages
         	common.toggleReceiveCANLED();
         }
-
+        
+        float pot_value = pot.read(); // sets Analog read from 0.0 to 1.0 //
+        unint32_t = blink_rate_us = 100000 + (unint32_t)((1.0f - pot_value) * 900000);
+        
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	led5 = !led5.read();
         }
 
-        //PROJECT 2 - use the potentiometer to change the blink rate
+        //PROJECT 2 - use the potentiometer to change the blink rate (note: shown above) //
 
 
 	}

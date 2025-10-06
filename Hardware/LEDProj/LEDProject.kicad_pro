@@ -460,7 +460,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Template_v0.0.kicad_pro",
+    "filename": "LEDProject.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -569,12 +569,42 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Notes",
+          "name": "Notes",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -631,7 +661,7 @@
   "sheets": [
     [
       "1e1b062d-fad0-427c-a622-c5b8a80b5268",
-      ""
+      "Root"
     ]
   ],
   "text_variables": {}
