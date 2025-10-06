@@ -1,10 +1,10 @@
 /*
  * This is where your main program code lives. On reset, after some basic
- * initialization code is run, main() is called.
- */
+ * initialization code is run, main() is called. */
 
 #include <mbed.h>
 // PROJECT 1 - Include something here!
+#include "pins.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -34,8 +34,8 @@ void checkCANController() {
  * mandatory.
  *
  * If you have global variables that need to be initialized, here would
- * be a good place to do it.
- */
+ * be a good place to do it.*/
+
 void setup() {
 
 	//set up the CAN interrupts and handling.
@@ -76,31 +76,38 @@ int main() {
 	// Configure all of our peripherals and globals
 	setup();
 	uint32_t last_task_1_time = timing.onTick(NULL);
-
+	uint32_tparameter perMinute = 60;
 	CANMessage msg;
 	bool shutdown = false;
 	// Main functionality
 	while (!shutdown) {
-
 		//on time overflow all callbacks will happen and timing reset to 0. Might be needed for other functions that rely on timing.
         bool overflow;
         uint32_t now = common.loopTime(&timing, &overflow);
 
         //clear CAN Buffer
         while(!common.readCANMessage(msg)) {
-        	//you should do something with the relevant CAN messages here
-        	//toggle the CAN receive LED for only the messages you need to
-        	//receive for this board to function. This should be only a few
-        	//total messages. Do nothing for irrelevant messages
-        	common.toggleReceiveCANLED();
+        	if (common.read() == 0 || common.read() == 1) {
+            	common.toggleReceiveCANLED();
+        	}
         }
-
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US) && TASK_1_RATE_US - last_task_1_time == HEARTBEAT_RATE){
         	//PROJECT 1 - add code here to actually make the LED blink
+			if (P0_4.read() == 0) {
+				P0_4.write(1);
+			} else {
+				P0_4.write(0);
+			}
+			
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
-
+		float analog_out_value = potentiometer.read();
+		if (analog_out_value < 0.5) {
+			HEARTBEAT_RATE = HEARTBEAT_RATE*2;
+		} else {
+			HEARTBEAT_RATE = HEARTBEAT_RATE/2;
+		}
 
 	}
 
