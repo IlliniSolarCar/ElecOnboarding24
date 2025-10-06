@@ -1,0 +1,54 @@
+Info: Reading netlist file 'C:\Users\default.LAPTOP-TU80VK49\Illini Solar Car\ElecOnboarding25\Hardware\prog1\prog1.net'.
+
+Info: Using reference designators to match symbols and footprints.
+
+Info: Processing symbol 'D1:layout:LED_0603_Symbol_on_F.SilkS'.
+Info: Processing symbol 'R2:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'J1:Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'SW1:Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile'.
+Changed D1 value from LED_0603 to LED_RED.
+Updated D1 symbol association from  to /4382b218-4e3e-4212-b125-a2b67ff61f3f.
+Updated D1 fields.
+Updated D1 sheetname to 'Root'.
+Updated D1 sheetfile to 'prog1.kicad_sch'.
+Updated D1 footprint filters to 'LED* LED_SMD:* LED_THT:*'.
+Add net GND.
+Connected D1 pin 1 to GND.
+Add net Net-(D1-A).
+Connected D1 pin 2 to Net-(D1-A).
+Added R2 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R2.
+Changed R2 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 105.
+Updated R2 symbol association from  to /b3866d3f-e302-454b-b3ab-a41bed336c99.
+Updated R2 fields.
+Updated R2 sheetname to 'Root'.
+Updated R2 sheetfile to 'prog1.kicad_sch'.
+Updated R2 footprint filters to 'R_*'.
+Connected R2 pin 2 to Net-(D1-A).
+Add net Net-(R2-Pad1).
+Connected R2 pin 1 to Net-(R2-Pad1).
+Added D1 (footprint 'layout:LED_0603_Symbol_on_F.SilkS').
+Added J1 (footprint 'Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical').
+Changed REF** reference designator to J1.
+Changed J1 value from Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical to Conn_01x02.
+Updated J1 symbol association from  to /339a818b-a76f-4287-8121-bf789eb1996b.
+Updated J1 fields.
+Updated J1 sheetname to 'Root'.
+Updated J1 sheetfile to 'prog1.kicad_sch'.
+Updated J1 footprint filters to 'Connector*:*_1x??_*'.
+Connected J1 pin 1 to GND.
+Add net +3V3.
+Connected J1 pin 2 to +3V3.
+Changed REF** reference designator to D1.
+Added SW1 (footprint 'Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile').
+Changed REF** reference designator to SW1.
+Changed SW1 value from SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile to SW_Push.
+Updated SW1 symbol association from  to /ded76ee8-f149-456f-b00d-4c3471b199c4.
+Updated SW1 fields.
+Updated SW1 sheetname to 'Root'.
+Updated SW1 sheetfile to 'prog1.kicad_sch'.
+Connected SW1 pin 2 to Net-(R2-Pad1).
+Connected SW1 pin 1 to +3V3.
+
+
+Info: Total warnings: 0, errors: 0.
