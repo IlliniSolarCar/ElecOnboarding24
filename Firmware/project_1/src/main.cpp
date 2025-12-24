@@ -10,7 +10,7 @@
 #include "CAN/can_id.h"
 #include "CAN/can_data.h"
 #include "can_buffer.h"
-
+#include "pins.h"
 
 /*
  * This is an example function. It blinks the heartbeat LED and sends
@@ -79,6 +79,10 @@ int main() {
 
 	CANMessage msg;
 	bool shutdown = false;
+	bool hbled_is_on=false;
+	float voltage;
+	int timing=TASK_1_RATE_US;
+
 	// Main functionality
 	while (!shutdown) {
 
@@ -95,11 +99,39 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+
+
+
+
+        if(timing.tickThreshold(last_task_1_time, timing)){
         	//PROJECT 1 - add code here to actually make the LED blink
+        	if (hbled.read()){
+        		hbled.write(0);
+        		hbled_is_on = false;
+        	}
+        	else{TASK_1_RATE_US
+        		hbled.write(1);
+        		hbled_is_on = true;
+        	}
+
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
+
+
+        /* Krishna's notes/thought process on the code;
+         * Set two variables on lines 83 and 84 for the voltage and the timing value. The previously used variable for timing, TASK_1_RATE_US, is a private variable and can't be edited.
+         * To adjust this timing value, multiply it by 10 times the float value of the voltage from the potentiometer, then cast to an int, since the variable timing is an int.
+         * The timing value is reset to its default before every repetition, so timing is only dependent on the voltage, not the previous timing value.
+         * For example, timing is initially 1000000. If the voltage is set to 0.3 on the potentiometer, the new timing value will be 0.3*10*1000000 which is 3000000.
+         * If the voltage value is now changed to 0.4, the new value will not be 0.4*10*1000000, but it will be 0.4*10*30000000. So timing is set to 10000000 before every cycle.
+         */
+        voltage=ptmtr.read();
+        timing=TASK_1_RATE_US;
+        timing=(int)timing*voltage*10;
+
+
+
 
 
 	}
