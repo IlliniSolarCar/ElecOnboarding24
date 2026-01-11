@@ -96,7 +96,9 @@ int main() {
         }
 
         if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
+        	//timing.addCallback(CHECK_CAN_RATE_US, checkCANController);
         	//PROJECT 1 - add code here to actually make the LED blink
+        	led1.write(!led1.read());
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
