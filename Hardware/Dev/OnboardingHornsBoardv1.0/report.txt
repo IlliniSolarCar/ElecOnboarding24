@@ -1,0 +1,22 @@
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-F_Cu.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-B_Cu.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-F_Paste.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-B_Paste.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-F_Silkscreen.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-B_Silkscreen.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-F_Mask.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-B_Mask.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-Edge_Cuts.gbr'.
+Created Gerber job file 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-job.gbrjob'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-F_Cu.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-B_Cu.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-F_Paste.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-B_Paste.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-F_Silkscreen.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-B_Silkscreen.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-F_Mask.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-B_Mask.gbr'.
+Plotted to 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-Edge_Cuts.gbr'.
+Created Gerber job file 'C:\Users\pedro\IlliniSolarCar\ElecOnboarding25\Hardware\Dev\OnboardingHornsBoardv1.0\OnboardingHornsBoardv1.0-job.gbrjob'.
+Info: Done.
+Info: Done.
