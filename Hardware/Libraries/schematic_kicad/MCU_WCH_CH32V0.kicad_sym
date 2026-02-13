@@ -1,0 +1,1850 @@
+(kicad_symbol_lib
+	(version 20231120)
+	(generator "kicad_symbol_editor")
+	(generator_version "8.0")
+	(symbol "CH32V003AxMx"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CH32V003AxMx"
+			(at 7.62 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOP-16_3.9x9.9mm_P1.27mm"
+			(at -2.54 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.wch-ic.com/products/CH32V003.html"
+			(at -2.54 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CH32V003 series are industrial-grade general-purpose microcontrollers designed based on 32-bit RISC-V instruction set and architecture. It adopts QingKe V2A core, RV32EC instruction set, and supports 2 levels of interrupt nesting. The series are mounted with rich peripheral interfaces and function modules. Its internal organizational structure meets the low-cost and low-power embedded application scenarios."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "RISC-V WCH MCU microcontroller"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOP*3.9x9.9mm*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "CH32V003AxMx_1_1"
+			(rectangle
+				(start -7.62 12.7)
+				(end 7.62 -12.7)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin bidirectional line
+				(at -10.16 7.62 0)
+				(length 2.54)
+				(name "PC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "NSS" bidirectional line)
+				(alternate "SDA" bidirectional line)
+				(alternate "T1BKIN_1" bidirectional line)
+				(alternate "T1BKIN_3" bidirectional line)
+				(alternate "T2CH1ETR_2" bidirectional line)
+				(alternate "T2CH1ETR_3" bidirectional line)
+				(alternate "T2CH4_1" bidirectional line)
+				(alternate "URX_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "PD6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A6" bidirectional line)
+				(alternate "T2CH3_3" bidirectional line)
+				(alternate "URX" bidirectional line)
+				(alternate "UTX_2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "PD7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "NRST" bidirectional line)
+				(alternate "OPP1" bidirectional line)
+				(alternate "T2CH4" bidirectional line)
+				(alternate "T2CH4_2" bidirectional line)
+				(alternate "UCK_1" bidirectional line)
+				(alternate "UCK_2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 -7.62 180)
+				(length 2.54)
+				(name "PA1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A1" bidirectional line)
+				(alternate "OPN0" bidirectional line)
+				(alternate "OSCI" bidirectional line)
+				(alternate "T1CH2" bidirectional line)
+				(alternate "T1CH2_2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 -10.16 180)
+				(length 2.54)
+				(name "PA2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A0" bidirectional line)
+				(alternate "AETR2_1" bidirectional line)
+				(alternate "OPP0" bidirectional line)
+				(alternate "OSCO" bidirectional line)
+				(alternate "TICH2N" bidirectional line)
+				(alternate "TICH2N_2" bidirectional line)
+			)
+			(pin power_in line
+				(at 0 -15.24 90)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 15.24 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -10.16 10.16 0)
+				(length 2.54)
+				(name "PC0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "NSS_1" bidirectional line)
+				(alternate "T1CH3_1" bidirectional line)
+				(alternate "T2CH3" bidirectional line)
+				(alternate "T2CH3_2" bidirectional line)
+				(alternate "UTX_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "PC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AETR_1" bidirectional line)
+				(alternate "SCL" bidirectional line)
+				(alternate "T1BKIN" bidirectional line)
+				(alternate "T1BKIN_2" bidirectional line)
+				(alternate "T1ETR_3" bidirectional line)
+				(alternate "T2CH2_1" bidirectional line)
+				(alternate "URTS" bidirectional line)
+				(alternate "URTS_1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "PC3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "T1CH1N_1" bidirectional line)
+				(alternate "T1CH1N_3" bidirectional line)
+				(alternate "T1CH3" bidirectional line)
+				(alternate "T1CH3_2" bidirectional line)
+				(alternate "UCTS_1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "PC4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A2" bidirectional line)
+				(alternate "MCO" bidirectional line)
+				(alternate "T1CH1_3" bidirectional line)
+				(alternate "T1CH2N_1" bidirectional line)
+				(alternate "T1CH4" bidirectional line)
+				(alternate "T1CH4_2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "PC6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "MOSI" bidirectional line)
+				(alternate "MOSI_1" bidirectional line)
+				(alternate "SDA_2" bidirectional line)
+				(alternate "SDA_3" bidirectional line)
+				(alternate "T1CH1_1" bidirectional line)
+				(alternate "T1CH3N_3" bidirectional line)
+				(alternate "UCTS_2" bidirectional line)
+				(alternate "UCTS_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "PC7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "MISO" bidirectional line)
+				(alternate "MISO_1" bidirectional line)
+				(alternate "T1CH2_1" bidirectional line)
+				(alternate "T1CH2_3" bidirectional line)
+				(alternate "T2CH2_3" bidirectional line)
+				(alternate "URTS_2" bidirectional line)
+				(alternate "URTS_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 10.16 180)
+				(length 2.54)
+				(name "PD1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AETR2" bidirectional line)
+				(alternate "SCL_1" bidirectional line)
+				(alternate "SWIO" bidirectional line)
+				(alternate "T1CH3N" bidirectional line)
+				(alternate "T1CH3N_1" bidirectional line)
+				(alternate "T1CH3N_2" bidirectional line)
+				(alternate "URX_1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 7.62 180)
+				(length 2.54)
+				(name "PD4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A7" bidirectional line)
+				(alternate "OPO" bidirectional line)
+				(alternate "T1CH4_3" bidirectional line)
+				(alternate "T2CH1ETR" bidirectional line)
+				(alternate "TIETR_2" bidirectional line)
+				(alternate "UCK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(name "PD5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A5" bidirectional line)
+				(alternate "T2CH4_3" bidirectional line)
+				(alternate "URX_2" bidirectional line)
+				(alternate "UTX" bidirectional line)
+			)
+		)
+	)
+	(symbol "CH32V003FxPx"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CH32V003FxPx"
+			(at 7.62 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at -1.27 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.wch-ic.com/products/CH32V003.html"
+			(at -1.27 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CH32V003 series are industrial-grade general-purpose microcontrollers designed based on 32-bit RISC-V instruction set and architecture. It adopts QingKe V2A core, RV32EC instruction set, and supports 2 levels of interrupt nesting. The series are mounted with rich peripheral interfaces and function modules. Its internal organizational structure meets the low-cost and low-power embedded application scenarios."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "microcontroller wch RISC-V"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TSSOP*4.4x6.5mm*P0.65mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "CH32V003FxPx_1_1"
+			(rectangle
+				(start -7.62 15.24)
+				(end 7.62 -15.24)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "PD4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A7" bidirectional line)
+				(alternate "OPO" bidirectional line)
+				(alternate "T1CH4_3" bidirectional line)
+				(alternate "T2CH1ETR" bidirectional line)
+				(alternate "TIETR_2" bidirectional line)
+				(alternate "UCK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 12.7 0)
+				(length 2.54)
+				(name "PC0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "NSS_1" bidirectional line)
+				(alternate "T1CH3_1" bidirectional line)
+				(alternate "T2CH3" bidirectional line)
+				(alternate "T2CH3_2" bidirectional line)
+				(alternate "UTX_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 10.16 0)
+				(length 2.54)
+				(name "PC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "NSS" bidirectional line)
+				(alternate "SDA" bidirectional line)
+				(alternate "T1BKIN_1" bidirectional line)
+				(alternate "T1BKIN_3" bidirectional line)
+				(alternate "T2CH1ETR_2" bidirectional line)
+				(alternate "T2CH1ETR_3" bidirectional line)
+				(alternate "T2CH4_1" bidirectional line)
+				(alternate "URX_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 7.62 0)
+				(length 2.54)
+				(name "PC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AETR_1" bidirectional line)
+				(alternate "SCL" bidirectional line)
+				(alternate "T1BKIN" bidirectional line)
+				(alternate "T1BKIN_2" bidirectional line)
+				(alternate "T1ETR_3" bidirectional line)
+				(alternate "T2CH2_1" bidirectional line)
+				(alternate "URTS" bidirectional line)
+				(alternate "URTS_1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "PC3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "T1CH1N_1" bidirectional line)
+				(alternate "T1CH1N_3" bidirectional line)
+				(alternate "T1CH3" bidirectional line)
+				(alternate "T1CH3_2" bidirectional line)
+				(alternate "UCTS_1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "PC4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A2" bidirectional line)
+				(alternate "MCO" bidirectional line)
+				(alternate "T1CH1_3" bidirectional line)
+				(alternate "T1CH2N_1" bidirectional line)
+				(alternate "T1CH4" bidirectional line)
+				(alternate "T1CH4_2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "PC5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SCK" bidirectional line)
+				(alternate "SCK_1" bidirectional line)
+				(alternate "SCL_2" bidirectional line)
+				(alternate "SCL_3" bidirectional line)
+				(alternate "T1CH3_3" bidirectional line)
+				(alternate "T1ETR" bidirectional line)
+				(alternate "T1ETR_1" bidirectional line)
+				(alternate "T2CH1ETR_1" bidirectional line)
+				(alternate "UCK_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "PC6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "MOSI" bidirectional line)
+				(alternate "MOSI_1" bidirectional line)
+				(alternate "SDA_2" bidirectional line)
+				(alternate "SDA_3" bidirectional line)
+				(alternate "T1CH1_1" bidirectional line)
+				(alternate "T1CH3N_3" bidirectional line)
+				(alternate "UCTS_2" bidirectional line)
+				(alternate "UCTS_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "PC7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "MISO" bidirectional line)
+				(alternate "MISO_1" bidirectional line)
+				(alternate "T1CH2_1" bidirectional line)
+				(alternate "T1CH2_3" bidirectional line)
+				(alternate "T2CH2_3" bidirectional line)
+				(alternate "URTS_2" bidirectional line)
+				(alternate "URTS_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 10.16 180)
+				(length 2.54)
+				(name "PD1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AETR2" bidirectional line)
+				(alternate "SCL_1" bidirectional line)
+				(alternate "SWIO" bidirectional line)
+				(alternate "T1CH3N" bidirectional line)
+				(alternate "T1CH3N_1" bidirectional line)
+				(alternate "T1CH3N_2" bidirectional line)
+				(alternate "URX_1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 7.62 180)
+				(length 2.54)
+				(name "PD2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A3" bidirectional line)
+				(alternate "T1CH1" bidirectional line)
+				(alternate "T1CH1_2" bidirectional line)
+				(alternate "T1CH2N_3" bidirectional line)
+				(alternate "T2CH3_1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "PD5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A5" bidirectional line)
+				(alternate "T2CH4_3" bidirectional line)
+				(alternate "URX_2" bidirectional line)
+				(alternate "UTX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(name "PD3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A4" bidirectional line)
+				(alternate "AETR" bidirectional line)
+				(alternate "T1CH4_1" bidirectional line)
+				(alternate "T2CH2" bidirectional line)
+				(alternate "T2CH2_2" bidirectional line)
+				(alternate "UCTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "PD6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A6" bidirectional line)
+				(alternate "T2CH3_3" bidirectional line)
+				(alternate "URX" bidirectional line)
+				(alternate "UTX_2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 -5.08 180)
+				(length 2.54)
+				(name "PD7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "NRST" bidirectional line)
+				(alternate "OPP1" bidirectional line)
+				(alternate "T2CH4" bidirectional line)
+				(alternate "T2CH4_2" bidirectional line)
+				(alternate "UCK_1" bidirectional line)
+				(alternate "UCK_2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 -10.16 180)
+				(length 2.54)
+				(name "PA1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A1" bidirectional line)
+				(alternate "OPN0" bidirectional line)
+				(alternate "OSCI" bidirectional line)
+				(alternate "T1CH2" bidirectional line)
+				(alternate "T1CH2_2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 -12.7 180)
+				(length 2.54)
+				(name "PA2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A0" bidirectional line)
+				(alternate "AETR2_1" bidirectional line)
+				(alternate "OPP0" bidirectional line)
+				(alternate "OSCO" bidirectional line)
+				(alternate "TICH2N" bidirectional line)
+				(alternate "TICH2N_2" bidirectional line)
+			)
+			(pin power_in line
+				(at 0 -17.78 90)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 12.7 180)
+				(length 2.54)
+				(name "PD0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "OPN1" bidirectional line)
+				(alternate "SDA_1" bidirectional line)
+				(alternate "TICH1N" bidirectional line)
+				(alternate "TICH1N_2" bidirectional line)
+				(alternate "UTX_1" bidirectional line)
+			)
+			(pin power_in line
+				(at 0 17.78 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "CH32V003FxUx"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -7.62 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CH32V003FxUx"
+			(at 7.62 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-20-1EP_3x3mm_P0.4mm_EP1.65x1.65mm"
+			(at -1.27 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.wch-ic.com/products/CH32V003.html"
+			(at -1.27 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CH32V003 series are industrial-grade general-purpose microcontrollers designed based on 32-bit RISC-V instruction set and architecture. It adopts QingKe V2A core, RV32EC instruction set, and supports 2 levels of interrupt nesting. The series are mounted with rich peripheral interfaces and function modules. Its internal organizational structure meets the low-cost and low-power embedded application scenarios."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "microcontroller wch RISC-V"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "QFN*1EP*3x3mm*P0.4mm*EP1.65x1.65mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "CH32V003FxUx_1_1"
+			(rectangle
+				(start -7.62 15.24)
+				(end 7.62 -15.24)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -5.08 180)
+				(length 2.54)
+				(name "PD7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "NRST" bidirectional line)
+				(alternate "OPP1" bidirectional line)
+				(alternate "T2CH4" bidirectional line)
+				(alternate "T2CH4_2" bidirectional line)
+				(alternate "UCK_1" bidirectional line)
+				(alternate "UCK_2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "PC3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "T1CH1N_1" bidirectional line)
+				(alternate "T1CH1N_3" bidirectional line)
+				(alternate "T1CH3" bidirectional line)
+				(alternate "T1CH3_2" bidirectional line)
+				(alternate "UCTS_1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "PC4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A2" bidirectional line)
+				(alternate "MCO" bidirectional line)
+				(alternate "T1CH1_3" bidirectional line)
+				(alternate "T1CH2N_1" bidirectional line)
+				(alternate "T1CH4" bidirectional line)
+				(alternate "T1CH4_2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "PC5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SCK" bidirectional line)
+				(alternate "SCK_1" bidirectional line)
+				(alternate "SCL_2" bidirectional line)
+				(alternate "SCL_3" bidirectional line)
+				(alternate "T1CH3_3" bidirectional line)
+				(alternate "T1ETR" bidirectional line)
+				(alternate "T1ETR_1" bidirectional line)
+				(alternate "T2CH1ETR_1" bidirectional line)
+				(alternate "UCK_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "PC6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "MOSI" bidirectional line)
+				(alternate "MOSI_1" bidirectional line)
+				(alternate "SDA_2" bidirectional line)
+				(alternate "SDA_3" bidirectional line)
+				(alternate "T1CH1_1" bidirectional line)
+				(alternate "T1CH3N_3" bidirectional line)
+				(alternate "UCTS_2" bidirectional line)
+				(alternate "UCTS_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "PC7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "MISO" bidirectional line)
+				(alternate "MISO_1" bidirectional line)
+				(alternate "T1CH2_1" bidirectional line)
+				(alternate "T1CH2_3" bidirectional line)
+				(alternate "T2CH2_3" bidirectional line)
+				(alternate "URTS_2" bidirectional line)
+				(alternate "URTS_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 10.16 180)
+				(length 2.54)
+				(name "PD1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AETR2" bidirectional line)
+				(alternate "SCL_1" bidirectional line)
+				(alternate "SWIO" bidirectional line)
+				(alternate "T1CH3N" bidirectional line)
+				(alternate "T1CH3N_1" bidirectional line)
+				(alternate "T1CH3N_2" bidirectional line)
+				(alternate "URX_1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 7.62 180)
+				(length 2.54)
+				(name "PD2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A3" bidirectional line)
+				(alternate "T1CH1" bidirectional line)
+				(alternate "T1CH1_2" bidirectional line)
+				(alternate "T1CH2N_3" bidirectional line)
+				(alternate "T2CH3_1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(name "PD3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A4" bidirectional line)
+				(alternate "AETR" bidirectional line)
+				(alternate "T1CH4_1" bidirectional line)
+				(alternate "T2CH2" bidirectional line)
+				(alternate "T2CH2_2" bidirectional line)
+				(alternate "UCTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "PD4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A7" bidirectional line)
+				(alternate "OPO" bidirectional line)
+				(alternate "T1CH4_3" bidirectional line)
+				(alternate "T2CH1ETR" bidirectional line)
+				(alternate "TIETR_2" bidirectional line)
+				(alternate "UCK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "PD5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A5" bidirectional line)
+				(alternate "T2CH4_3" bidirectional line)
+				(alternate "URX_2" bidirectional line)
+				(alternate "UTX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 -10.16 180)
+				(length 2.54)
+				(name "PA1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A1" bidirectional line)
+				(alternate "OPN0" bidirectional line)
+				(alternate "OSCI" bidirectional line)
+				(alternate "T1CH2" bidirectional line)
+				(alternate "T1CH2_2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "PD6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A6" bidirectional line)
+				(alternate "T2CH3_3" bidirectional line)
+				(alternate "URX" bidirectional line)
+				(alternate "UTX_2" bidirectional line)
+			)
+			(pin passive line
+				(at 0 -17.78 90)
+				(length 2.54) hide
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -12.7 180)
+				(length 2.54)
+				(name "PA2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A0" bidirectional line)
+				(alternate "AETR2_1" bidirectional line)
+				(alternate "OPP0" bidirectional line)
+				(alternate "OSCO" bidirectional line)
+				(alternate "TICH2N" bidirectional line)
+				(alternate "TICH2N_2" bidirectional line)
+			)
+			(pin power_in line
+				(at 0 -17.78 90)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 12.7 180)
+				(length 2.54)
+				(name "PD0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "OPN1" bidirectional line)
+				(alternate "SDA_1" bidirectional line)
+				(alternate "TICH1N" bidirectional line)
+				(alternate "TICH1N_2" bidirectional line)
+				(alternate "UTX_1" bidirectional line)
+			)
+			(pin power_in line
+				(at 0 17.78 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -10.16 12.7 0)
+				(length 2.54)
+				(name "PC0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "NSS_1" bidirectional line)
+				(alternate "T1CH3_1" bidirectional line)
+				(alternate "T2CH3" bidirectional line)
+				(alternate "T2CH3_2" bidirectional line)
+				(alternate "UTX_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 10.16 0)
+				(length 2.54)
+				(name "PC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "NSS" bidirectional line)
+				(alternate "SDA" bidirectional line)
+				(alternate "T1BKIN_1" bidirectional line)
+				(alternate "T1BKIN_3" bidirectional line)
+				(alternate "T2CH1ETR_2" bidirectional line)
+				(alternate "T2CH1ETR_3" bidirectional line)
+				(alternate "T2CH4_1" bidirectional line)
+				(alternate "URX_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -10.16 7.62 0)
+				(length 2.54)
+				(name "PC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AETR_1" bidirectional line)
+				(alternate "SCL" bidirectional line)
+				(alternate "T1BKIN" bidirectional line)
+				(alternate "T1BKIN_2" bidirectional line)
+				(alternate "T1ETR_3" bidirectional line)
+				(alternate "T2CH2_1" bidirectional line)
+				(alternate "URTS" bidirectional line)
+				(alternate "URTS_1" bidirectional line)
+			)
+		)
+	)
+	(symbol "CH32V003JxMx"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -15.24 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CH32V003JxMx"
+			(at 15.24 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOP-8_3.9x4.9mm_P1.27mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.wch-ic.com/products/CH32V003.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CH32V003 series are industrial-grade general-purpose microcontrollers designed based on 32-bit RISC-V instruction set and architecture. It adopts QingKe V2A core, RV32EC instruction set, and supports 2 levels of interrupt nesting. The series are mounted with rich peripheral interfaces and function modules. Its internal organizational structure meets the low-cost and low-power embedded application scenarios."
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "microcontroller wch RISC-V"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOP*3.9x4.9mm*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "CH32V003JxMx_1_1"
+			(rectangle
+				(start -15.24 5.08)
+				(end 15.24 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin bidirectional line
+				(at 17.78 0 180)
+				(length 2.54)
+				(name "PD6/PA1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A1" bidirectional line)
+				(alternate "A6" bidirectional line)
+				(alternate "OPN0" bidirectional line)
+				(alternate "OSCI" bidirectional line)
+				(alternate "T1CH2" bidirectional line)
+				(alternate "T1CH2_2" bidirectional line)
+				(alternate "T2CH3_3" bidirectional line)
+				(alternate "URX" bidirectional line)
+				(alternate "UTX_2" bidirectional line)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 17.78 -2.54 180)
+				(length 2.54)
+				(name "PA2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A0" bidirectional line)
+				(alternate "AETR2_1" bidirectional line)
+				(alternate "OPP0" bidirectional line)
+				(alternate "OSCO" bidirectional line)
+				(alternate "TICH2N" bidirectional line)
+				(alternate "TICH2N_2" bidirectional line)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -17.78 2.54 0)
+				(length 2.54)
+				(name "PC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "NSS" bidirectional line)
+				(alternate "SDA" bidirectional line)
+				(alternate "T1BKIN_1" bidirectional line)
+				(alternate "T1BKIN_3" bidirectional line)
+				(alternate "T2CH1ETR_2" bidirectional line)
+				(alternate "T2CH1ETR_3" bidirectional line)
+				(alternate "T2CH4_1" bidirectional line)
+				(alternate "URX_3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -17.78 0 0)
+				(length 2.54)
+				(name "PC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AETR_1" bidirectional line)
+				(alternate "SCL" bidirectional line)
+				(alternate "T1BKIN" bidirectional line)
+				(alternate "T1BKIN_2" bidirectional line)
+				(alternate "T1ETR_3" bidirectional line)
+				(alternate "T2CH2_1" bidirectional line)
+				(alternate "URTS" bidirectional line)
+				(alternate "URTS_1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -17.78 -2.54 0)
+				(length 2.54)
+				(name "PC4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A2" bidirectional line)
+				(alternate "MCO" bidirectional line)
+				(alternate "T1CH1_3" bidirectional line)
+				(alternate "T1CH2N_1" bidirectional line)
+				(alternate "T1CH4" bidirectional line)
+				(alternate "T1CH4_2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 17.78 2.54 180)
+				(length 2.54)
+				(name "PD1/PD4/PD5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A5" bidirectional line)
+				(alternate "A7" bidirectional line)
+				(alternate "AETR2" bidirectional line)
+				(alternate "OPO" bidirectional line)
+				(alternate "SCL_1" bidirectional line)
+				(alternate "SWIO" bidirectional line)
+				(alternate "T1CH3N" bidirectional line)
+				(alternate "T1CH3N_1" bidirectional line)
+				(alternate "T1CH3N_2" bidirectional line)
+				(alternate "T1CH4_3" bidirectional line)
+				(alternate "T2CH1ETR" bidirectional line)
+				(alternate "T2CH4_3" bidirectional line)
+				(alternate "TIETR_2" bidirectional line)
+				(alternate "UCK" bidirectional line)
+				(alternate "URX_1" bidirectional line)
+				(alternate "URX_2" bidirectional line)
+				(alternate "UTX" bidirectional line)
+			)
+		)
+	)
+)
