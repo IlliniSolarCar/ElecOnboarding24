@@ -1,0 +1,26 @@
+Electrical Onboarding 
+
+1. Update your slack profile with things like which project your working on and your contact information
+
+2. workspaces- Open Lab(need for using this) on the second floor, Lin view, MRDC (Mechanical + electrical work happens here)
+3. Open Lab access- google open lab ECE and do a few safety quizzes and then you have to do a safety tour of open lab (gives access  to the building)
+4. ESPL training - ESDC Door Access Fall 2025 and spring of 2026 
+5. Ki CAD Programme 
+6. PCB Design process- they just change the PCB's design (don't make them from scratch)
+7. Software installation - Git, Kicad,MCUXpresso
+
+
+High Voltage subsystems 
+4 major systems 
+
+Array 
+working and testing for a array (the systems the convert the electrical energy into the solar energy)
+MCUexpresso password - asmis2@illinois.edu
+password- Sudiksharani1234#
+
+
+
+
+
+
+
