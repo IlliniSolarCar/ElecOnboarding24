@@ -4,7 +4,8 @@
  */
 
 #include <mbed.h>
-// PROJECT 1 - Include something here!
+#include "pins.h"
+#include "setup.h"
 #include "peripherals.h"
 #include "can_struct.h"
 #include "CAN/can_id.h"
@@ -42,6 +43,7 @@ void setup() {
 	common.setupCAN();
 	//set up LEDs and turn them all off
 	common.setupLEDs(&led1, &led2, &led3, &led4);
+	heart = 0;
 
 	//Set Callbacks:
 	//These are side tasks (up to 8) that are run independently of the main
@@ -95,11 +97,18 @@ int main() {
         	common.toggleReceiveCANLED();
         }
 
-        if(timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)){
-        	//PROJECT 1 - add code here to actually make the LED blink
+        if (timing.tickThreshold(last_task_1_time, TASK_1_RATE_US)) {
+            //PROJECT 1 - add code here to actually make the LED blink
+            heart = !heart.read();
         }
 
         //PROJECT 2 - use the potentiometer to change the blink rate
+        float p = pot.read();
+
+        uint32_t interval = 50000u + (uint32_t)((800000u - 50000u) * p);
+        if (timing.tickThreshold(last_task_1_time, interval)) {
+            led1 = !led1.read();
+        }
 
 
 	}
